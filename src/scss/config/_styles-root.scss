@@ -12,10 +12,10 @@ $altura-linea: 1.5;
 $global-font-size: 16px;
 // Para establecer los tipos de fuente (principal, secundaria, auxiliar), los tamaños de los textos por defecto según su etiqueta
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
-$fuente-parrafos: 'Open Sans', sans-serif;
-$fuente-titulos:'Comfortaa', cursive;
+$fuente-parrafos: 'Montserrat', sans-serif;
+$fuente-titulos: 'Montserrat', sans-serif;
 
 // Colores
 
@@ -26,14 +26,13 @@ $fuente-titulos:'Comfortaa', cursive;
 // Paleta de colores
 
 $colors:(
-  primary: #090A07,
-  secondary: #BE9C4A,
+  primary: #b9a391,
+  secondary: #d5b18a,
+  tertiary: #b76f33,
+  hover: #e4ddc7,
   success: green,
-  cta: #E0B544,
-  alert: #C0362C,
-  text: #424242,
-  sombra: #dddddd4d,
-  btn-hover: #6a5515,
+  alert: red,
+  text: #21211F,
   bg-body: #f8f8f8,
 );
 
