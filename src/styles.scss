@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+// Config
+@import "scss/config/reset";
+@import "scss/config/styles-root"; // estilos generales del proyecto (colores, tamaños de fuente, tipos de fuente)
+
+// Layout
+@import "scss/layout/sections";
+@import "scss/layout/containers";
+@import "scss/layout/grid"; // siempre van dentro de un container
+@import "scss/layout/flex"; // siempre van dentro de un container
+@import "scss/layout/columnas";  // siempre van dentro de un grid
+@import "scss/layout/helpers";  // tal vez lo use para margenes, paddings, borders y otros detalles especificos que desee modificar
+
+// Elementos (estilos para una sola etiqueta html)
+@import "scss/elementos/botones";
+@import "scss/elementos/iconos";
+@import "scss/elementos/loaders";
+
+// Moleculas (estilos para conjuntos de dos o más elementos que, como conjunto, presenten algún contenido)
+@import "scss/moleculas/imagenes";
+@import "scss/moleculas/cards";
+@import "scss/moleculas/navs-var";
+@import "scss/moleculas/breadcrumbs";
+
+// Organismos (estilos para conjuntos de dos o más moleculas)
+@import "scss/organismos/formularios";
+@import "scss/organismos/paneles";
+@import "scss/organismos/banners";
+@import "scss/organismos/sliders";
+
+
+// Secciones (Estilos para las cajas de secciones)
+@import "scss/secciones/header";
+@import "scss/secciones/main";
+@import "scss/secciones/aside";
+@import "scss/secciones/footer";
+@import "scss/secciones/modales";
+
+
+// Animaciones (sólo con css)
+
+// Componentes (Además de estilo tienen animaciones y funcionalidades)
