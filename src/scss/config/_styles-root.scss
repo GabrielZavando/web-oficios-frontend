@@ -1,0 +1,86 @@
+
+// Variables globales
+
+// Variables para maquetación
+
+$ancho-maximo: 1600px;
+$ancho-total: 1920px;
+$altura-linea: 1.5;
+
+// fuentes
+
+$global-font-size: 16px;
+// Para establecer los tipos de fuente (principal, secundaria, auxiliar), los tamaños de los textos por defecto según su etiqueta
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans&display=swap');
+
+$fuente-parrafos: 'Open Sans', sans-serif;
+$fuente-titulos:'Comfortaa', cursive;
+
+// Colores
+
+@function color($color) {
+  @return map-get($colors,$color);
+}
+
+// Paleta de colores
+
+$colors:(
+  primary: #090A07,
+  secondary: #BE9C4A,
+  success: green,
+  cta: #E0B544,
+  alert: #C0362C,
+  text: #424242,
+  sombra: #dddddd4d,
+  btn-hover: #6a5515,
+  bg-body: #f8f8f8,
+);
+
+$fondo-transparente: rgba(9, 10, 7, 0.8);
+
+// Imagenes
+
+// Funcion para obtener imagenes
+
+@function img($img) {
+  @return url('../../assets/img/' + $img);
+}
+
+//Ejemplo
+
+// img{
+//   background-image: img('ejemplo.jpg');
+// }
+
+// Bordes
+
+$borde-col: 1px solid rgb(255, 255, 255);
+
+// Margenes
+
+$margen-section-top: 1rem;
+$margen-section-bottom: 1rem;
+
+// Gap
+
+$gap-card: 1rem;
+$gap-col: .5rem;
+
+
+
+// Estilos globales
+
+body{
+  background-color: color(bg-body);
+  font-family: $fuente-parrafos;
+  font-size: $global-font-size;
+  color: color(text);
+  background-image: img('fondoweb.jpg');
+  line-height: 27px;
+}
+
+// Fuente para los formularios
+form *{
+  font-family: $fuente-parrafos;
+}

@@ -1,0 +1,12 @@
+
+@mixin container($display){
+  display: $display;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $ancho-maximo;
+}
+
+.container{
+  @include container(block);
+  border: 2px solid red;
+}

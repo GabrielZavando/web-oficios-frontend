@@ -1,0 +1,12 @@
+
+@mixin col(){
+  border: $borde-col;
+}
+
+.col-1{
+  @include col();
+}
+
+.col-2{
+  @include col();
+}

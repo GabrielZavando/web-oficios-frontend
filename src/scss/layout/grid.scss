@@ -1,0 +1,40 @@
+
+@mixin grid-cols($columnas){
+  display: grid;
+  grid-template-columns: repeat($columnas,1fr);
+}
+
+@mixin grid-rows($filas){
+  display: grid;
+  height: auto;
+  grid-template-rows: repeat($filas, 1fr);
+}
+
+@mixin grid-alineacion($a-vertical, $a-horizontal){
+  display: grid;
+  align-items: $a-vertical; // alineación en eje vertical de los grid items
+  justify-items: $a-horizontal; // alineación ene eje horizontal de los grid items
+}
+
+// Clases
+
+// Grid columnas
+
+.grid-col-2{
+  @include grid-cols(2);
+}
+
+// Grid filas
+
+.grid-row-2{
+  @include grid-rows(2);
+}
+
+// Grid alineacion
+
+.grid-center{
+  @include grid-alineacion(center, center);
+  border: 2px solid white;
+}
+
+
