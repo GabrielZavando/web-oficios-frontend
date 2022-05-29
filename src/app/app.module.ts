@@ -14,6 +14,7 @@ import { MaestrosComponent } from './pages/maestros/maestros.component';
 import { AprendeComponent } from './pages/aprende/aprende.component';
 import { PanoramasComponent } from './pages/panoramas/panoramas.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HeaderComponent } from './shared/header/header.component';
     MaestrosComponent,
     AprendeComponent,
     PanoramasComponent,
-    HeaderComponent
+    HeaderComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
