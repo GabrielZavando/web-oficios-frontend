@@ -5,6 +5,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { MaestrosComponent } from './maestros/maestros.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PanoramasComponent } from './panoramas/panoramas.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 
@@ -24,7 +25,8 @@ import { PanoramasComponent } from './panoramas/panoramas.component';
     PanoramasComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }

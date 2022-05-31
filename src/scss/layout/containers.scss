@@ -8,5 +8,11 @@
 
 .container{
   @include container(block);
-  border: 2px solid red;
+  border: 1px solid red
+}
+
+.container-global{
+  @include container(block);
+  max-width: $ancho-total;
+  border: 1px solid blue;
 }

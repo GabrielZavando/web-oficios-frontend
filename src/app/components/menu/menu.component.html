@@ -1,6 +1,28 @@
 <div class="Panel">
   <div class="Panel-item">
-    <i class="fi fi-rr-menu-burger"></i>
-    <h3>MENU</h3>
+    <button #btnMenu>
+      <i class="fi fi-rr-menu-burger"></i>
+      <h3>Menu</h3>
+    </button>
   </div>
+  <nav #menu class="Panel-item">
+    <ul>
+      <li>
+        <a href="">Inicio</a>
+      </li>
+      <li>
+        <a (click)="goToSection('nosotros', btnMenu, menu)">Nosotros</a>
+      </li>
+      <li>
+        <a (click)="goToSection('maestros', btnMenu, menu)">Maestros</a>
+      </li>
+      <li>
+        <a (click)="goToSection('aprende', btnMenu, menu)">Aprende</a>
+      </li>
+      <li>
+        <a (click)="goToSection('panoramas', btnMenu, menu)">Panoramas</a>
+      </li>
+    </ul>
+  </nav>
 </div>
+

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SliderItem } from '../../models/slider.model';
+import { SLIDER_DATA_ITEM } from '../../services/data/slider.content';
 
 @Component({
   selector: 'app-inicio',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent implements OnInit {
+  public sliderData: SliderItem[] = SLIDER_DATA_ITEM
 
   constructor() { }
 
