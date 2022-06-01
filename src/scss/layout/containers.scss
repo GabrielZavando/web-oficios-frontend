@@ -1,18 +1,30 @@
 
-@mixin container($display){
+@mixin container($display, $ancho){
   display: $display;
   margin: 0 auto;
   width: 100%;
-  max-width: $ancho-maximo;
-}
-
-.container{
-  @include container(block);
-  border: 1px solid red
+  max-width: $ancho;
 }
 
 .container-global{
-  @include container(block);
+  @include container(block, $ancho-total);
   max-width: $ancho-total;
   border: 1px solid blue;
 }
+
+.container{
+  @include container(block, $ancho-maximo);
+  border: 1px solid red
+}
+
+.container-flex{
+  @include container(flex, 100%);
+  &-wrap{
+    flex-wrap: wrap;
+  }
+}
+
+.container-grid{
+  @include container(grid, 100%);
+}
+
