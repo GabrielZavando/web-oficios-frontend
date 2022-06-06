@@ -12,10 +12,23 @@ $altura-linea: 1.5;
 $global-font-size: 16px;
 // Para establecer los tipos de fuente (principal, secundaria, auxiliar), los tamaños de los textos por defecto según su etiqueta
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 
 $fuente-parrafos: 'Montserrat', sans-serif;
 $fuente-titulos: 'Montserrat', sans-serif;
+$fuente-logo: 'Arvo', serif;
+
+// Fuente weight
+
+// Arvo
+// BOLD: 700
+
+// Montserrat
+// Light: 300
+// Regular: 400
+// Regular: 400 italic
+// SemiBold: 600
+// Bold: 700
 
 // Colores
 
@@ -30,6 +43,7 @@ $colors:(
   secondary: #e4ddc7,
   tertiary: #e0dac5,
   hover: #f8f2e4,
+  hoverHeader: #f2f0ed,
   success: #898d72,
   alert: #a11918,
   text: #6b6b6b,
