@@ -1,0 +1,17 @@
+
+.Titulo{
+  display: inline;
+  text-transform: uppercase;
+  color: color(primary);
+  font-weight: 400;
+  position: relative;
+  padding: $padding-titulo;
+  &:before{
+    content: '';
+    width: 50%;
+    height: 1px;
+    background-color: color(primary);
+    position: absolute;
+    bottom: 0;
+  }
+}

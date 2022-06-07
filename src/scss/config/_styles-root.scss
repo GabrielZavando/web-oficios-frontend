@@ -40,7 +40,7 @@ $fuente-logo: 'Arvo', serif;
 
 $colors:(
   primary: #b9a391,
-  secondary: #e4ddc7,
+  secondary: #e1d6bd,
   tertiary: #e0dac5,
   hover: #f8f2e4,
   hoverHeader: #f2f0ed,
@@ -48,7 +48,8 @@ $colors:(
   alert: #a11918,
   text: #6b6b6b,
   blanco: #fff,
-  bg-body: #75a275
+  bg-body: #75a275,
+  negro: #121212
 );
 
 $fondo-transparente: rgba(9, 10, 7, 0.8);
@@ -81,12 +82,16 @@ $margen-section-bottom: 1rem;
 $gap-card: 1rem;
 $gap-col: .5rem;
 
+// Padding's
+
+$padding-titulo: .5rem 0;
+
 
 
 // Estilos globales
 
 body{
-  background-color: color(bg-body);
+  // background-color: color(bg-body);
   font-family: $fuente-parrafos;
   font-size: $global-font-size;
   color: color(text);

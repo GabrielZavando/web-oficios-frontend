@@ -1,0 +1,15 @@
+@import "../../../scss/config/styles-root";
+@import "../../../scss/elementos/botones";
+
+.btn-menu{
+  display: flex;
+  color: color(blanco);
+  transition: color .25s;
+  &:active{
+    transform: scale(1);
+  }
+  &-activo{
+    color: color(negro);
+    transition: color .25s;
+  }
+}

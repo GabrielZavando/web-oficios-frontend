@@ -1,0 +1,36 @@
+@import "../../../scss/config/styles-root";
+
+.form-buscador{
+  display: flex;
+  justify-content: space-between;
+  &-input{
+    background-color: color(tertiary);
+    color: color(negro);
+    margin-right: .5rem;
+    border-radius: 1.25rem;
+    padding-left: 1rem;
+    transition: background-color .25s;
+    &:hover{
+      background-color: color(hover);
+    }
+    &:focus{
+      background-color: color(hover);
+    }
+  }
+  &-btn{
+    background-color: color(primary);
+    color: color(tertiary);
+    border-radius: 1.25rem;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: 3px;
+    transition: background-color .25s;
+    &:hover{
+      background-color: color(hover);
+    }
+    & i{
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -6,8 +6,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public headerActivo: boolean = false
-  public colorLogo: string = '#fff'
+  public colorHeader: string = 'Header'
+  public colorLogo: string = 'Logo'
 
   constructor() { }
 
@@ -23,13 +23,14 @@ export class HeaderComponent implements OnInit {
 
 
     if (st > lastScrollTop){
-      return 'Header-activo'
+      this.colorHeader = 'Header-activo'
+      this.colorLogo = 'Logo-activo'
     }else if (sctop === 0){
-      return 'Header'
+      this.colorHeader = 'Header'
+      this.colorLogo = 'Logo'
     }
 
     lastScrollTop = st
-    return 'Header'
   }
 
   // Detectar scroll

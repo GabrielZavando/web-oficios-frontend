@@ -1,9 +1,10 @@
 <div class="Panel">
   <div class="Panel-item">
     <button #btnMenu
-            class="container-flex">
-      <i class="fi fi-rr-menu-burger"></i>
-      <h3>Menu</h3>
+            class="btn-menu"
+            [class]="colorMenu">
+      <i class="fi fi-br-menu-burger"></i>
+      <span>Menu</span>
     </button>
   </div>
   <nav #menu class="Panel-item">

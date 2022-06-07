@@ -6,6 +6,7 @@ import { MaestrosComponent } from './maestros/maestros.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PanoramasComponent } from './panoramas/panoramas.component';
 import { ComponentsModule } from '../components/components.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -26,6 +27,7 @@ import { ComponentsModule } from '../components/components.module';
   ],
   imports: [
     CommonModule,
+    AppRoutingModule,
     ComponentsModule
   ]
 })

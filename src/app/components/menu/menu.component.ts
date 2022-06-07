@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,11 +6,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  public colorMenu: string = 'btn-menu'
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  menuChangeColor(){
+    let lastScrollTop = 0
+    // al hacer scroll aumenta el valor de sctop
+    let sctop = document.documentElement.scrollTop
+    // console.log(sctop)
+    let st = window.pageXOffset || document.documentElement.scrollTop
+
+
+    if (st > lastScrollTop){
+      this.colorMenu = 'btn-menu-activo'
+    }else if (sctop === 0){
+      this.colorMenu = 'btn-menu'
+    }
+
+    lastScrollTop = st
+  }
+
+    // Detectar scroll
+    @HostListener('window:scroll', [])
+    onWindowScroll(){
+      this.menuChangeColor()
+    }
 
     // Navegación smooth scroll
 

@@ -17,11 +17,15 @@
 
 .Logo{
   text-align: center;
+  color: color(blanco);
+  &-activo{
+    color: color(negro);
+  }
   & a{
     text-decoration: none;
+    color: inherit;
     cursor: pointer;
     & h1{
-      color: color(blanco);
       font-family: $fuente-logo;
     }
   }

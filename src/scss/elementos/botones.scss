@@ -1,0 +1,45 @@
+
+@mixin btn($bg-color, $text-color, $hover-color){
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 22px;
+  background-color: $bg-color;
+  border: none;
+  cursor: pointer;
+  color: $text-color;
+  transition: background-color .25s ease;
+  &:hover{
+    background-color: $hover-color;
+  }
+  &:active{
+    transform: scale(0.98);
+  }
+}
+
+.btn-pages{
+  @include btn(color(primary), color(blanco), color(secondary));
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn-icon{
+  @include btn(color(primary), color(blanco), color(secondary));
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  & > i{
+    margin-left: 5px;
+  }
+}
+
+.btn-menu{
+  @include btn(transparent, color(blanco), transparent);
+}

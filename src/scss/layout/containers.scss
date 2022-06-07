@@ -9,13 +9,11 @@
 .container-global{
   @include container(block, $ancho-total);
   max-width: $ancho-total;
-  border: 1px solid blue;
   position: relative;
 }
 
 .container{
   @include container(block, $ancho-maximo);
-  border: 1px solid red;
 }
 
 .container-flex{

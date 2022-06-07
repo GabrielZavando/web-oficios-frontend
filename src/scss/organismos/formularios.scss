@@ -1,0 +1,14 @@
+
+.form{
+  display: block;
+  width: 100%;
+  // border: 2px solid red;
+  &-input{
+    outline: none;
+    border: transparent;
+    padding: .5rem;
+  }
+  &-btn{
+    border: none;
+  }
+}
