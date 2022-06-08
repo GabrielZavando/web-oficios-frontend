@@ -1,0 +1,10 @@
+
+@mixin img($display, $ancho, $posicion: center){
+  display: $display;
+  width: $ancho;
+}
+
+.img-50-center{
+  @include img(block, 50%);
+  margin: 0 auto;
+}

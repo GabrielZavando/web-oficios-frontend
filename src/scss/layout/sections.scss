@@ -1,9 +1,9 @@
 
 .Section{
-  display: block;
-  max-width: $ancho-total;
-  margin: 0 auto;
-  margin-top: $margen-section-top;
   margin-bottom: $margen-section-bottom;
-  border: 2px solid white;
+  padding: $padding-sections;
+}
+
+#aprende{
+  background-color: #F4F0ED;
 }
