@@ -1,1 +1,38 @@
+@import "../../../scss/config/styles-root";
 
+.Header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: transparent;
+	transition: background-color .25s;
+	padding: 2rem 1rem;
+	&-activo{
+		background-color: color(hoverHeader);
+		transition: background-color .25s;
+	}
+}
+
+.Logo{
+	text-align: center;
+	color: color(blanco);
+	&-activo{
+		color: color(negro);
+	}
+	& a{
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+		& h1{
+			font-family: $fuente-logo;
+			font-size: var(--size-logo);
+		}
+	}
+}
+
+// .Menu{
+//   border: 2px solid blue;
+// }

@@ -1,0 +1,72 @@
+// slide left
+@mixin slideLeft($time){
+	animation: slideleft $time forwards;
+	@keyframes slideleft {
+		from{
+			transform: translate3d(-100%,0,0);
+		}
+	}
+}
+
+// slide right
+@mixin slideRight($time){
+	animation: slideright $time forwards;
+	@keyframes slideright {
+		from{
+			transform: translate3d(100%,0,0);
+		}
+	}
+}
+
+// slide top
+@mixin slideTop($time){
+	animation: slidetop $time forwards;
+	@keyframes slidetop {
+		from{
+			transform: translate3d(0,-100%,0);
+		}
+	}
+}
+
+// slide bottom
+@mixin slideBottom($time){
+	animation: slidebottom $time forwards;
+	@keyframes slidebottom {
+		from{
+			transform: translate3d(0,100%,0);
+		}
+	}
+}
+
+//Slide Down
+@mixin slideDown($time, $height){
+	max-height: 0;
+	overflow: hidden;
+	animation: slideDown $time forwards;
+	@keyframes slideDown {
+		to{
+			max-height: $height;
+		}
+	}
+}
+
+//Slide Up
+@mixin slideUp($time, $height){
+	max-height: $height;
+	overflow: hidden;
+	animation: slideUp $time forwards;
+	@keyframes slideUp {
+		to{
+			max-height: 0;
+		}
+	}
+}
+
+//Clases para aplicarlos con clases
+
+.slideleft, .slide-left{@include slideLeft(1s);}
+.slideright, .slide-right{@include slideRight(1s);}
+.slidetop, .slide-top{@include slideTop(1s);}
+.slidebottom, .slide-bottom{@include slideBottom(1s);}
+.slidedown, .slide-down{@include slideDown(.25s,1000px);}
+.slideup, .slide-up{@include slideUp(.25s, 1000px);}

@@ -1,11 +1,78 @@
 
+// Breakpoints
+// Para establecer los puntos en los que los estilos pueden cambiar (comienzo pensando en 320px de ancho y desde ahí el primer cambio puede ser a los 360px de ancho)
+// En casi todos los casos bastará trabajar con tres breakpoint
+
+
+$tablet: 768px;
+$notebook: 1024px;
+$escritorio: 1440px;
+
+
+// Minor Breakpoint
+// Para ajustes especiales
+$movil-small: 360px;
+$movil-medium: 411px;
+$movil-large: 480px;
+$movil-xlarge: 568px;
+$medium: 640px;
+$notebook-medium: 1240px;
+
+
+//Mixin para media query
+
+@mixin mq($size) {
+  @if $size == movil {
+      @media screen and (min-width: $movil-small)and (orientation: portrait){@content;}
+  }
+  @if $size == movilH{
+      @media screen and (min-width: $movil-small)and (max-width: $tablet) and (orientation: landscape){@content;}
+  }
+  @if $size == movilM {
+      @media screen and (min-width: $movil-medium)and (orientation: portrait){@content;}
+  }
+  @if $size == movilMH {
+      @media screen and (min-width: $movil-medium)and (max-width: $movil-medium) and (orientation: landscape){@content;}
+  }
+  @if $size == movilL {
+      @media screen and (min-width: $movil-large)and (orientation: portrait){@content;}
+  }
+  @if $size == movilXL {
+      @media screen and (min-width: $movil-xlarge){@content;}
+  }
+  @if $size == medium {
+    @media screen and (min-width: $medium){@content;}
+}
+  @if $size == tablet {
+      @media screen and (min-width: $tablet){@content;}
+  }
+  @if $size == notebook {
+      @media screen and (min-width: $notebook){@content;}
+  }
+  @if $size == notebookH {
+      @media screen and (min-width: $notebook)and (orientation: landscape){@content;}
+  }
+  @if $size == notebookM {
+      @media screen and (min-width: $notebook-medium){@content;}
+  }
+  @if $size == escritorio {
+      @media screen and (min-width: $escritorio){@content;}
+  }
+}
+
+// Uso
+
+@include mq(movil){
+  // Bloque de declaración
+}
 // Variables globales
 
 // Variables para maquetación
 
-$ancho-maximo: 1600px;
+$ancho-maximo: 1440px;
 $ancho-total: 1920px;
 $altura-linea: 1.5;
+
 
 // fuentes
 
@@ -29,6 +96,14 @@ $fuente-logo: 'Arvo', serif;
 // Regular: 400 italic
 // SemiBold: 600
 // Bold: 700
+
+// Tamaño de fuentes
+
+:root{
+  --size-logo: 1.3rem;
+  --size-menu: 1.2rem;
+  --size-menu-item: .8rem;
+}
 
 // Colores
 
@@ -87,6 +162,10 @@ $gap-col: .5rem;
 $padding-titulo: .5rem 0;
 $padding-sections: 2rem;
 $padding-parrafo: .5rem 1rem;
+
+:root{
+  --padding-menu: .5rem;
+}
 
 
 

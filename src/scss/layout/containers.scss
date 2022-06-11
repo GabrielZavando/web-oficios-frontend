@@ -27,3 +27,7 @@
   @include container(grid, 100%);
 }
 
+.flex-separados{
+  justify-content: space-between;
+}
+

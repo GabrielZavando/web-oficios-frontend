@@ -7,10 +7,30 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   public colorMenu: string = 'btn-menu'
+  public mostrarMenu: boolean = false
+	public menuNotebook: string = ''
+	public breakPoint: any = window.matchMedia("(min-width:1024px)")
 
-  constructor() { }
+  constructor() {
+		if(this.breakPoint.matches){
+			this.mostrarMenu = true
+			this.menuNotebook = 'link-menu-notebook-activo'
+		}
+	}
 
   ngOnInit(): void {
+  }
+
+  showHidePanelMenu(){
+		if(this.breakPoint.matches){
+			return
+		}
+    this.mostrarMenu = !this.mostrarMenu
+    if(this.mostrarMenu){
+      this.colorMenu = 'btn-menu-activo'
+    }else{
+      this.colorMenu = 'btn-menu'
+    }
   }
 
   menuChangeColor(){
@@ -21,10 +41,12 @@ export class MenuComponent implements OnInit {
     let st = window.pageXOffset || document.documentElement.scrollTop
 
 
-    if (st > lastScrollTop){
+    if (st > lastScrollTop || this.mostrarMenu && !this.breakPoint.matches){
       this.colorMenu = 'btn-menu-activo'
-    }else if (sctop === 0){
+			this.menuNotebook = 'link-menu-notebook'
+    }else if (sctop === 0 ){
       this.colorMenu = 'btn-menu'
+			this.menuNotebook = 'link-menu-notebook-activo'
     }
 
     lastScrollTop = st
@@ -35,17 +57,5 @@ export class MenuComponent implements OnInit {
     onWindowScroll(){
       this.menuChangeColor()
     }
-
-    // Navegación smooth scroll
-
-  // Nota (se puede mejorar creando un objeto con el menu para luego recorrerlo con un *ngfor en el html)
-
-  goToSection(section: string, boton: any, menu: any){
-    document.getElementById(section)
-                ?.scrollIntoView({behavior: 'smooth'})
-
-    boton.classList.toggle('is-active')
-    menu.classList.toggle('is-active')
-  }
 
 }

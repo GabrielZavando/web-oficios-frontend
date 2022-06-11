@@ -3,17 +3,20 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ComponentsModule } from '../components/components.module';
+import { BtnTopComponent } from './btn-top/btn-top.component';
 
 
 
 @NgModule({
   declarations: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    BtnTopComponent
   ],
   exports: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+		BtnTopComponent
   ],
   imports: [
     CommonModule,

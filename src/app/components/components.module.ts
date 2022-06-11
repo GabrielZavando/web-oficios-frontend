@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BuscadorComponent } from './buscador/buscador.component';
 import { MenuComponent } from './menu/menu.component';
 import { SliderComponent } from './slider/slider.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -18,7 +19,8 @@ import { SliderComponent } from './slider/slider.component';
     SliderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ]
 })
 export class ComponentsModule { }

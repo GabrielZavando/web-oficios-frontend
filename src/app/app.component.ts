@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+	toTop(){
+		document.body.scrollTop = 0
+		document.documentElement.scrollTop = 0
+	}
+
 }
