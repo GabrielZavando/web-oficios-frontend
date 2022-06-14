@@ -1,9 +1,7 @@
 
 .Section{
   margin-bottom: $margen-section-bottom;
-  padding: $padding-sections;
+  padding: var(--padding-sections);
 }
 
-#aprende{
-  background-color: #F4F0ED;
-}
+

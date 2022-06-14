@@ -1,52 +1,95 @@
 <section class="container Banner-slider">
-  <app-slider [items]="sliderData"></app-slider>
-  <app-buscador class="Buscador"></app-buscador>
+	<app-slider [items]="sliderData"></app-slider>
+	<app-buscador class="Buscador"></app-buscador>
 </section>
 <section class="container Section">
-  <p>Imagen</p>
+	<p>Imagen con link a video</p>
 </section>
 <section class="container Section" id="nosotros">
-  <h2 class="Titulo">
-    Nosotros
-  </h2>
-  <p class="Parrafo">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nostrum asperiores adipisci magni inventore pariatur deleniti quod. Repellendus officiis, atque deserunt quod maxime rerum aliquam sit. Dolore doloremque consectetur sit?
-  </p>
-  <p class="Parrafo">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni iusto ipsum veritatis sunt libero, cum corporis minima dolorum, delectus fuga hic molestias temporibus in fugit porro ratione voluptatem earum?
-  </p>
-  <div class="img-50-center">
-    <img src="/assets/img/logo-territorial.png" alt="Logo Territorial">
-  </div>
-  <button class="btn-pages" routerLink="nosotros">ver más</button>
+	<h2 class="Titulo">
+		Nosotros
+	</h2>
+	<p class="Parrafo">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nostrum asperiores adipisci magni inventore pariatur deleniti quod. Repellendus officiis, atque deserunt quod maxime rerum aliquam sit. Dolore doloremque consectetur sit?
+	</p>
+	<p class="Parrafo">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni iusto ipsum veritatis sunt libero, cum corporis minima dolorum, delectus fuga hic molestias temporibus in fugit porro ratione voluptatem earum?
+	</p>
+	<div class="img-50-center">
+		<img src="/assets/img/logo-territorial.png" alt="Logo Territorial">
+	</div>
+	<button class="btn-pages"
+					routerLink="nosotros">
+					ver más
+	</button>
 </section>
 <section class="container Section" id="maestros">
-  <h2 class="Titulo">
-    Maestros
-  </h2>
-  <p>Proponer hacer la página aparte porque son 50 Maestros y poner dos carruseles de 25 maestros cada uno es una mala experiencia para los usuarios</p>
-  <p>A lo más pondría una breve sección en donde explique que tipo de maestros se pueden encontrar en la plataforma</p>
+	<div class="container-flex-wrap">
+		<h2 class="Titulo">Maestros</h2>
+		<app-buscador></app-buscador>
+	</div>
+	<div class="img">
+		Imagen banner trabajador
+	</div>
+	<div class="card-text-btn">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nisi iusto explicabo neque omnis rem itaque alias quaerat, veniam placeat ipsum libero porro incidunt aut maxime laborum vitae quos necessitatibus!</p>
+		<button class="btn-pages"
+						routerLink="maestros">
+			Ver todos
+		</button>
+	</div>
+	<div class="Box-slider">
+		<h3 class="Subtitulo">Maestros Destacados</h3>
+		<p>Slider de maestros destacados</p>
+	</div>
 </section>
 <section class="container Section" id="aprende">
-  <h2 class="Titulo">
-    Aprende
-  </h2>
-  <p>Lo mismo que para el caso de la sección "Maestros"</p>
+	<h2 class="Titulo">
+		Aprende
+	</h2>
+	<div class="img">
+		Imagen con link a video
+	</div>
+	<div class="Box-slider">
+		<p>Slider de videos de maestros destacados</p>
+		<button class="btn-pages"
+						routerLink="aprende">
+			Ver todos
+		</button>
+	</div>
 </section>
 <section class="container Section" id="panoramas">
-  <h2 class="Titulo">
-    Panoramas
-  </h2>
-  <p>Acá también tengo un slider y no me parece mal mientras la idea sea destacar unos pocos panoramas. Los más cercanos en el tiempo, por ejemplo</p>
+	<h2 class="Titulo">
+		Panoramas
+	</h2>
+	<div class="Banner-img">
+		<div class="img">
+			<p>Imagen tipo banner con descripcion y boton</p>
+		</div>
+	</div>
 </section>
 <section class="container Section">
-  <!-- <div class="container-flex">
-    <h2 class="Titulo">Instagram</h2>
-    <a class="btn--text-icon"
-       href="https://www.instagram.com/"
-       target="_blank">
-       Síguenos
-       <i class="fi fi-brands-instagram"></i>
-    </a>
-  </div> -->
+	<div class="container-flex">
+		<h2 class="Titulo">Instagram</h2>
+		<a class="btn-text-icon"
+			 href="https://www.instagram.com/"
+			 target="_blank">
+			 Síguenos
+			 <i class="fi fi-brands-instagram"></i>
+		</a>
+	</div>
+	<div class="container-grid">
+		<div class="img">
+			imagen
+		</div>
+		<div class="img">
+			imagen
+		</div>
+		<div class="img">
+			imagen
+		</div>
+		<div class="img">
+			imagen
+		</div>
+	</div>
 </section>

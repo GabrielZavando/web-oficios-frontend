@@ -159,8 +159,11 @@ $gap-col: .5rem;
 
 // Padding's
 
+:root{
+	--padding-sections: 1rem;
+}
+
 $padding-titulo: .5rem 0;
-$padding-sections: 2rem;
 $padding-parrafo: .5rem 1rem;
 
 :root{

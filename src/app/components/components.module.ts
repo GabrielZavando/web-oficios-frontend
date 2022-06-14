@@ -4,6 +4,7 @@ import { BuscadorComponent } from './buscador/buscador.component';
 import { MenuComponent } from './menu/menu.component';
 import { SliderComponent } from './slider/slider.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { BtnTopComponent } from './btn-top/btn-top.component';
 
 
 
@@ -11,12 +12,14 @@ import { AppRoutingModule } from '../app-routing.module';
   declarations: [
     BuscadorComponent,
     MenuComponent,
-    SliderComponent
+    SliderComponent,
+		BtnTopComponent
   ],
   exports: [
     BuscadorComponent,
     MenuComponent,
-    SliderComponent
+    SliderComponent,
+		BtnTopComponent
   ],
   imports: [
     CommonModule,

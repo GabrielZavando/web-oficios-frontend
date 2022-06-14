@@ -1,1 +1,23 @@
-<footer class="container">Footer</footer>
+<footer class="container">
+	<div class="container-flex-wrap">
+		<div class="container-flex">
+			<h2>Únete</h2>
+			<i class="fi fi-br-envelope"></i>
+		</div>
+		<p>Se parte de nuestro correo mensual para recibir las últimas actualizaciones de creadores, panoramas y nuevas convocatorias.</p>
+		<div class="Box-form">
+			<form [formGroup]="form" (ngSubmit)="suscribir()">
+				<input type="text"
+								formControlName="nombre"
+								placeholder="Nombre">
+				<input type="text"
+								formControlName="correo"
+								placeholder="Correo">
+
+				<button type="submit">
+					Agregar
+				</button>
+			</form>
+		</div>
+	</div>
+</footer>
