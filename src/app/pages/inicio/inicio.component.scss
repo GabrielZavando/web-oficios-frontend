@@ -1,11 +1,21 @@
+@import "../../../scss/config/styles-root";
+
 .Buscador{
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 18%;
+  right: 5%;
   min-width: 200px;
   max-width: 350px;
 }
 
-#maestros{
+.Maestros{
   background-color: #F4F0ED;
+}
+
+.card-img-back-css{
+	background-image: img('conoce-video.jpg');
+}
+
+.Banner-img-back-css{
+	background-image: img('taller.jpg');
 }

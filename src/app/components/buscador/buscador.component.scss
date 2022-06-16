@@ -11,6 +11,7 @@
     border-radius: 1.25rem;
     padding-left: 1rem;
     transition: background-color .25s;
+		font-weight: 600;
     &:hover{
       background-color: color(hover);
     }

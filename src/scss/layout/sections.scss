@@ -1,7 +1,12 @@
 
-.Section{
-  margin-bottom: $margen-section-bottom;
-  padding: var(--padding-sections);
+@mixin seccion(){
+	display: block;
+	width: 100%;
+	max-width: $ancho-maximo;
+}
+
+.seccion{
+	@include seccion();
 }
 
 

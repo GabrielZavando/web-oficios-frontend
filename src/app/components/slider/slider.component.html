@@ -1,24 +1,26 @@
-<div class="dsc-carousel"
-     [ngStyle]="{'min-height': finalHeight}">
-  <div class="dsc-carousel__btns">
-    <i class="fi fi-br-angle-left" (click)="anterior()"></i>
-    <i class="fi fi-br-angle-right" (click)="siguiente()"></i>
-  </div>
-  <div class="dsc-carousel__content">
-    <ng-container *ngFor="let item of items;">
-      <div class="dsc-carousel__content-item"
-           [ngStyle]="{'background-image': 'url('+ item.imagen +')', 'margin-left': item.marginLeft + '%'}">
-        <h1>{{item.titulo}}</h1>
-        <p>{{item.subtitulo}}</p>
-      </div>
-    </ng-container>
-  </div>
-  <div class="dsc-carousel__steps">
-    <div class="dsc-carousel__steps-step
-         dsc-carousel__steps-step-{{currentPosition === step.id ? 'active' : ''}}"
-         *ngFor="let step of items"
-         (click)="setCurrentPosition(step.id)">
+<div class="container-carrusel"
+		 [ngStyle]="{'min-height': finalHeight}">
+	<div class="container-carrusel-btns">
+		<i class="fi fi-br-angle-left" (click)="anterior()"></i>
+		<i class="fi fi-br-angle-right" (click)="siguiente()"></i>
+	</div>
+	<div class="container-carrusel-contenido">
+		<ng-container *ngFor="let item of items;">
+			<div class="container-carrusel-contenido-item"
+					 [ngStyle]="{'background-image': 'url('+ item.imagen +')', 'margin-left': item.marginLeft + '%'}">
+				<h1>{{item.titulo}}</h1>
+				<p>{{item.subtitulo}}</p>
+				<a href={{item.boton?.link}}
+						class="btn-pages">{{item.boton?.texto}}</a>
+			</div>
+		</ng-container>
+	</div>
+	<div class="container-carrusel-steps">
+		<div class="container-carrusel-steps-step
+				 container-carrusel-steps-step-{{currentPosition === step.id ? 'active' : ''}}"
+				 *ngFor="let step of items"
+				 (click)="setCurrentPosition(step.id)">
 
-    </div>
-  </div>
+		</div>
+	</div>
 </div>

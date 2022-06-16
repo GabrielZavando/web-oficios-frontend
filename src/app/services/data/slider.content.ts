@@ -4,32 +4,42 @@ import { SliderItem } from '../../models/slider.model';
 export const SLIDER_DATA_ITEM: SliderItem[] = [
   {
     id: 1,
-    titulo: 'Titulo uno',
-    subtitulo: 'Subtitulo uno',
-    imagen: 'assets/img/1.jpg'
+    titulo: 'Postula',
+    subtitulo: 'Hasta el 7 de Agosto',
+    imagen: 'assets/img/banner-1.jpg',
+		boton: {
+			link: 'https://www.instagram.com/',
+			texto: 'Postula aquí'
+		}
   },
   {
     id: 2,
-    titulo: 'Titulo dos',
-    subtitulo: 'Subtitulo dos',
-    imagen: 'assets/img/2.jpg'
+    titulo: 'Conócenos',
+    subtitulo: 'Descubre el proyecto',
+    imagen: 'assets/img/banner-2.jpg',
+		boton: {
+			link: 'https://www.instagram.com/',
+			texto: 'ver más'
+		}
   },
   {
     id: 3,
-    titulo: 'Titulo tres',
-    subtitulo: 'Subtitulo tres',
-    imagen: 'assets/img/3.jpg'
+    titulo: 'Síguenos',
+    subtitulo: 'Visita nuestras redes sociales',
+    imagen: 'assets/img/banner-3.jpg',
+		boton: {
+			link: 'https://www.instagram.com/',
+			texto: 'ver más'
+		}
   },
   {
     id: 4,
-    titulo: 'Titulo cuatro',
-    subtitulo: 'Subtitulo cuatro',
-    imagen: 'assets/img/4.jpg'
-  },
-  {
-    id: 5,
-    titulo: 'Titulo cinco',
-    subtitulo: 'Subtitulo cinco',
-    imagen: 'assets/img/5.jpg'
+    titulo: 'Panoramas',
+    subtitulo: 'Entérate de todo, inspírate y descubre un mundo de oficio y creatividad',
+    imagen: 'assets/img/banner-4.jpg',
+		boton: {
+			link: 'https://www.instagram.com/',
+			texto: 'ver más'
+		}
   }
 ]

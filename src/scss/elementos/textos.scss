@@ -5,7 +5,8 @@
   color: color(primary);
   font-weight: 400;
   position: relative;
-  padding: $padding-titulo;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
   &:before{
     content: '';
     width: 50%;

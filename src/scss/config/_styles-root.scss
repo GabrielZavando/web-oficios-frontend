@@ -127,14 +127,13 @@ $colors:(
   negro: #121212
 );
 
-$fondo-transparente: rgba(9, 10, 7, 0.8);
 
 // Imagenes
 
 // Funcion para obtener imagenes
 
 @function img($img) {
-  @return url('../../assets/img/' + $img);
+  @return url('/assets/img/' + $img);
 }
 
 //Ejemplo
@@ -149,8 +148,6 @@ $borde-col: 1px solid rgb(255, 255, 255);
 
 // Margenes
 
-$margen-section-top: 1rem;
-$margen-section-bottom: 2rem;
 
 // Gap
 
