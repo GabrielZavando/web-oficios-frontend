@@ -4,6 +4,11 @@
   width: $ancho;
 }
 
+.img-100{
+  @include img(block, 100%);
+  margin: 0 auto;
+}
+
 .img-50-center{
   @include img(block, 50%);
   margin: 0 auto;

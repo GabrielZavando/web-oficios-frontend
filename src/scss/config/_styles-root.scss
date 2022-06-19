@@ -142,6 +142,17 @@ $colors:(
 //   background-image: img('ejemplo.jpg');
 // }
 
+@mixin transparencia($color, $opacidad){
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: $color;
+	opacity: $opacidad;
+}
+
 // Bordes
 
 $borde-col: 1px solid rgb(255, 255, 255);

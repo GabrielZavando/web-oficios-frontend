@@ -2,8 +2,9 @@
 
 .form-buscador{
   display: flex;
+	width: max-content;
   justify-content: space-between;
-	margin: 1.5rem auto;
+	margin: 1rem auto;
   &-input{
     background-color: color(tertiary);
     color: color(negro);

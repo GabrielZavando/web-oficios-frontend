@@ -1,21 +1,129 @@
 @import "../../../scss/config/styles-root";
 
-.Buscador{
-  position: absolute;
-  top: 18%;
-  right: 5%;
-  min-width: 200px;
-  max-width: 350px;
+.Inicio{
+	& > button{
+		position: absolute;
+		top: 18%;
+		right: 1rem;
+	}
+}
+
+.Conoce{
+	& .card-img-back-css{
+		min-height: 200px;
+		max-height: 35vw;
+		background-image: img('conoce-video.jpg');
+		background-position: bottom;
+		position: relative;
+		&::before{
+			@include transparencia(color(negro), .5);
+		}
+		& > .Box-grid-1-3{
+			z-index: 1;
+			height: 100%;
+			padding: 1rem;
+			& > h3, h4, .icon{
+				color: color(blanco);
+				text-transform: uppercase;
+			}
+			& > h3{
+				line-height: 1.3rem;
+				font-weight: 400;
+			}
+			& > a{
+				text-decoration: none;
+				cursor: pointer;
+				&:hover{
+					transition: transform .25s;
+					transform: scale(1.1);
+				}
+				& > .icon{
+					font-size: 1.3rem;
+					border: 1px solid color(blanco);
+					padding: .7rem;
+					border-radius: 50%;
+					color: color(blanco);
+					text-transform: uppercase;
+				}
+			}
+			& .logo-text{
+				font-family: $fuente-logo;
+				text-align: center;
+				& > h4{
+					line-height: 1.2rem;
+				}
+			}
+		}
+	}
+}
+
+.Nosotros{
+	& .Box-img-btn{
+		display: flex;
+		flex-direction: column;
+		width: 70vw;
+		max-width: 300px;
+		margin: 0 auto;
+		border: 1px solid red;
+		& button{
+			align-self: flex-end;
+		}
+	}
 }
 
 .Maestros{
-  background-color: #F4F0ED;
+	background-color: #F4F0ED;
+	& > .Box-text-form{
+		border: 1px solid blue;
+		display: flex;
+		flex-direction: column;
+		& button{
+			align-self: flex-end;
+		}
+	}
 }
 
-.card-img-back-css{
-	background-image: img('conoce-video.jpg');
+.Aprende{
+	& > .Box-btn{
+		& > button{
+			display: block;
+			width: max-content;
+			margin: auto;
+		}
+	}
 }
 
-.Banner-img-back-css{
-	background-image: img('taller.jpg');
+.Panoramas{
+	& .Banner-img-back-css{
+		min-height: 320px;
+		max-height: 40vw;
+		background-position: center top;
+		background-image: img('taller.jpg');
+		&::before{
+			@include transparencia(color(primary), .3);
+		}
+		& > .Box-grid{
+			position: relative;
+			z-index: 1;
+			& p{
+				color: color(blanco);
+			}
+		}
+	}
 }
+
+
+
+
+.Box-flex-wrap{
+	& > a{
+		margin-left: 1rem;
+	}
+}
+
+
+
+
+
+
+

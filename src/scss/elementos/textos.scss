@@ -1,12 +1,14 @@
 
 .Titulo{
-  display: inline;
+  display: inline-block;
   text-transform: uppercase;
   color: color(primary);
   font-weight: 400;
   position: relative;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
+	margin: 0;
+	width: max-content;
   &:before{
     content: '';
     width: 50%;
@@ -15,6 +17,10 @@
     position: absolute;
     bottom: 0;
   }
+}
+
+.Subtitulo{
+	text-transform: uppercase;
 }
 
 .Parrafo{

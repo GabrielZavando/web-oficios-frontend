@@ -6,14 +6,7 @@
 	justify-content: center;
 	position: relative;
 	&::before{
-		content: '';
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: color(primary);
-		opacity: .5;
+		@include transparencia(color(primary), .5);
 	}
 	&-contenido{
 		text-align: center;

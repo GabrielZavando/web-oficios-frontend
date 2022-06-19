@@ -27,7 +27,16 @@
   @include container(grid, 100%);
 }
 
-.flex-separados{
-  justify-content: space-between;
-}
+ // Box
+
+ .Box-slider{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+ }
+
+ .Box-btn{
+	display: block;
+	width: 100%;
+ }
 
