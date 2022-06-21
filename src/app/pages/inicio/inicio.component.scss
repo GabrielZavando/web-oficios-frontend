@@ -112,14 +112,19 @@
 	}
 }
 
-
-
-
-.Box-flex-wrap{
-	& > a{
-		margin-left: 1rem;
+.Instagram{
+	& > .Box-flex-wrap{
+		& > h2{
+			margin-bottom: 1rem;
+		}
+		& > a{
+			margin-left: 1rem;
+		}
 	}
 }
+
+
+
 
 
 

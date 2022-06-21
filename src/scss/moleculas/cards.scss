@@ -7,3 +7,11 @@
 	background-position: bottom;
 	position: relative;
 }
+
+.card-links-rrss{
+	display: flex;
+	& a{
+		text-decoration: none;
+		cursor: pointer;
+	}
+}

@@ -1,14 +1,28 @@
 
-.form{
-  display: block;
+.Form-round{
+  display: flex;
+	flex-direction: column;
   width: 100%;
-  // border: 2px solid red;
+  border: 2px solid red;
   &-input{
+		display: block;
+		width: 100%;
     outline: none;
     border: transparent;
-    padding: .5rem;
+    padding: .5rem 1rem;
+		margin: .5rem auto;
+		border-radius: 1rem;
   }
   &-btn{
     border: none;
+		max-width: max-content;
+		align-self: flex-end;
+		text-transform: uppercase;
+		color: color(negro);
+		background-color: color(secondary);
+		padding: .5rem 1rem;
+		border-radius: 1rem;
+		margin-top: 1rem;
+		cursor: pointer;
   }
 }

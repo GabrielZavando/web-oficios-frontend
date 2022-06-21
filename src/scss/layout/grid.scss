@@ -1,11 +1,3 @@
-@mixin box-grid($cols, $rows: 1){
-  display: grid;
-  margin: 0 auto;
-  width: 100%;
-	grid-template-columns: repeat($cols, 1fr);
-	grid-template-rows: repeat($rows, 1fr);
-}
-
 
 @mixin grid-alineacion($a-vertical, $a-horizontal: center){
   display: grid;
@@ -14,22 +6,6 @@
 }
 
 // Clases
-
-// Box
-
-.Box-grid{
-	@include box-grid(1);
-}
-
-.Box-grid-2{
-	@include box-grid(2);
-}
-
-.Box-grid-1-3{
-	@include box-grid(1,3);
-}
-
-
 
 // Grid alineacion
 

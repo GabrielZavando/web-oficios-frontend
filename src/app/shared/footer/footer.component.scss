@@ -1,0 +1,62 @@
+@import "../../../scss/config/styles-root";
+
+.Footer{
+	& > div:first-child{
+		background-image: img('banner-2.jpg');
+		background-position: center center;
+		&::before{
+			@include transparencia(color(primary), .5);
+		}
+		& .Box{
+			position: relative;
+			z-index: 1;
+			color: color(blanco);
+			& .Box-flex{
+				& h2{
+					font-size: 2rem;
+					font-weight: 400;
+					text-transform: uppercase;
+				}
+				& i{
+					font-size: 1.5rem;
+					margin-left: .5rem;
+				}
+			}
+			& .Box-flex:last-child{
+				// border: 2px solid blue;
+				margin-top: 1rem;
+				h4{
+					font-size: 1.3rem;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	& > div:last-child{
+		background-color: color(primary);
+		justify-content: space-around;
+		& .img{
+			& img{
+				width: 80%;
+				max-width: 600px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+
+
+.Form-round-input:focus{
+	background-color: color(secondary);
+}
+
+.card-links-rrss{
+	& a{
+		color: color(blanco);
+		transition: color .5s;
+		&:hover{
+			color: color(negro);
+		}
+	}
+}
