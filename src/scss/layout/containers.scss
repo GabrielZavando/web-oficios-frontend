@@ -36,12 +36,10 @@
 	align-items: center;
 }
 
-@mixin box-grid($cols, $rows: 1){
+@mixin box-grid(){
   display: grid;
   margin: 0 auto;
   width: 100%;
-	grid-template-columns: repeat($cols, 1fr);
-	grid-template-rows: repeat($rows, 1fr);
 }
 
 .Box-flex{
@@ -69,14 +67,7 @@
  }
 
 .Box-grid{
-	@include box-grid(1);
+	@include box-grid();
 }
 
-.Box-grid-2{
-	@include box-grid(2);
-}
-
-.Box-grid-1-3{
-	@include box-grid(1,3);
-}
 
