@@ -103,6 +103,33 @@ $fuente-logo: 'Arvo', serif;
   --size-logo: 1.3rem;
   --size-menu: 1.2rem;
   --size-menu-item: .8rem;
+	--size-h1: 2rem;
+	--size-h2: 1.5rem;
+	--size-h3: 1.3rem;
+	--size-h4: 1.1rem;
+	--size-p: 1rem;
+	@include mq(tablet){
+		--size-logo: 1.8rem;
+		--size-menu: 1.7rem;
+		--size-menu-item: 1rem;
+		--size-h1: 2.5rem;
+		--size-h2: 2rem;
+		--size-h3: 1.8rem;
+		--size-h4: 1.6rem;
+		--size-p: 1.2rem;
+
+	}
+}
+
+h1{	font-size: var(--size-h1);}
+h2{	font-size: var(--size-h2);}
+h3{	font-size: var(--size-h3);}
+h4{
+	font-size: var(--size-h4);
+	line-height: 1.5rem;
+	@include mq(tablet){
+		line-height: 2rem;
+	}
 }
 
 // Colores
@@ -168,14 +195,17 @@ $gap-col: .5rem;
 
 :root{
 	--padding-sections: 1rem;
+	--padding-parrafo: .5rem 0;
+	--padding-banner-inicio: 2rem 1rem;
+	--padding-menu: .5rem;
+	@include mq(tablet){
+		--padding-sections: 1rem 2.5rem;
+		--padding-banner-inicio: 2.5rem;
+		--padding-menu: 1rem;
+	}
 }
 
 $padding-titulo: .5rem 0;
-$padding-parrafo: .5rem 1rem;
-
-:root{
-  --padding-menu: .5rem;
-}
 
 
 

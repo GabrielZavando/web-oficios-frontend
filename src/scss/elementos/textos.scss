@@ -8,7 +8,12 @@
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 	margin: 0;
+	margin-bottom: .5rem;
 	width: max-content;
+	@include mq(tablet){
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+	}
   &:before{
     content: '';
     width: 50%;
@@ -25,6 +30,12 @@
 
 .Parrafo{
   color: color(text);
-  padding: $padding-parrafo;
+  padding: var(--padding-parrafo);
 	margin: 0;
+	font-size: var(--size-p);
+}
+
+.Articulo{
+	// border: 1px solid red;
+	margin: auto;
 }

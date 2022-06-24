@@ -37,6 +37,9 @@
 				margin: 0 auto;
 				border-bottom: 1px solid color(blanco);
 				z-index: 1;
+				@include mq(tablet){
+					width: 70%;
+				}
 			}
 			& > p{
 				width: 80%;
@@ -48,6 +51,9 @@
 				font-weight: 500;
 				font-size: 1rem;
 				text-transform: uppercase;
+				@include mq(tablet){
+					width: 70%;
+				}
 			}
 			& > a{
 				text-align: left;
@@ -56,16 +62,23 @@
 				z-index: 1;
 				color: color(blanco);
 				font-weight: 500;
+				@include mq(tablet){
+					margin-left: 15%;
+				}
 			}
 		}
 	}
 	&-btns{
+		// border: 2px solid red;
 		position: absolute;
 		width: 100%;
 		top: 56%;
 		margin: auto;
 		display: flex;
 		justify-content: space-between;
+		@include mq(tablet){
+			padding: 0 2rem;
+		}
 		> i{
 			opacity: .7;
 			color: color(blanco);
@@ -91,6 +104,10 @@
 			border: 1px solid rgba(255, 255, 255, 0.7);
 			transition: .25s all ease-in-out;
 			cursor: pointer;
+			@include mq(tablet){
+				height: 16px;
+				width: 16px;
+			}
 			&:hover, &-active{
 				opacity: .8;
 				background: color(blanco);

@@ -9,7 +9,7 @@
 	z-index: 1000;
 	background-color: transparent;
 	transition: background-color .25s;
-	padding: 2rem 1rem;
+	padding: var(--padding-banner-inicio);
 	&-activo{
 		background-color: color(hoverHeader);
 		transition: background-color .25s;

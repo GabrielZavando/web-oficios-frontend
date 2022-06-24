@@ -1,20 +1,31 @@
 @import "../../../scss/config/styles-root";
 
 .Inicio{
+	margin-bottom: 1rem;
+	position: relative;
 	& > button{
 		position: absolute;
 		top: 25%;
 		right: 1.5rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		@include mq(tablet){
+			right: 2.5rem;
+		}
 	}
 }
 
 .Conoce{
+	padding: var(--padding-sections);
 	& .card-img-back-css{
 		min-height: 200px;
-		max-height: 35vw;
+		height: 60vw;
 		background-image: img('conoce-video.jpg');
 		background-position: bottom;
 		position: relative;
+		@include mq(tablet){
+			height: 50vw;
+		}
 		&::before{
 			@include transparencia(color(negro), .5);
 		}
@@ -29,6 +40,9 @@
 			& > h3{
 				line-height: 1.3rem;
 				font-weight: 400;
+				@include mq(tablet){
+					line-height: 1.8rem;
+				}
 			}
 			& > a{
 				text-decoration: none;
@@ -38,12 +52,17 @@
 					transform: scale(1.1);
 				}
 				& > .icon{
-					font-size: 1.3rem;
 					border: 1px solid color(blanco);
 					padding: .7rem;
 					border-radius: 50%;
 					color: color(blanco);
 					text-transform: uppercase;
+					& > i{
+						font-size: 1.3rem;
+						@include mq(tablet){
+							font-size: 1.8rem;
+						}
+					}
 				}
 			}
 			& .logo-text{
@@ -51,6 +70,9 @@
 				text-align: center;
 				& > h4{
 					line-height: 1.2rem;
+					@include mq(tablet){
+						line-height: 1.7rem;
+					}
 				}
 			}
 		}
@@ -58,13 +80,14 @@
 }
 
 .Nosotros{
+	padding: var(--padding-sections);
 	& .Box-img-btn{
 		display: flex;
 		flex-direction: column;
 		width: 70vw;
 		max-width: 300px;
 		margin: 0 auto;
-		border: 1px solid red;
+		// border: 1px solid red;
 		& button{
 			align-self: flex-end;
 		}
@@ -73,17 +96,38 @@
 
 .Maestros{
 	background-color: #F4F0ED;
+	margin-top: 1rem;
+	padding: var(--padding-sections);
 	& > .Box-text-form{
-		border: 1px solid blue;
+		// border: 1px solid blue;
 		display: flex;
 		flex-direction: column;
+		@include mq(movilM){
+			flex-direction: row;
+			margin: 1rem 0;
+		}
 		& button{
 			align-self: flex-end;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			@include mq(movilM){
+				margin: 0 0 0 auto;
+				align-self: center;
+				justify-self: end;
+			}
 		}
+	}
+	& > .Box-slider{
+		margin-top: 1rem;
 	}
 }
 
 .Aprende{
+	padding: var(--padding-sections);
+	& > .img-100{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
 	& > .Box-btn{
 		& > button{
 			display: block;
@@ -94,28 +138,43 @@
 }
 
 .Panoramas{
+	margin-bottom: 1rem;
+	& > .Titulo{
+		padding: var(--padding-sections);
+	}
 	& .Banner-img-back-css{
-		min-height: 320px;
-		max-height: 40vw;
+		padding: 1rem;
+		min-height: 250px;
+		height: 50vw;
 		background-position: center top;
 		background-image: img('taller.jpg');
+		@include mq(tablet){
+			padding: 4rem;
+			margin-top: 2rem;
+		}
 		&::before{
 			@include transparencia(color(primary), .3);
 		}
 		& > .Box-grid{
 			position: relative;
 			z-index: 1;
-			& h3{
+			& h4{
 				color: color(blanco);
+			}
+			& button{
+				margin-top: 1rem;
 			}
 		}
 	}
 }
 
 .Instagram{
+	margin-top: 1rem;
 	& > .Box-flex-wrap{
+		margin-bottom: 1rem;
 		& > h2{
 			margin-bottom: 1rem;
+			padding: var(--padding-sections);
 		}
 		& > a{
 			margin-left: 1rem;

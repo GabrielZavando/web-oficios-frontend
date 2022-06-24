@@ -11,6 +11,9 @@
 	@include mq(movilH){
 		--anchoPanel: 140px;
 	}
+	@include mq(tablet){
+		--anchoPanel: 180px;
+	}
 	@include mq(notebook){
 		width: 100%;
 	}
@@ -50,6 +53,9 @@
 			& li {
 				display: flex;
 				justify-content: flex-end;
+				@include mq(tablet){
+					margin-top: 5px;
+				}
 				& a {
 					padding: 0 0.5rem 0 2rem;
 					color: color(primary);
@@ -95,6 +101,10 @@
 	padding-right: 0;
 	justify-content: center;
   align-items: center;
+	@include mq(tablet){
+		margin-right: auto;
+		margin-left: auto;
+	}
 	& > i {
 		margin-right: 5px;
 	}

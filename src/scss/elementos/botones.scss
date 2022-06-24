@@ -26,6 +26,9 @@
   padding: .3rem 1rem;
 	text-decoration: none;
 	font-size: .8rem;
+	@include mq(tablet){
+		font-size: 1rem;
+	}
 }
 
 .btn-text-icon{

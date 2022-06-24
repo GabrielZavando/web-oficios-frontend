@@ -1,7 +1,9 @@
 @import "../../../scss/config/styles-root";
 
 .Banner{
+	margin-bottom: 1rem;
 	& .Banner-img-back-css{
+		position: relative;
 		background-image: img('nosotros.jpg');
 		min-height: 500px;
 		background-position: left bottom;
@@ -9,6 +11,24 @@
 			position: absolute;
 			top: 25%;
 			right: 1.5rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+		& > h1{
+			position: absolute;
+			text-transform: uppercase;
+			color: color(blanco);
+			font-weight: 400;
+			top: 50%;
+			left: 2rem;
+			right: 2rem;
+			text-align: left;
+			border-bottom: 1px solid color(blanco);
+			padding-bottom: .5rem;
 		}
 	}
+}
+
+.Mision{
+	padding: 1rem;
 }
