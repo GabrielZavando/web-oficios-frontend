@@ -15,13 +15,13 @@
   &-btn{
     border: none;
 		max-width: max-content;
-		align-self: flex-end;
 		text-transform: uppercase;
-		color: color(negro);
-		background-color: color(secondary);
-		padding: .5rem 1rem;
+		padding: .5rem 1.5rem;
 		border-radius: 1rem;
-		margin-top: 1rem;
 		cursor: pointer;
+		transition: all .25s ease;
+		&:active{
+			transform: scale(0.98);
+		}
   }
 }

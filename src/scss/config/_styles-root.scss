@@ -23,19 +23,19 @@ $notebook-medium: 1240px;
 
 @mixin mq($size) {
   @if $size == movil {
-      @media screen and (min-width: $movil-small)and (orientation: portrait){@content;}
+      @media screen and (min-width: $movil-small){@content;}
   }
   @if $size == movilH{
       @media screen and (min-width: $movil-small)and (max-width: $tablet) and (orientation: landscape){@content;}
   }
   @if $size == movilM {
-      @media screen and (min-width: $movil-medium)and (orientation: portrait){@content;}
+      @media screen and (min-width: $movil-medium){@content;}
   }
   @if $size == movilMH {
       @media screen and (min-width: $movil-medium)and (max-width: $movil-medium) and (orientation: landscape){@content;}
   }
   @if $size == movilL {
-      @media screen and (min-width: $movil-large)and (orientation: portrait){@content;}
+      @media screen and (min-width: $movil-large){@content;}
   }
   @if $size == movilXL {
       @media screen and (min-width: $movil-xlarge){@content;}
@@ -97,41 +97,6 @@ $fuente-logo: 'Arvo', serif;
 // SemiBold: 600
 // Bold: 700
 
-// Tamaño de fuentes
-
-:root{
-  --size-logo: 1.3rem;
-  --size-menu: 1.2rem;
-  --size-menu-item: .8rem;
-	--size-h1: 2rem;
-	--size-h2: 1.5rem;
-	--size-h3: 1.3rem;
-	--size-h4: 1.1rem;
-	--size-p: 1rem;
-	@include mq(tablet){
-		--size-logo: 1.8rem;
-		--size-menu: 1.7rem;
-		--size-menu-item: 1rem;
-		--size-h1: 2.5rem;
-		--size-h2: 2rem;
-		--size-h3: 1.8rem;
-		--size-h4: 1.6rem;
-		--size-p: 1.2rem;
-
-	}
-}
-
-h1{	font-size: var(--size-h1);}
-h2{	font-size: var(--size-h2);}
-h3{	font-size: var(--size-h3);}
-h4{
-	font-size: var(--size-h4);
-	line-height: 1.5rem;
-	@include mq(tablet){
-		line-height: 2rem;
-	}
-}
-
 // Colores
 
 @function color($color) {
@@ -168,6 +133,48 @@ $colors:(
 //   background-image: img('ejemplo.jpg');
 // }
 
+// Tamaño de fuentes
+
+:root{
+  --size-logo: 1.3rem;
+  --size-menu: 1.2rem;
+  --size-menu-item: .8rem;
+	--size-h1: 2rem;
+	--size-h2: 1.7rem;
+	--size-h3: 1.5rem;
+	--size-h4: 1.2rem;
+	--size-h5: 1.1rem;
+	--size-p: 1rem;
+	@include mq(tablet){
+		--size-logo: 1.8rem;
+		--size-menu: 1.7rem;
+		--size-menu-item: 1rem;
+		--size-h1: 2.5rem;
+		--size-h2: 2rem;
+		--size-h3: 1.8rem;
+		--size-h4: 1.6rem;
+		--size-h5: 1.3rem;
+		--size-p: 1.2rem;
+	}
+	@include mq(escritorio){
+		--size-h5: 1.6rem;
+	}
+}
+
+h1{	font-size: var(--size-h1);}
+h2{	font-size: var(--size-h2);}
+h3{	font-size: var(--size-h3);}
+h4{
+	font-size: var(--size-h4);
+	line-height: 1.5rem;
+	@include mq(tablet){
+		line-height: 2rem;
+	}
+}
+h5{font-size: var(--size-h5);}
+
+
+
 @mixin transparencia($color, $opacidad){
 	content: '';
 	height: 100%;
@@ -202,6 +209,9 @@ $gap-col: .5rem;
 		--padding-sections: 1rem 2.5rem;
 		--padding-banner-inicio: 2.5rem;
 		--padding-menu: 1rem;
+	}
+	@include mq(notebook){
+		--padding-menu: 1rem 0;
 	}
 }
 

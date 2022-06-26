@@ -1,13 +1,16 @@
 <footer class="Footer container">
-	<div class="Box-flex-wrap Banner-img-back-css pad-1r">
-		<div class="Box">
-			<div class="Box-flex">
-				<h2>Únete</h2>
-				<i class="fi fi-br-envelope"></i>
+	<div class="Banner-img-back-css">
+		<div class="Box-grid grid-center">
+			<div class="Box-grid-item msg">
+				<div class="Box-flex">
+					<h2>Únete</h2>
+					<i class="fi fi-br-envelope"></i>
+				</div>
+				<p class="Parrafo">Sé parte de nuestro correo mensual, para recibir las últimas actualizaciones de creadores, panoramas y nuevas convocatorias.</p>
 			</div>
-			<p>Sé parte de nuestro correo mensual, para recibir las últimas actualizaciones de creadores, panoramas y nuevas convocatorias.</p>
-			<div class="Box-form">
-				<form [formGroup]="form"
+			<div class="Box-grid-item form">
+				<div class="Box-form">
+					<form [formGroup]="form"
 							(ngSubmit)="suscribir()"
 							class="Form-round">
 					<input type="text"
@@ -20,13 +23,14 @@
 									class="Form-round-input">
 					<button type="submit"
 									class="Form-round-btn">
-						Suscribir
+						Enviar
 					</button>
 				</form>
+				</div>
 			</div>
-			<div class="container">
+			<div class="Box-grid-item siguenos">
 				<div class="Box-flex">
-					<h4>Síguenos</h4>
+					<h3>Síguenos</h3>
 					<div class="card-links-rrss">
 						<a href="https://www.instagram.com/">
 							<i class="fi fi-brands-instagram"></i>
@@ -42,7 +46,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="Box-flex-wrap pad-1r">
+
+	<div class="Footer-auspicio Box-flex-wrap">
 		<div class="img">
 			<img src="/assets/img/territorial-footer.png" alt="Logo Territorial">
 		</div>

@@ -70,4 +70,14 @@
 	@include box-grid();
 }
 
+.Box-grid-max-2{
+	@include box-grid();
+	justify-items: center;
+	align-items: center;
+	@include mq(notebook){
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+}
+
 

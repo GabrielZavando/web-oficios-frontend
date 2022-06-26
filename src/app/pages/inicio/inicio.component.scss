@@ -33,6 +33,9 @@
 			z-index: 1;
 			height: 100%;
 			padding: 1rem;
+			@include mq(tablet){
+				padding: 2.5rem;
+			}
 			& > h3, h4, .icon{
 				color: color(blanco);
 				text-transform: uppercase;
@@ -81,15 +84,24 @@
 
 .Nosotros{
 	padding: var(--padding-sections);
-	& .Box-img-btn{
-		display: flex;
-		flex-direction: column;
-		width: 70vw;
-		max-width: 300px;
-		margin: 0 auto;
-		// border: 1px solid red;
-		& button{
-			align-self: flex-end;
+	& .Box-grid-max-2{
+		// border: 2px solid blue;
+		& .Box-img-btn{
+			display: flex;
+			flex-direction: column;
+			width: 70vw;
+			max-width: 300px;
+			margin: 0 auto;
+			// border: 1px solid red;
+			@include mq(tablet){
+				margin: 1rem auto;
+			}
+			@include mq(notebook){
+				max-width: 350px;
+			}
+			& button{
+				align-self: flex-end;
+			}
 		}
 	}
 }
@@ -98,35 +110,41 @@
 	background-color: #F4F0ED;
 	margin-top: 1rem;
 	padding: var(--padding-sections);
-	& > .Box-text-form{
-		// border: 1px solid blue;
-		display: flex;
-		flex-direction: column;
-		@include mq(movilM){
-			flex-direction: row;
-			margin: 1rem 0;
-		}
-		& button{
-			align-self: flex-end;
+	& .Box-grid-max-2{
+		& .img{
 			margin-top: 1rem;
-			margin-bottom: 1rem;
-			@include mq(movilM){
-				margin: 0 0 0 auto;
-				align-self: center;
-				justify-self: end;
+		}
+		& > .Articulo{
+			margin: .5rem auto;
+			@include mq(tablet){
+				margin: 1rem auto;
+			}
+			& .Box-btn{
+				text-align: center;
+				margin-top: 1rem;
+				@include mq(notebook){
+					text-align: left;
+				}
 			}
 		}
 	}
 	& > .Box-slider{
 		margin-top: 1rem;
+		@include mq(notebook){
+			margin-top: 2rem;
+		}
 	}
 }
 
 .Aprende{
 	padding: var(--padding-sections);
-	& > .img-100{
-		margin-top: 1rem;
-		margin-bottom: 1rem;
+	& .Box-grid-max-2{
+		margin: 1rem auto;
+		& .Parrafo{
+			@include mq(tablet){
+				margin-top: 1rem;
+			}
+		}
 	}
 	& > .Box-btn{
 		& > button{
@@ -141,9 +159,13 @@
 	margin-bottom: 1rem;
 	& > .Titulo{
 		padding: var(--padding-sections);
+		@include mq(tablet){
+			margin-bottom: 0;
+		}
 	}
 	& .Banner-img-back-css{
 		padding: 1rem;
+		margin-top: 1rem;
 		min-height: 250px;
 		height: 50vw;
 		background-position: center top;
@@ -158,8 +180,9 @@
 		& > .Box-grid{
 			position: relative;
 			z-index: 1;
-			& h4{
+			& h5{
 				color: color(blanco);
+				max-width: 55%;
 			}
 			& button{
 				margin-top: 1rem;
@@ -170,14 +193,59 @@
 
 .Instagram{
 	margin-top: 1rem;
+	@include mq(tablet){
+		margin-bottom: 2rem;
+	}
 	& > .Box-flex-wrap{
 		margin-bottom: 1rem;
+		@include mq(tablet){
+			margin-bottom: 0;
+		}
 		& > h2{
 			margin-bottom: 1rem;
 			padding: var(--padding-sections);
 		}
 		& > a{
 			margin-left: 1rem;
+		}
+	}
+	& > .Box-grid{
+		grid-template-columns: repeat(2, 1fr);
+		@include mq(tablet){
+			padding: var(--padding-sections);
+		}
+		@include mq(notebook){
+			grid-template-columns: repeat(3, 1fr);
+		}
+		& > .img-100:nth-of-type(1){
+			@include mq(notebook){
+				order: 1;
+			}
+		}
+		& > .img-100:nth-of-type(2){
+			@include mq(notebook){
+				order: 2;
+			}
+		}
+		& > .img-100:nth-of-type(3){
+			@include mq(notebook){
+				order: 4;
+			}
+		}
+		& > .img-100:nth-of-type(4){
+			@include mq(notebook){
+				order: 5;
+			}
+		}
+		& > .img-100:nth-of-type(5){
+			@include mq(notebook){
+				order: 3;
+			}
+		}
+		& > .img-100:nth-of-type(6){
+			@include mq(notebook){
+				order: 6;
+			}
 		}
 	}
 }

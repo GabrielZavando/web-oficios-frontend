@@ -1,73 +1,209 @@
 @import "../../../scss/config/styles-root";
 
 .Footer{
-	& > div:first-child{
+	border: 2px solid red;
+	& .Banner-img-back-css{
 		background-image: img('banner-2.jpg');
 		background-position: center center;
+		padding: var(--padding-banner-inicio);
 		&::before{
 			@include transparencia(color(primary), .5);
 		}
-		& .Box{
+		& .Box-grid{
 			position: relative;
 			z-index: 1;
-			color: color(blanco);
-			& .Box-flex{
-				& h2{
-					font-size: 2rem;
-					font-weight: 400;
-					text-transform: uppercase;
-				}
-				& > i{
-					font-size: 1.5rem;
-					margin-left: .5rem;
-				}
+			gap: .5rem;
+			border: 1px solid red;
+			@include mq(tablet){
+				gap: 1rem;
+				grid-template-columns: 50% 1fr;
+				grid-template-rows: auto auto;
+				grid-template-areas: "msg form"
+														 "msg siguenos";
 			}
-			& .Box-flex:last-child{
-				// border: 2px solid blue;
-				margin-top: 1.5rem;
-				& h4{
-					font-size: 1.5rem;
-					font-weight: 400;
-				}
-				& .card-links-rrss{
-					& a{
-						color: color(blanco);
-						transition: color .5s;
-						& > i{
-							margin-left: .5rem;
-							font-size: 2rem;
+			&-item{
+				border: 2px solid blue;
+				color: color(blanco);
+				width: 100%;
+				& .Box-flex{
+					& > h2{
+						text-transform: uppercase;
+						font-weight: 400;
+					}
+					& > h3{
+						font-weight: 400;
+					}
+					& > i{
+						font-size: var(--size-h2);
+						margin-left: 1rem;
+					}
+					& > .card-links-rrss{
+						& a{
+							color: color(blanco);
+							transition: color .5s;
+							& > i{
+								margin-left: .5rem;
+								font-size: 2rem;
+							}
+							&:hover{
+								color: color(negro);
+							}
 						}
-						&:hover{
-							color: color(negro);
+					}
+				}
+				& p{
+					color: inherit;
+					font-weight: 600;
+				}
+				& .Box-form{
+					max-width: 320px;
+					& .Form-round{
+						&-input:focus{
+							transition: background-color .25s;
+							background-color: color(secondary);
+						}
+						&-btn{
+							color: color(blanco);
+							align-self: flex-start;
+							background-color: color(secondary);
+							margin-top: 1rem;
+							&:hover{
+								background-color: color(blanco);
+								color: color(secondary);
+							}
 						}
 					}
 				}
 			}
-		}
-	}
-	& > div:last-child{
-		background-color: color(primary);
-		justify-content: space-around;
-		& .img{
-			& img{
-				width: 80%;
-				max-width: 600px;
-				margin: 0 auto;
+			& .msg{
+				@include mq(tablet){
+					grid-area: msg;
+					align-self: stretch;
+				}
+			}
+			& .form{
+				@include mq(tablet){
+					grid-area: form;
+				}
+			}
+			& .siguenos{
+				margin-top: 1rem;
+				@include mq(tablet){
+					margin-top: 0;
+					grid-area: siguenos;
+				}
 			}
 		}
 	}
+	&-auspicio{
+		padding: var(--padding-banner-inicio);
+		background-color: color(primary);
+		justify-content: space-around;
+		& .img{
+			width: 80%;
+			max-width: 300px;
+		}
+	}
 }
 
-.Box-form{
-	// border: 1px solid brown;
-	width: 80%;
-	margin: 1rem auto;
-}
+// .Footer{
+// 	& > div:first-child{
+// 		background-image: img('banner-2.jpg');
+// 		background-position: center center;
+// 		padding: var(--padding-banner-inicio);
+// 		border: 1px solid red;
+// 		&::before{
+// 			@include transparencia(color(primary), .5);
+// 		}
+// 		& .Box{
+// 			position: relative;
+// 			z-index: 1;
+// 			color: color(blanco);
+// 			border: 1px solid blue;
+// 			@include mq(tablet){
+// 				display: flex;
+// 			}
+// 			&-item:first-child{
+// 				border: 2px solid green;
+// 				@include mq(tablet){
+// 					flex: 1 1 40%;
+// 				}
+// 				& > .Box-flex{
+// 					& h2{
+// 						font-size: 2rem;
+// 						font-weight: 400;
+// 						text-transform: uppercase;
+// 					}
+// 					& > i{
+// 						font-size: 1.5rem;
+// 						margin-left: .5rem;
+// 					}
+// 				}
+// 				& > p{
+// 					color: color(blanco);
+// 					@include mq(tablet){
+// 						margin-top: 1rem;
+// 					}
+// 				}
+// 			}
+// 			&-item:last-child{
+// 				@include mq(tablet){
+// 					flex: 2 1 60%;
+// 				}
+// 				& > .Box-form{
+// 					border: 2px solid gold;
+// 					max-width: 400px;
+// 				}
+// 				& > .container{
+// 					& > .Box-flex{
+// 						border: 2px solid pink;
+// 						margin-top: 1.5rem;
+// 						@include mq(tablet){
+// 							justify-content: center;
+// 						}
+// 						& h4{
+// 							font-size: 1.5rem;
+// 							font-weight: 400;
+// 						}
+// 						& .card-links-rrss{
+// 							& a{
+// 								color: color(blanco);
+// 								transition: color .5s;
+// 								& > i{
+// 									margin-left: .5rem;
+// 									font-size: 2rem;
+// 								}
+// 								&:hover{
+// 									color: color(negro);
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	& > div:last-child{
+// 		background-color: color(primary);
+// 		justify-content: space-around;
+// 		& .img{
+// 			& img{
+// 				width: 80%;
+// 				max-width: 600px;
+// 				margin: 0 auto;
+// 			}
+// 		}
+// 	}
+// }
+
+// .Box-form{
+// 	// border: 1px solid brown;
+// 	width: 80%;
+// 	margin: 1rem auto;
+// }
 
 
-.Form-round-input:focus{
-	transition: background-color .25s;
-	background-color: color(secondary);
-}
-
-
+// .Form-round-input:focus{
+// 	transition: background-color .25s;
+// 	background-color: color(secondary);
+// }
