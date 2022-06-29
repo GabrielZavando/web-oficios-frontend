@@ -26,6 +26,9 @@
 		@include mq(tablet){
 			height: 50vw;
 		}
+		@include mq(notebook){
+			height: 40vw;
+		}
 		&::before{
 			@include transparencia(color(negro), .5);
 		}
@@ -173,6 +176,9 @@
 		@include mq(tablet){
 			padding: 4rem;
 			margin-top: 2rem;
+		}
+		@include mq(notebook){
+			height: 45vw;
 		}
 		&::before{
 			@include transparencia(color(primary), .3);

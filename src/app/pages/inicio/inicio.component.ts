@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SliderItem } from '../../models/slider.model';
-import { SLIDER_DATA_ITEM } from '../../services/data/slider.content';
+import { SLIDER_DATA_ITEM } from '../../../assets/data/slider.content';
 
 @Component({
   selector: 'app-inicio',

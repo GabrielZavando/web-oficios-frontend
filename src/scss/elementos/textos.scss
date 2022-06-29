@@ -1,4 +1,13 @@
 
+@mixin parrafo($grosor: 400, $estilo: normal){
+	color: color(text);
+  padding: var(--padding-parrafo);
+	margin: 0;
+	font-size: var(--size-p);
+	font-weight: $grosor;
+	font-style: $estilo;
+}
+
 .Titulo{
   display: inline-block;
   text-transform: uppercase;
@@ -29,10 +38,15 @@
 }
 
 .Parrafo{
-  color: color(text);
-  padding: var(--padding-parrafo);
-	margin: 0;
-	font-size: var(--size-p);
+  @include parrafo();
+}
+
+.Parrafo-bold{
+	@include parrafo(700);
+}
+
+.Parrafo-bold-italic{
+	@include parrafo(700, italic);
 }
 
 .Articulo{

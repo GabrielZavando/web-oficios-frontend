@@ -1,7 +1,7 @@
 @import "../../../scss/config/styles-root";
 
 .Footer{
-	border: 2px solid red;
+	// border: 2px solid red;
 	& .Banner-img-back-css{
 		background-image: img('banner-2.jpg');
 		background-position: center center;
@@ -13,16 +13,22 @@
 			position: relative;
 			z-index: 1;
 			gap: .5rem;
-			border: 1px solid red;
+			// border: 1px solid red;
 			@include mq(tablet){
-				gap: 1rem;
+				gap: 2rem;
 				grid-template-columns: 50% 1fr;
 				grid-template-rows: auto auto;
 				grid-template-areas: "msg form"
 														 "msg siguenos";
 			}
+			@include mq(notebook){
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-areas: "msg form siguenos";
+				grid-template-rows: none;
+				gap: 1.5rem;
+			}
 			&-item{
-				border: 2px solid blue;
+				// border: 2px solid blue;
 				color: color(blanco);
 				width: 100%;
 				& .Box-flex{
@@ -54,6 +60,9 @@
 				& p{
 					color: inherit;
 					font-weight: 600;
+					@include mq(tablet){
+						margin-top: 1.5rem;
+					}
 				}
 				& .Box-form{
 					max-width: 320px;
@@ -99,9 +108,15 @@
 		padding: var(--padding-banner-inicio);
 		background-color: color(primary);
 		justify-content: space-around;
+		@include mq(notebook){
+			justify-content: space-between;
+		}
 		& .img{
 			width: 80%;
 			max-width: 300px;
+			@include mq(notebook){
+				max-width: 440px;
+			}
 		}
 	}
 }

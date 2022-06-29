@@ -1,4 +1,4 @@
-import { SliderItem } from '../../models/slider.model';
+import { SliderItem } from '../../app/models/slider.model';
 
 
 export const SLIDER_DATA_ITEM: SliderItem[] = [
