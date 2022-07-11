@@ -1,0 +1,11 @@
+<p>Componente que muestra un maestro</p>
+
+<div *ngIf="!usuario; else cardUsuario">
+	<p>Loader</p>
+</div>
+
+<ng-template #cardUsuario>
+	<div class="card-usuario-full">
+		<p>{{usuario.nombre}}</p>
+	</div>
+</ng-template>

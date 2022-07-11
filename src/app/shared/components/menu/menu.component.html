@@ -1,0 +1,53 @@
+<div class="Panel">
+	<div
+		class="Panel-btn"
+		[class]="mostrarMenu ? 'Panel-btn-activo' : 'Panel-btn'">
+		<button
+			#btnMenu
+			class="btn-menu"
+			[class]="colorMenu"
+			(click)="showHidePanelMenu()">
+			<i class="icon-menu"></i>
+			<span>Menu</span>
+		</button>
+	</div>
+	<nav
+		#menu
+		class="Panel-menu"
+		[ngClass]="{ 'slide-down': mostrarMenu, 'slide-up': !mostrarMenu }">
+		<ul>
+			<li>
+				<a routerLink=""
+					routerLinkActive="link-activo"
+					[routerLinkActiveOptions]="{exact:
+						true}"
+					(click)="showHidePanelMenu()"
+					[class]="menuNotebook">Inicio</a>
+			</li>
+			<li>
+				<a routerLink="nosotros"
+					routerLinkActive="link-activo"
+					[class]="menuNotebook"
+					(click)="showHidePanelMenu()">Nosotros</a>
+			</li>
+			<li>
+				<a routerLink="maestros"
+					routerLinkActive="link-activo"
+					[class]="menuNotebook"
+					(click)="showHidePanelMenu()">Maestros</a>
+			</li>
+			<li>
+				<a routerLink="aprende"
+					routerLinkActive="link-activo"
+					[class]="menuNotebook"
+					(click)="showHidePanelMenu()">Aprende</a>
+			</li>
+			<li>
+				<a routerLink="panoramas"
+					routerLinkActive="link-activo"
+					[class]="menuNotebook"
+					(click)="showHidePanelMenu()">Panoramas</a>
+			</li>
+		</ul>
+	</nav>
+</div>

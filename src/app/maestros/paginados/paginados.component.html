@@ -1,0 +1,14 @@
+<div class="Box-maestros">
+	<div *ngFor="let usuario of usuarios"
+				class="card-maestro">
+		<div class="card-maestro-img">
+			<img src="{{usuario.banner}}" alt="" srcset="">
+		</div>
+		<div class="card-maestro-text">
+			<i>{{usuario.categoria}}</i>
+			<h2>{{usuario.nombre}}</h2>
+			<p>{{usuario.descripcion}}</p>
+			<a [routerLink]="['/', usuario.uid]">Ver más</a>
+		</div>
+	</div>
+</div>

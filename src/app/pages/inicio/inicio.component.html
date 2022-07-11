@@ -1,5 +1,5 @@
-<section class="Inicio container">
-	<app-slider [items]="sliderData"></app-slider>
+<section class="Inicio">
+	<!-- <app-slider [items]="sliderData"></app-slider> -->
 	<button class="btn-pages"
 					routerLink="maestros">
 		Buscar Maestros
@@ -11,7 +11,7 @@
 			<h3 class="selfH-inicio selfV-inicio">Conoce<br>la plataforma</h3>
 			<a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
 				<div class="icon">
-					<i class="fi fi-sr-play"></i>
+					<i class="icon-play"></i>
 				</div>
 			</a>
 			<div class="logo-text selfH-final selfV-final">
@@ -82,7 +82,7 @@
 	</div>
 	<div class="Box-slider">
 		<h4 class="Subtitulo">Maestros Destacados</h4>
-		<p>Slider de maestros destacados</p>
+		<!-- <app-destacados></app-destacados> -->
 	</div>
 </section>
 <section class="Aprende container">
@@ -107,10 +107,12 @@
 		</button>
 	</div>
 </section>
-<section class="Panoramas container">
-	<h2 class="Titulo">
-		Panoramas
-	</h2>
+<section class="Panoramas">
+	<div class="max-content">
+		<h2 class="Titulo">
+			Panoramas
+		</h2>
+	</div>
 	<div class="Banner-img-back-css Box-grid grid-center">
 		<div class="Box-grid grid-center">
 			<h5 class="selfH-inicio">Entérate de todo, inspírate, comparte y descubre un mundo de oficios y creatividad. </h5>
@@ -128,7 +130,7 @@
 			 href="https://www.instagram.com/"
 			 target="_blank">
 			 Síguenos
-			 <i class="fi fi-brands-instagram"></i>
+			 <i class="icon-instagram"></i>
 		</a>
 	</div>
 	<div class="Box-grid">

@@ -1,7 +1,6 @@
 @import "../../../scss/config/styles-root";
 
 .Footer{
-	// border: 2px solid red;
 	& .Banner-img-back-css{
 		background-image: img('banner-2.jpg');
 		background-position: center center;
@@ -10,6 +9,8 @@
 			@include transparencia(color(primary), .5);
 		}
 		& .Box-grid{
+			margin: auto;
+			max-width: $ancho-maximo;
 			position: relative;
 			z-index: 1;
 			gap: .5rem;
@@ -107,15 +108,20 @@
 	&-auspicio{
 		padding: var(--padding-banner-inicio);
 		background-color: color(primary);
-		justify-content: space-around;
-		@include mq(notebook){
-			justify-content: space-between;
-		}
-		& .img{
-			width: 80%;
-			max-width: 300px;
+		& .Box-flex-wrap{
+			width: 100%;
+			margin: auto;
+			max-width: $ancho-maximo;
+			justify-content: space-around;
 			@include mq(notebook){
-				max-width: 440px;
+				justify-content: space-between;
+			}
+			& .img{
+				width: 80%;
+				max-width: 300px;
+				@include mq(notebook){
+					max-width: 440px;
+				}
 			}
 		}
 	}

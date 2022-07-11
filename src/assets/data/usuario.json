@@ -1,0 +1,954 @@
+[
+	{
+		"nombre": "Cristobal Ruiz",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Carpintería",
+		"web": "plataformaoficios.cl",
+		"correo": "cristobal@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Alberto Marín",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Construcción",
+		"web": "plataformaoficios.cl",
+		"correo": "alberto@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Jimena Lopez",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Pintura",
+		"web": "plataformaoficios.cl",
+		"correo": "jimena@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Cristina Aldunate",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Zapatería",
+		"web": "plataformaoficios.cl",
+		"correo": "cristina@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Fernando Zapata",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Diseño",
+		"web": "plataformaoficios.cl",
+		"correo": "fernando@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Aymara Soto",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Costura",
+		"web": "plataformaoficios.cl",
+		"correo": "aymara@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Elisa Aldunate",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Modista",
+		"web": "plataformaoficios.cl",
+		"correo": "elisa@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Roberto Zuñiga",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Talabartero",
+		"web": "plataformaoficios.cl",
+		"correo": "roberto@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Alberto Cifuentes",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Herrería",
+		"web": "plataformaoficios.cl",
+		"correo": "albertocifuentes@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Nidia Albarado",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Gastronomía",
+		"web": "plataformaoficios.cl",
+		"correo": "nidia@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Hernan Coronado",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Escultor",
+		"web": "plataformaoficios.cl",
+		"correo": "hernan@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Ismael Araya",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Ceramista",
+		"web": "plataformaoficios.cl",
+		"correo": "ismael@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Sergio Albornoz",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Textilería",
+		"web": "plataformaoficios.cl",
+		"correo": "sergio@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Ivan Reinoso",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Alfarería",
+		"web": "plataformaoficios.cl",
+		"correo": "ivan@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Libertad Ortiz",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Cestería",
+		"web": "plataformaoficios.cl",
+		"correo": "libertad@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Horacio Zapata",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Orfebrería",
+		"web": "plataformaoficios.cl",
+		"correo": "horacio@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Ignacio Faúndez",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Tallado",
+		"web": "plataformaoficios.cl",
+		"correo": "ignacio@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Mariana González",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Bordado",
+		"web": "plataformaoficios.cl",
+		"correo": "mariana@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Gloria Ramírez",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Vidriería",
+		"web": "plataformaoficios.cl",
+		"correo": "gloria@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Fidel Ortuzar",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Cantería",
+		"web": "plataformaoficios.cl",
+		"correo": "fidel@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Marta Cabezas",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Adobería",
+		"web": "plataformaoficios.cl",
+		"correo": "marta@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Roxana Contreras",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Artesanía",
+		"web": "plataformaoficios.cl",
+		"correo": "roxana@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Paloma Gutierrez",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Imaginería",
+		"web": "plataformaoficios.cl",
+		"correo": "paloma@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Andrea Bustamante",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Restauración",
+		"web": "plataformaoficios.cl",
+		"correo": "andrea@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Sebastian Mateluna",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Lutier",
+		"web": "plataformaoficios.cl",
+		"correo": "sebastian@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Susana Gallardo",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Cultor",
+		"oficio": "Lettering",
+		"web": "plataformaoficios.cl",
+		"correo": "susana@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "José Nuñez",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Maestro",
+		"oficio": "Fabriquería",
+		"web": "plataformaoficios.cl",
+		"correo": "jose@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	},
+	{
+		"nombre": "Lorenzo Peñaloza",
+		"emprendimiento": "Lorem Ipsum",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus orci ut ex tempus orci aliquam.",
+		"banner": "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoplast.gt%2Fwp-content%2Fuploads%2F2019%2F08%2FTU-LOGO-AQUI-BLANCO-Y-GRIS.png&f=1&nofb=1",
+		"categoria": "Creativo",
+		"oficio": "Mural",
+		"web": "plataformaoficios.cl",
+		"correo": "lorenzo@gmail.com",
+		"telefono": "63559359",
+		"whatsapp": "+56 9 76336574",
+		"rrss": {
+			"instagram": "https://www.instagram.com/",
+			"linkedin": "https://www.linkedin.com/feed/",
+			"facebook": "https://www.facebook.com/"
+		},
+		"rating": 5,
+		"rol": "USER_ROL",
+		"password": "123456",
+		"galeria": ["https://images.pexels.com/photos/8306245/pexels-photo-8306245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+								"https://images.pexels.com/photos/9090161/pexels-photo-9090161.png?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/4706134/pexels-photo-4706134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+								"https://images.pexels.com/photos/3822900/pexels-photo-3822900.jpeg?auto=compress&cs=tinysrgb&w=1600"
+						],
+
+		"videos": ["https://www.youtube.com/watch?v=m5VP2Scx4oQ",
+							 "https://www.youtube.com/watch?v=_Y4RnVhPS5A",
+							 "https://www.youtube.com/watch?v=ZuBJ1nqRVOM"
+							],
+		"direccion": "Avenida General Bernardo O'Higgins 1244, Antofagasta",
+		"estado": true,
+		"destacado": false
+	}
+]

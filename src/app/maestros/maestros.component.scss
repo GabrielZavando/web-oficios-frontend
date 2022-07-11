@@ -1,0 +1,14 @@
+@import "../../scss/config/styles-root";
+
+.Banner{
+	& .Banner-img-back-css{
+		background-image: img('maestros-banner.jpg');
+		min-height: 500px;
+		background-position: center center;
+		& > button{
+			position: absolute;
+			top: 25%;
+			right: 1.5rem;
+		}
+	}
+}

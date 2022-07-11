@@ -1,0 +1,24 @@
+// zoom in
+@mixin zoomIn($time){
+	animation: zoomIn $time forwards;
+	@keyframes zoomIn{
+		from{
+			transform: scale3d(0,0,0);
+		}
+	}
+}
+
+// zoom out
+@mixin zoomOut($time){
+	animation: zoomOut $time forwards;
+	@keyframes zoomOut{
+		to{
+			transform: scale3d(0,0,0);
+		}
+	}
+}
+
+// creamos las clases para tener la opcion de usarlas directamente
+
+.zoomin, .zoom-in{@include zoomIn(.25s)}
+.zoomout, .zoom-out{@include zoomOut(.25s)}

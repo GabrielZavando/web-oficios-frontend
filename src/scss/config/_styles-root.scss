@@ -7,6 +7,7 @@
 $tablet: 768px;
 $notebook: 1024px;
 $escritorio: 1440px;
+$escritorio-full: 1920px;
 
 
 // Minor Breakpoint
@@ -58,6 +59,9 @@ $notebook-medium: 1240px;
   @if $size == escritorio {
       @media screen and (min-width: $escritorio){@content;}
   }
+	@if $size == escritorioXL {
+		@media screen and (min-width: $escritorio-full){@content;}
+}
 }
 
 // Uso
@@ -69,7 +73,7 @@ $notebook-medium: 1240px;
 
 // Variables para maquetación
 
-$ancho-maximo: 1440px;
+$ancho-maximo: 1680px;
 $ancho-total: 1920px;
 $altura-linea: 1.5;
 
@@ -118,6 +122,8 @@ $colors:(
   blanco: #fff,
   negro: #121212
 );
+
+$fondo-transparente: rgba(185, 163, 145, 0.8);
 
 
 // Imagenes
@@ -202,17 +208,20 @@ $gap-col: .5rem;
 // Padding's
 
 :root{
-	--padding-sections: 1rem;
+	--padding-sections: 1rem 0;
 	--padding-parrafo: .5rem 0;
 	--padding-banner-inicio: 2rem 1rem;
 	--padding-menu: .5rem;
 	@include mq(tablet){
-		--padding-sections: 1rem 2.5rem;
+		--padding-sections: 1rem 2rem;
 		--padding-banner-inicio: 2.5rem;
 		--padding-menu: 1rem;
 	}
 	@include mq(notebook){
 		--padding-menu: 1rem 0;
+		@include mq(escritorioXL){
+			--padding-sections: 1.5rem 0;
+		}
 	}
 }
 

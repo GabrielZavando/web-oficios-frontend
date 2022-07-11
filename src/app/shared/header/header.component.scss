@@ -10,9 +10,14 @@
 	background-color: transparent;
 	transition: background-color .25s;
 	padding: var(--padding-banner-inicio);
+	// border: 2px solid red;
 	&-activo{
 		background-color: color(hoverHeader);
 		transition: background-color .25s;
+	}
+	& .container-flex{
+		max-width: $ancho-maximo;
+		margin: auto;
 	}
 }
 

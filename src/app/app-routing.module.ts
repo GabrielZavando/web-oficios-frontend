@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
-import { MaestrosComponent } from './pages/maestros/maestros.component';
+import { MaestrosComponent } from './maestros/maestros.component';
 import { AprendeComponent } from './pages/aprende/aprende.component';
-import { PanoramasComponent } from './pages/panoramas/panoramas.component';
+import { PanoramasComponent } from './panoramas/panoramas.component';
+import { MaestroComponent } from './maestros/maestro/maestro.component';
 
 const routes: Routes = [
   {
@@ -20,9 +21,13 @@ const routes: Routes = [
     path: 'maestros',
     component: MaestrosComponent
   },
+	{
+		path: ':uid',
+		component: MaestroComponent
+	},
   {
     path: 'aprende',
-    component: AprendeComponent
+    component: AprendeComponent,
   },
   {
     path: 'panoramas',

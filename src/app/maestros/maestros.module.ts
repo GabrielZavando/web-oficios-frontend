@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardComponent } from './card/card.component';
-import { SeccionComponent } from './seccion/seccion.component';
+import { MaestroComponent } from './maestro/maestro.component';
+import { PaginadosComponent } from './paginados/paginados.component';
+import { MaestrosComponent } from './maestros.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
 @NgModule({
   declarations: [
-    CardComponent,
-    SeccionComponent
-  ],
-  exports: [
-    CardComponent,
-    SeccionComponent
-  ],
+		MaestrosComponent,
+		MaestroComponent,
+		PaginadosComponent
+	],
   imports: [
-    CommonModule
+    CommonModule,
+		AppRoutingModule
   ]
 })
 export class MaestrosModule { }

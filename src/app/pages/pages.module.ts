@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+// Componentes
 import { AprendeComponent } from './aprende/aprende.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { MaestrosComponent } from './maestros/maestros.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
-import { PanoramasComponent } from './panoramas/panoramas.component';
-import { ComponentsModule } from '../components/components.module';
+
+// Modulos
 import { AppRoutingModule } from '../app-routing.module';
 
 
@@ -14,21 +15,16 @@ import { AppRoutingModule } from '../app-routing.module';
   declarations: [
     AprendeComponent,
     InicioComponent,
-    MaestrosComponent,
     NosotrosComponent,
-    PanoramasComponent
   ],
   exports: [
-    AprendeComponent,
-    InicioComponent,
-    MaestrosComponent,
-    NosotrosComponent,
-    PanoramasComponent
+    // AprendeComponent,
+    // InicioComponent,
+    // NosotrosComponent
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
-    ComponentsModule
   ]
 })
 export class PagesModule { }

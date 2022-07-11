@@ -4,6 +4,7 @@
 	& .Banner-img-back-css{
 		position: relative;
 		background-image: img('nosotros.jpg');
+		height: 80vw;
 		min-height: 500px;
 		background-position: center center;
 		& .Box-banner-content{
@@ -30,6 +31,11 @@
 					background-color: color(blanco);
 				}
 			}
+			& > .img{
+				// border: 2px solid blue;
+				width: 90%;
+				max-width: 350px;
+			}
 		}
 	}
 }
@@ -53,9 +59,15 @@
 
 .Escuela{
 	padding: var(--padding-sections);
+	@include mq(tablet){
+		margin-bottom: 2rem;
+	}
 	& .Galeria{
 		& .Box-grid{
 			gap: 1rem;
+			@include mq(tablet){
+				gap: 1.5rem;
+			}
 		}
 	}
 }
@@ -71,8 +83,12 @@
 		--margenes: 7px auto;
 		--size-numero: 2.5rem;
 		--size-titulo: 1rem;
+		@include mq(tablet){
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+		}
 		& .card-impacto{
-			border: 2px solid red;
+			// border: 2px solid red;
 			&-img{
 				width: auto;
 				height: 80px;
@@ -98,5 +114,143 @@
 				line-height: 1.3rem;
 			}
 		}
+		& .card-impacto:nth-of-type(odd){
+			@include mq(tablet){
+				grid-column-start: 1;
+				grid-column-end: 3;
+				border: 2px solid red;
+			}
+		}
+		& .card-impacto:nth-of-type(even){
+			@include mq(tablet){
+				grid-column-start: 3;
+				grid-column-end: 5;
+				border: 2px solid blue;
+			}
+		}
+		& .card-impacto:last-of-type{
+			@include mq(tablet){
+				grid-column-start: 2;
+				grid-column-end: 4;
+			}
+		}
+	}
+}
+
+.Motivacion{
+	padding: var(--padding-sections);
+	& .Box-grid{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+		grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+		border: 2px solid blue;
+		grid-gap: 0 1rem;
+		@include mq(tablet){
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+		}
+		& .card-motivaciones{
+			width: 100%;
+			margin: auto;
+			text-align: center;
+			grid-row-start: span;
+		}
+		& .card-motivaciones:nth-of-type(odd){
+			border: 2px solid red;
+			grid-column: x0 / x2;
+			@include mq(tablet){
+				grid-column: auto;
+			}
+		}
+		& .card-motivaciones:nth-of-type(even){
+			border: 2px solid green;
+			grid-column: x2 / x4;
+			@include mq(tablet){
+				grid-column: auto;
+			}
+		}
+		& .card-motivaciones:last-of-type{
+			border: 2px solid pink;
+			grid-column: x1 / x3;
+			align-self: start;
+			@include mq(tablet){
+				grid-column: auto;
+			}
+		}
+	}
+}
+
+.Equipo{
+	padding: var(--padding-sections);
+	border: 2px solid red;
+	& .Box-grid{
+		border: 2px solid violet;
+		gap: 1rem;
+		& .card-equipo{
+			border: 2px solid blue;
+			display: block;
+			&:hover .card-equipo-img-rrss{
+				animation: zoomIn .5s forwards;
+				@keyframes zoomIn{
+					from{
+						transform: scale3d(0,0,0);
+					}
+				}
+			}
+			&-img{
+				position: relative;
+				&-rrss{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 1;
+					background-color: $fondo-transparente;
+					animation: zoomOut .5s forwards;
+					@keyframes zoomOut{
+						to{
+							transform: scale3d(0,0,0);
+						}
+					}
+					& a{
+						text-decoration: none;
+						display: block;
+						cursor: pointer;
+						font-size: 2.5rem;
+						& i{
+							color: color(blanco);
+							display: block;
+						}
+					}
+					& a:nth-of-type(1n+2){ // de uno en una a partir del 2
+						margin-left: .7rem;
+					}
+				}
+			}
+			&-text{
+				max-width: fit-content;
+				margin: auto;
+				& h5{
+					text-align: center;
+					margin-top: .5rem;
+				}
+				& p{
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.Conoce{
+	padding: var(--padding-sections);
+	background-color: color(hover);
+	& h4{
+		color: color(primary);
+	}
+	& .Box-grid-max-2{
+		gap: 1rem;
 	}
 }

@@ -160,10 +160,15 @@
 
 .Panoramas{
 	margin-bottom: 1rem;
-	& > .Titulo{
+	& .max-content{
+		width: 100%;
 		padding: var(--padding-sections);
-		@include mq(tablet){
-			margin-bottom: 0;
+		margin: auto;
+		max-width: $ancho-maximo;
+		& > .Titulo{
+			@include mq(tablet){
+				margin-bottom: 0;
+			}
 		}
 	}
 	& .Banner-img-back-css{
@@ -186,6 +191,7 @@
 		& > .Box-grid{
 			position: relative;
 			z-index: 1;
+			max-width: $ancho-maximo;
 			& h5{
 				color: color(blanco);
 				max-width: 55%;

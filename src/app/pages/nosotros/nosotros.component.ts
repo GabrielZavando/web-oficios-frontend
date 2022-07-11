@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Impacto } from '../../models/impacto.model';
+import { DataEquipo } from '../../../assets/data/equipo';
 import { DataImpacto } from '../../../assets/data/impactos';
-import { Motivacion } from '../../models/motivacion.model';
 import { DataMotivaciones } from '../../../assets/data/motivaciones';
 import { Equipo } from '../../models/equipo.model';
-import { DataEquipo } from '../../../assets/data/equipo';
+import { Impacto } from '../../models/impacto.model';
+import { Motivacion } from '../../models/motivacion.model';
 
 @Component({
   selector: 'app-nosotros',

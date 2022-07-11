@@ -1,0 +1,121 @@
+@import "../../../../scss/config/styles-root";
+@import "../../../../scss/elementos/botones";
+
+.Panel {
+	position: relative;
+	--anchoPanel: 110px;
+	width: var(--anchoPanel);
+	@include mq(movil){
+		--anchoPanel: 130px;
+	}
+	@include mq(movilH){
+		--anchoPanel: 140px;
+	}
+	@include mq(tablet){
+		--anchoPanel: 180px;
+	}
+	@include mq(notebook){
+		width: 100%;
+	}
+	&-btn {
+		// background-color: color(hoverHeader);
+		border-radius: 15px 15px 0 0;
+		display: flex;
+		justify-content: flex-end;
+		transition: background-color 0.25s;
+		@include mq(notebook){
+			display: none;
+		}
+		&-activo {
+			transition: background-color 0.25s;
+			background-color: color(hoverHeader);
+		}
+	}
+	&-menu {
+		position: absolute;
+		background-color: color(hoverHeader);
+		border-radius: 0 0 15px 15px;
+		right: 0;
+		width: var(--anchoPanel);
+		@include mq(notebook){
+			position: relative;
+			width: 100%;
+			background-color: transparent;
+			border-radius: none;
+		}
+		& ul {
+			list-style: none;
+			margin: 0;
+			padding: var(--padding-menu);
+			@include mq(notebook){
+				display: flex;
+			}
+			& li {
+				display: flex;
+				justify-content: flex-end;
+				@include mq(tablet){
+					margin-top: 5px;
+				}
+				& a {
+					padding: 0 0.5rem 0 2rem;
+					color: color(primary);
+					text-transform: uppercase;
+					text-decoration: none;
+					cursor: pointer;
+					font-weight: 600;
+					font-size: var(--size-menu-item);
+					transition: background-color 0.25s;
+					@include mq(notebook){
+						color: color(blanco);
+						padding: .5rem 1rem;
+						border-radius: 15px;
+						margin-left: .5rem;
+					}
+					&:hover {
+						background-color: color(secondary);
+					}
+				}
+				& a.link-activo {
+					background-color: color(secondary);
+					color: color(blanco);
+				}
+				& a.link-menu-notebook{
+					color: color(primary);
+					&-activo{
+						color: color(blanco);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.btn-menu {
+	display: flex;
+	color: color(blanco);
+	transition: color 0.25s;
+	margin-top: 0.5rem;
+	font-size: var(--size-menu);
+	// padding-right: 0;
+	justify-content: center;
+  align-items: center;
+	@include mq(tablet){
+		margin-right: auto;
+		margin-left: auto;
+	}
+	& > i {
+		margin-right: 5px;
+	}
+	& > span {
+		text-transform: uppercase;
+	}
+	&:active {
+		transform: scale(1);
+	}
+	&-activo {
+		color: color(primary);
+		transition: color 0.25s;
+	}
+}
