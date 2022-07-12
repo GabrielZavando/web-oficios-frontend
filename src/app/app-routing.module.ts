@@ -19,19 +19,17 @@ const routes: Routes = [
   },
   {
     path: 'maestros',
-    component: MaestrosComponent
+    loadChildren: () => import('./maestros/maestros.module')
+													.then(m => m.MaestrosModule)
   },
-	{
-		path: ':uid',
-		component: MaestroComponent
-	},
   {
     path: 'aprende',
     component: AprendeComponent,
   },
   {
     path: 'panoramas',
-    component: PanoramasComponent
+    loadChildren: () => import('./panoramas/panoramas.module')
+													.then(m => m.PanoramasModule)
   },
   {
     path: '**',

@@ -1,1 +1,32 @@
-<p>banner-slider works!</p>
+<div *ngIf="cards && cards.length > 0"
+		 class="carousel-container">
+	<img *ngFor="let card of cards; let i = index"
+			 [src]="card.imagen"
+			 [ngClass]="{'image-active': selectedIndex === i}"
+			 class="fade">
+
+	<div *ngIf="indicadores"
+			 class="carousel-dot-container">
+		<span *ngFor="let dot of cards; let i = index"
+					class="dot"
+					[ngClass]="{'active': selectedIndex === i}"
+					(click)="selectCard(i)"
+		>
+		</span>
+	</div>
+
+	<button *ngIf="controles"
+			 class="btn-carousel btn-prev"
+			 (click)="onPrevClick()"
+	>
+		<i class="icon-arrow-left icon-carousel icon-prev"
+		></i>
+	</button>
+	<button *ngIf="controles"
+			 class="btn-carousel btn-next"
+			 (click)="onNextClick()"
+	>
+		<i class="icon-arrow-right icon-carousel icon-next"
+		></i>
+	</button>
+</div>

@@ -1,7 +1,7 @@
-import { SliderItem } from '../../app/models/slider.model';
+import { SliderBanner } from '../../app/models/slider.banner.model';
 
 
-export const SLIDER_DATA_ITEM: SliderItem[] = [
+export const SLIDER_BANNER_DATA: SliderBanner[] = [
   {
     id: 1,
     titulo: 'Postula',

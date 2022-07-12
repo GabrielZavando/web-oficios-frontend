@@ -1,5 +1,5 @@
 
-export interface SliderItem{
+export interface SliderBanner{
 	id: number;
 	titulo?: string;
 	subtitulo?: string;

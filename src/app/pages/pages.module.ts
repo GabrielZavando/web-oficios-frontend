@@ -8,6 +8,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 
 // Modulos
 import { AppRoutingModule } from '../app-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -18,13 +19,14 @@ import { AppRoutingModule } from '../app-routing.module';
     NosotrosComponent,
   ],
   exports: [
-    // AprendeComponent,
-    // InicioComponent,
-    // NosotrosComponent
+    AprendeComponent,
+    InicioComponent,
+    NosotrosComponent
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
+		SharedModule
   ]
 })
 export class PagesModule { }

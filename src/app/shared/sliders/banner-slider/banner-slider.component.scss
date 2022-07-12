@@ -1,0 +1,100 @@
+@import '../../../../scss/config/styles-root';
+
+.carousel-container{
+	position: relative;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	& img{
+		display: none;
+	}
+	& img.image-active{
+		display: block;
+		width: 100%;
+		max-width: $ancho-total;
+		height: 100vh;
+	}
+}
+
+.carousel-dot-container{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-bottom: 2rem;
+	& .dot{
+		cursor: pointer;
+		height: 13px;
+		width: 13px;
+		margin: 0 10px;
+		background-color: color(blanco);
+		border-radius: 50%;
+		display: inline-block;
+		transition: opacity 0.6s ease;
+		opacity: .5;
+		&:hover{
+			opacity: 1;
+		}
+		&.active{
+			opacity: 1;
+		}
+	}
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.btn-carousel{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15%;
+	padding: 0;
+	color: color(blanco);
+	text-align: center;
+	background: 0 0;
+	border: 0;
+	cursor: pointer;
+}
+
+.btn-prev{
+	left: 0;
+}
+
+.btn-next{
+	right: 0;
+}
+
+.icon-carousel{
+	opacity: 0.5;
+	color: color(blanco);
+	transition: all .15s ease;
+	&:hover{
+		opacity: 0.9;
+	}
+	&:active{
+		opacity: 0.5;
+	}
+}
+
+.icon-prev,
+.icon-next{
+	font-size: 7rem;
+}

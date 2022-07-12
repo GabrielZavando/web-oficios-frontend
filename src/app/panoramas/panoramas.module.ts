@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PanoramaComponent } from './panorama/panorama.component';
 import { PanoramasComponent } from './panoramas.component';
+import { PanoramasRoutingModule } from './panoramas-routing.module';
 
 
 
@@ -11,7 +12,8 @@ import { PanoramasComponent } from './panoramas.component';
     PanoramaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+		PanoramasRoutingModule
   ]
 })
 export class PanoramasModule { }

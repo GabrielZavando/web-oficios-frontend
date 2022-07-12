@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaestroComponent } from './maestro/maestro.component';
 import { PaginadosComponent } from './paginados/paginados.component';
 import { MaestrosComponent } from './maestros.component';
-import { AppRoutingModule } from '../app-routing.module';
+import { MaestrosRoutingModule } from './maestros-routing.module';
 
 
 
@@ -15,7 +15,7 @@ import { AppRoutingModule } from '../app-routing.module';
 	],
   imports: [
     CommonModule,
-		AppRoutingModule
+		MaestrosRoutingModule
   ]
 })
 export class MaestrosModule { }

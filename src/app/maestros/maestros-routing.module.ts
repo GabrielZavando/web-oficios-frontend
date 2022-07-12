@@ -1,12 +1,36 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { PaginadosComponent } from './paginados/paginados.component';
+import { MaestroComponent } from './maestro/maestro.component';
+
+const routes: Routes = [
+	{
+		path: '',
+		children: [
+			{
+				path: 'paginados',
+				component: PaginadosComponent
+			},
+			{
+				path: ':uid',
+				component: MaestroComponent
+			},
+			{
+				path: '**',
+				redirectTo: 'paginados'
+			}
+		]
+	}
+]
 
 
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
-  ]
+		RouterModule.forChild(routes)
+	],
+	exports: [
+		RouterModule
+	]
 })
 export class MaestrosRoutingModule { }

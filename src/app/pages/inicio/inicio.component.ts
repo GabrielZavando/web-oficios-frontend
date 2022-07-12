@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SliderItem } from '../../models/slider.model';
-import { SLIDER_DATA_ITEM } from '../../../assets/data/slider.content';
+import { SliderBanner } from '../../models/slider.banner.model';
+import { SLIDER_BANNER_DATA } from '../../../assets/data/slider-inicio';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { SLIDER_DATA_ITEM } from '../../../assets/data/slider.content';
   styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent implements OnInit {
-  public sliderData: SliderItem[] = SLIDER_DATA_ITEM
+  public DATA: SliderBanner[] = SLIDER_BANNER_DATA
 
   constructor() { }
 
