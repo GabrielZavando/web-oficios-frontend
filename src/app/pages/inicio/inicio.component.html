@@ -1,7 +1,7 @@
 <section class="Inicio">
 	<app-banner-slider [cards]="DATA"
-										 [autoSlide]="true"
-	></app-banner-slider>
+										 [autoSlide]="true">
+	</app-banner-slider>
 	<button class="btn-pages"
 					routerLink="maestros">
 		Buscar Maestros
@@ -84,7 +84,7 @@
 	</div>
 	<div class="Box-slider">
 		<h4 class="Subtitulo">Maestros Destacados</h4>
-		<!-- <app-destacados></app-destacados> -->
+		<app-card-slider [DESTACADOS]="DESTACADOS" *ngIf="DESTACADOS.length > 0"></app-card-slider>
 	</div>
 </section>
 <section class="Aprende container">
@@ -100,7 +100,7 @@
 		</p>
 	</div>
 	<div class="Box-slider">
-		<p>Slider de videos de maestros destacados</p>
+		<app-card-video-slider [DESTACADOS]="DESTACADOS" *ngIf="DESTACADOS.length > 0"></app-card-video-slider>
 	</div>
 	<div class="Box-btn">
 		<button class="btn-pages"

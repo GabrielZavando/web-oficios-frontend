@@ -1,1 +1,23 @@
-<p>card-slider works!</p>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div *ngFor="let destacado of DESTACADOS"
+					class="swiper-slide card">
+			<img [src]="destacado.banner"
+					 class="card-img">
+			<i class="card-categoria">
+				{{destacado.categoria}}
+			</i>
+			<h4 class="card-nombre">
+				{{destacado.nombre}}
+			</h4>
+			<p class="card-descripcion">
+				{{destacado.descripcion}}
+			</p>
+		</div>
+	</div>
+
+	<div class="controles">
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
+</div>

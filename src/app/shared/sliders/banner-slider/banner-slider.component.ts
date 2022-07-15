@@ -10,12 +10,13 @@ export class BannerSliderComponent implements OnInit {
 	// Se puede mejorar añadiendo un boton de play y pausa
 
 	@Input() cards: SliderBanner[] = []
-	@Input() indicadores = true
-	@Input() controles = true
+	@Input() dots = true
+	@Input() flechas = true
 	@Input() autoSlide = false
 	@Input() slideInterval = 3000
 
 	public selectedIndex: number = 0
+  public playOrPauseIcon: string = ''
 
   constructor() { }
 
@@ -24,6 +25,8 @@ export class BannerSliderComponent implements OnInit {
 			this.autoSlideBanner()
 		}
   }
+
+
 
 	autoSlideBanner(): void{
 		setInterval(() => {

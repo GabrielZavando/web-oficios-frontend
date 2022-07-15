@@ -3,16 +3,35 @@
 .carousel-container{
 	position: relative;
 	margin: auto;
-	text-align: center;
 	width: 100%;
-	& img{
+	& .card{
 		display: none;
-	}
-	& img.image-active{
-		display: block;
-		width: 100%;
-		max-width: $ancho-total;
-		height: 100vh;
+		&-active{
+			display: block;
+			position: relative;
+			width: 100%;
+			max-width: $ancho-total;
+			height: 100vh;
+			&::before{
+				@include transparencia(color(negro), .3);
+			}
+		}
+		&-content{
+			border: 2px solid red;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 85%;
+			max-width: $ancho-maximo;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			padding: 1rem;
+		}
 	}
 }
 
@@ -65,7 +84,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 15%;
+	width: 10%;
 	padding: 0;
 	color: color(blanco);
 	text-align: center;
@@ -98,3 +117,5 @@
 .icon-next{
 	font-size: 7rem;
 }
+
+

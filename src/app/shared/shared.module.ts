@@ -12,6 +12,8 @@ import { CardVideoSliderComponent } from './sliders/card-video-slider/card-video
 import { AppRoutingModule } from '../app-routing.module';
 import { BotonUpComponent } from './components/boton-up/boton-up.component';
 
+import { SwiperModule } from 'swiper/angular';
+
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { BotonUpComponent } from './components/boton-up/boton-up.component';
 	imports: [
 		CommonModule,
 		ReactiveFormsModule,
-		AppRoutingModule
+		AppRoutingModule,
+		SwiperModule
 	]
 })
 export class SharedModule { }
