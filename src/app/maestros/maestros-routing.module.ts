@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PaginadosComponent } from './paginados/paginados.component';
 import { MaestroComponent } from './maestro/maestro.component';
+import { MaestrosComponent } from './maestros.component';
 
 const routes: Routes = [
 	{
 		path: '',
 		children: [
 			{
-				path: 'paginados',
-				component: PaginadosComponent
+				path: 'lista',
+				component: MaestrosComponent
 			},
 			{
 				path: ':uid',
@@ -17,7 +17,7 @@ const routes: Routes = [
 			},
 			{
 				path: '**',
-				redirectTo: 'paginados'
+				redirectTo: 'lista'
 			}
 		]
 	}

@@ -1,0 +1,19 @@
+@import "../../../scss/config/styles-root";
+
+.Box-maestros{
+	display: grid;
+	gap: 1rem;
+	@include mq(movilXL){
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+	@include mq(notebook){
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.card-maestro{
+	&-img{
+		margin-bottom: .5rem;
+	}
+}

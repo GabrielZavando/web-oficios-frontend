@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Usuario } from '../../models/usuario.model';
+import { Component, OnInit} from '@angular/core';
+import { Usuario, UserList } from '../../models/usuario.model';
 import { UsuariosService } from '../../services/usuarios.service';
 
 @Component({
@@ -7,27 +7,44 @@ import { UsuariosService } from '../../services/usuarios.service';
   templateUrl: './paginados.component.html',
   styleUrls: ['./paginados.component.scss']
 })
-export class PaginadosComponent implements OnInit {
+export class PaginadosComponent implements OnInit{
+	public termino: string = ''
+	public hayError: boolean = false
 	public usuarios : Usuario[] = []
+	public usuariosSugeridos: Usuario[] = []
 	public total: number = 0
 
   constructor(
-		private usuariosService: UsuariosService
+		private userService: UsuariosService
 	) { }
 
-  ngOnInit(): void {
-		this.usuariosService.getPaginatedUsers(0)
-			.subscribe({
-				next: (res) =>{
-					this.usuarios = res.usuarios
-					this.total = res.total
-					console.log(res)
-				},
-				error: (err) => {
-					console.log(err)
-				},
-				complete: () => console.info('complete')
-			})
-  }
+	ngOnInit(): void{
+		this.userService.getPaginatedUsers()
+					.subscribe({
+						next: (resp: UserList) => {
+							this.usuarios = resp.usuarios
+							this.total = resp.total
+						}
+					})
+	}
+
+	buscar(termino: string){
+		this.hayError = false
+		this.termino = termino
+
+		this.userService.getUserForTermino(termino)
+					.subscribe({
+						next: (respuesta) => console.log(respuesta)
+					})
+	}
+
+	sugerencias(termino: string){
+		this.hayError = false
+
+		this.userService.getUserForTermino(termino)
+					.subscribe({
+						next: (respuesta) => console.log(respuesta)
+					})
+	}
 
 }

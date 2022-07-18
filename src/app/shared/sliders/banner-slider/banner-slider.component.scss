@@ -9,6 +9,9 @@
 		&-active{
 			display: block;
 			position: relative;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
 			width: 100%;
 			max-width: $ancho-total;
 			height: 100vh;
@@ -17,20 +20,47 @@
 			}
 		}
 		&-content{
-			border: 2px solid red;
+			// border: 2px solid red;
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			left: 0;
 			right: 0;
-			width: 85%;
+			width: 90%;
 			max-width: $ancho-maximo;
 			margin: auto;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
-			padding: 1rem;
+			padding: var(--padding-banner-inicio);
+			& hr{
+				height: 2px;
+				width: 100%;
+				max-width: 600px;
+				margin-left: 0;
+				border: none;
+				background-color: color(blanco);
+			}
+		}
+		&-titulo{
+			display: inline-block;
+			text-transform: uppercase;
+			color: color(blanco);
+			font-weight: 400;
+			font-size: var(--size-titulo-banner);
+			width: max-content;
+			padding: var(--padding-titulo-banner);
+		}
+		&-subtitulo{
+			color: color(blanco);
+			font-weight: 400;
+			font-size: var(--size-subtitulo-banner);
+			text-transform: uppercase;
+			padding: var(--padding-subtitulo-banner);
+		}
+		&-btn{
+			margin-top: 1rem;
 		}
 	}
 }
@@ -43,12 +73,23 @@
 	display: flex;
 	justify-content: center;
 	padding: 0;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
+	--dot-size: 10px;
+	--dot-margin: 0 5px;
+	@include mq(tablet){
+		margin-bottom: 2rem;
+		--dot-size: 12px;
+		--dot-margin: 0 7px;
+	}
+	@include mq(escritorio){
+		--dot-size: 16px;
+		--dot-margin: 0 10px;
+	}
 	& .dot{
 		cursor: pointer;
-		height: 13px;
-		width: 13px;
-		margin: 0 10px;
+		height: var(--dot-size);
+		width: var(--dot-size);
+		margin: var(--dot-margin);
 		background-color: color(blanco);
 		border-radius: 50%;
 		display: inline-block;
@@ -115,7 +156,7 @@
 
 .icon-prev,
 .icon-next{
-	font-size: 7rem;
+	font-size: var(--size-flechas-banner);
 }
 
 

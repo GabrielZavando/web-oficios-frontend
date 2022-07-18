@@ -1,30 +1,38 @@
-import { AfterViewInit, Component, Input} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Usuario } from '../../../models/usuario.model';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { SwiperOptions, Navigation } from 'swiper';
+
+SwiperCore.use([Navigation])
 
 @Component({
   selector: 'app-card-video-slider',
   templateUrl: './card-video-slider.component.html',
   styleUrls: ['./card-video-slider.component.scss']
 })
-export class CardVideoSliderComponent implements AfterViewInit{
+export class CardVideoSliderComponent{
 	@Input() DESTACADOS: Usuario[] = []
 
-  constructor() { }
-
-  ngAfterViewInit(): void{
-		const mySwipper = new Swiper('.swiper-container', {
-			modules: [Navigation, Pagination],
-			direction: 'horizontal',
-			loop: true,
-			slidesPerView: 2,
-			spaceBetween: 15,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
+	config: SwiperOptions = {
+		slidesPerView: 1,
+		spaceBetween: 10,
+		navigation: true,
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 25
+			},
+			1440: {
+				slidesPerView: 4,
+				spaceBetween: 30
 			}
-		})
+		}
 	}
+
+  constructor() { }
 
 }
 

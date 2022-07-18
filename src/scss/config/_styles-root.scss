@@ -146,6 +146,9 @@ $fondo-transparente: rgba(185, 163, 145, 0.8);
   --size-logo: 1.3rem;
   --size-menu: 1.2rem;
   --size-menu-item: .8rem;
+	--size-titulo-banner: 2rem;
+	--size-subtitulo-banner: 1.1rem;
+	--size-flechas-banner: 2rem;
 	--size-h1: 2rem;
 	--size-h2: 1.7rem;
 	--size-h3: 1.5rem;
@@ -153,6 +156,9 @@ $fondo-transparente: rgba(185, 163, 145, 0.8);
 	--size-h5: 1.1rem;
 	--size-p: 1rem;
 	@include mq(tablet){
+		--size-titulo-banner: 2.5rem;
+		--size-subtitulo-banner: 1.3rem;
+		--size-flechas-banner: 5rem;
 		--size-logo: 1.8rem;
 		--size-menu: 1.7rem;
 		--size-menu-item: 1rem;
@@ -164,6 +170,9 @@ $fondo-transparente: rgba(185, 163, 145, 0.8);
 		--size-p: 1.2rem;
 	}
 	@include mq(escritorio){
+		--size-titulo-banner: 3.5rem;
+		--size-subtitulo-banner: 1.6rem;
+		--size-flechas-banner: 7rem;
 		--size-h5: 1.6rem;
 	}
 }
@@ -210,15 +219,20 @@ $gap-col: .5rem;
 :root{
 	--padding-sections: 1rem 0;
 	--padding-parrafo: .5rem 0;
-	--padding-banner-inicio: 2rem 1rem;
+	--padding-banner-inicio: 1rem;
+	--padding-titulo-banner: 0;
+	--padding-subtitulo-banner: 0;
 	--padding-menu: .5rem;
 	@include mq(tablet){
+		--padding-titulo-banner: .5rem 0;
+		--padding-subtitulo-banner: 0;
 		--padding-sections: 1rem 2rem;
 		--padding-banner-inicio: 2.5rem;
 		--padding-menu: 1rem;
 	}
 	@include mq(notebook){
 		--padding-menu: 1rem 0;
+		--padding-titulo-banner: 1rem 0;
 		@include mq(escritorioXL){
 			--padding-sections: 1.5rem 0;
 		}
@@ -243,4 +257,17 @@ body{
 // Fuente para los formularios
 form *{
   font-family: $fuente-parrafos;
+}
+
+// Plugins
+
+// Swiper
+
+swiper.swiper{
+	margin-top: 2rem;
+	--swiper-navigation-color: #fff;
+	& .swiper-button-prev,
+		.swiper-button-next{
+			top: 25%;
+		}
 }

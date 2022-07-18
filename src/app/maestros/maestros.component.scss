@@ -1,14 +1,68 @@
 @import "../../scss/config/styles-root";
 
 .Banner{
+	position: relative;
 	& .Banner-img-back-css{
+		position: relative;
 		background-image: img('maestros-banner.jpg');
-		min-height: 500px;
-		background-position: center center;
-		& > button{
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		max-width: $ancho-total;
+		height: 100vh;
+		&::before{
+			@include transparencia(color(negro), .3);
+		}
+		& .Box-banner-content{
 			position: absolute;
-			top: 25%;
-			right: 1.5rem;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 90%;
+			max-width: $ancho-maximo;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			padding: var(--padding-banner-inicio);
+			& .Titulo-banner{
+				text-transform: uppercase;
+				font-weight: 400;
+				color: color(blanco);
+				font-size: var(--size-titulo-banner);
+				width: max-content;
+				padding: var(--padding-titulo-banner);
+			}
+			& hr{
+				height: 2px;
+				width: 100%;
+				max-width: 600px;
+				margin-left: 0;
+				border: none;
+				background-color: color(blanco);
+			}
 		}
 	}
+}
+
+.Buscador{
+	text-align: center;
+	padding: 3rem 0;
+}
+
+.Maestros{
+	&-img{
+		width: 100%;
+		height: auto;
+		& > img{
+			aspect-ratio: 16 / 9;
+		}
+	}
+}
+
+.Paginados{
+	margin-top: 2rem;
 }

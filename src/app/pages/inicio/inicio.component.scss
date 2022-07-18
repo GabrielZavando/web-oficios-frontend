@@ -3,20 +3,11 @@
 .Inicio{
 	margin-bottom: 1rem;
 	position: relative;
-	& > button{
-		position: absolute;
-		top: 25%;
-		right: 1.5rem;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-		@include mq(tablet){
-			right: 2.5rem;
-		}
-	}
 }
 
 .Conoce{
 	padding: var(--padding-sections);
+	// border: 1px solid blue;
 	& .card-img-back-css{
 		min-height: 200px;
 		height: 60vw;
@@ -150,6 +141,10 @@
 		}
 	}
 	& > .Box-btn{
+		margin-top: 1.5rem;
+		@include mq(tablet){
+			margin-top: 3.5rem;
+		}
 		& > button{
 			display: block;
 			width: max-content;
@@ -160,11 +155,8 @@
 
 .Panoramas{
 	margin-bottom: 1rem;
-	& .max-content{
-		width: 100%;
+	& .container-max{
 		padding: var(--padding-sections);
-		margin: auto;
-		max-width: $ancho-maximo;
 		& > .Titulo{
 			@include mq(tablet){
 				margin-bottom: 0;
@@ -174,19 +166,14 @@
 	& .Banner-img-back-css{
 		padding: 1rem;
 		margin-top: 1rem;
-		min-height: 250px;
-		height: 50vw;
+		aspect-ratio: 16 / 9;
 		background-position: center top;
 		background-image: img('taller.jpg');
 		@include mq(tablet){
 			padding: 4rem;
-			margin-top: 2rem;
-		}
-		@include mq(notebook){
-			height: 45vw;
 		}
 		&::before{
-			@include transparencia(color(primary), .3);
+			@include transparencia(color(primary), .2);
 		}
 		& > .Box-grid{
 			position: relative;
@@ -194,7 +181,10 @@
 			max-width: $ancho-maximo;
 			& h5{
 				color: color(blanco);
-				max-width: 55%;
+				max-width: 70%;
+				@include mq(tablet){
+					max-width: 50%;
+				}
 			}
 			& button{
 				margin-top: 1rem;
@@ -208,23 +198,25 @@
 	@include mq(tablet){
 		margin-bottom: 2rem;
 	}
-	& > .Box-flex-wrap{
+	& > .Box-grid-titulo{
 		margin-bottom: 1rem;
+		@include mq(movilXL){
+			display: grid;
+			grid-template-columns: repeat(2, max-content);
+			align-items: center;
+			justify-items: flex-start;
+			gap: 2rem;
+		}
 		@include mq(tablet){
 			margin-bottom: 0;
-		}
-		& > h2{
-			margin-bottom: 1rem;
-			padding: var(--padding-sections);
-		}
-		& > a{
-			margin-left: 1rem;
+			margin-top: 2rem;
 		}
 	}
 	& > .Box-grid{
 		grid-template-columns: repeat(2, 1fr);
 		@include mq(tablet){
 			padding: var(--padding-sections);
+			width: 90%;
 		}
 		@include mq(notebook){
 			grid-template-columns: repeat(3, 1fr);

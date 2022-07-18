@@ -1,17 +1,21 @@
-<section class="Banner container mg-bot-1r">
-	<div class="Banner-img-back-css p-relative">
-		<button class="btn-pages mg-top-1r mg-bot-1r"
-						routerLink="maestros">
-			Buscar Maestros
-		</button>
+
+<section class="Banner">
+	<div class="Banner-img-back-css">
+		<div class="Box-banner-content">
+			<h1 class="Titulo-banner">Maestros</h1>
+			<hr>
+		</div>
 	</div>
 </section>
-<section class="container pad-1r">
-	<div class="img">
-		<img src="/assets/img/maestros-madera.jpg" alt="Cortando madera">
-	</div>
+<section class="Buscador container-max">
+	<app-maestros-buscador (onEnter)="buscar($event)"
+												 (onDebounce)="sugerencias($event)">
+	</app-maestros-buscador>
 </section>
-<section class="container">
+<section class="Maestros container-max">
+	<div class="Maestros-img">
+		<img src="/assets/img/maestros.jpg" alt="Cortando madera">
+	</div>
 	<div class="Articulo">
 		<p class="Parrafo">
 			Conoce a los protagonistas detrás de la magia del oficio.
@@ -24,9 +28,28 @@
 		</p>
 	</div>
 </section>
-<section class="container">
+<section class="Paginados container-max">
 	<app-paginados></app-paginados>
+</section>
+
+
+
+<!-- <section class="Banner container mg-bot-1r">
+	<div class="Banner-img-back-css p-relative">
+		<h1>Maestros</h1>
+	</div>
+</section>
+<section class="container buscador">
+	<app-maestros-buscador (onEnter)="buscar($event)"
+												 (onDebounce)="sugerencias($event)">
+	</app-maestros-buscador>
+</section>
+
+<section class="container">
+
 </section>
 <section class="container">
 	slider de maestros destacados
-</section>
+</section> -->
+
+

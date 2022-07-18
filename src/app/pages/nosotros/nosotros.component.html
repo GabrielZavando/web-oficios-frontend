@@ -1,18 +1,19 @@
-<section class="Banner container">
+<section class="Banner">
 	<div class="Banner-img-back-css">
 		<div class="Box-banner-content">
-			<button class="btn-pages"
-							routerLink="maestros">
-				Buscar Maestros
-			</button>
-			<h1 class="Titulo">Nosotros</h1>
+			<h1 class="Titulo-banner">Nosotros</h1>
+			<hr>
 			<div class="img">
 				<img src="/assets/img/territorial-footer.png" alt="Logo Territorial">
 			</div>
 		</div>
 	</div>
+	<button class="btn-pages btn-banner"
+					routerLink="maestros">
+		Buscar Maestros
+	</button>
 </section>
-<section class="Historia container">
+<section class="Historia container-max">
 	<div class="Articulo">
 		<strong class="Parrafo-bold">
 			Creemos en el valor del aprender haciendo, la historia que cultiva el saber de las manos, y la magia creadora del diseño de autor.
@@ -39,12 +40,12 @@
 		</p>
 	</div>
 </section>
-<section class="Banner-text">
+<section class="Section-text container-full">
 	<strong class="Parrafo-bold">
 		Entendemos el valor de los oficios tradicionales y creativos como motor para la economía creativa, el fomento cultural y desarrollo local, resultado de la expresión humana de saberes que relevan identidad, evocan la memoria y conectan a las personas desde su sentir emocional.
 	</strong>
 </section>
-<section class="Reinvencion container">
+<section class="Reinvencion container-max">
 	<div class="img-100">
 		<img src="/assets/img/pintura.jpg" alt="Pintura">
 	</div>
@@ -61,7 +62,7 @@
 		</strong>
 	</div>
 </section>
-<section class="Escuela container">
+<section class="Escuela container-max">
 	<div class="Articulo">
 		<h4 class="Subtitulo">
 			MIRA LO QUE HICIMOS EN TODOS ESOS AÑOS !
@@ -87,41 +88,45 @@
 		</div>
 	</div>
 </section>
-<section class="Impacto container">
-	<div class="Articulo">
-		<h4 class="Subtitulo">impacto proyecto</h4>
-	</div>
-	<div class="Box-grid grid-center">
-		<div *ngFor="let impacto of impactos"
-				 class="card-impacto">
-			<div class="card-impacto-img">
-				<img src="{{impacto.img}}">
+<section class="Impacto container-full">
+	<div class="container-max">
+		<div class="Articulo">
+			<h4 class="Subtitulo">impacto proyecto</h4>
+		</div>
+		<div class="Box-grid grid-center">
+			<div *ngFor="let impacto of impactos"
+					 class="card">
+				<div class="card-img">
+					<img src="{{impacto.img}}">
+				</div>
+				<strong class="card-numero">{{impacto.num}}</strong>
+				<h5 class="card-titulo">{{impacto.titulo}}</h5>
+				<p class="card-descripcion">
+					{{impacto.descripcion}}
+				</p>
 			</div>
-			<strong class="card-impacto-numero">{{impacto.num}}</strong>
-			<h5 class="card-impacto-titulo">{{impacto.titulo}}</h5>
-			<p class="card-impacto-descripcion">
-				{{impacto.descripcion}}
-			</p>
 		</div>
 	</div>
 </section>
-<section class="Motivacion container">
-	<div class="Articulo">
-		<h4 class="Subtitulo">Lo que nos motiva</h4>
-	</div>
-	<div class="Box-grid">
-		<div *ngFor="let motivacion of motivaciones"
-				 class="card-motivaciones">
-				 <div class="card-motivaciones-img">
-					 <img src="{{motivacion.img}}">
-				 </div>
-				 <div class="card-motivaciones-text">
-					<p>{{motivacion.text}}</p>
-				 </div>
+<section class="Impacto container-full Motivacion">
+	<div class="container-max">
+		<div class="Articulo">
+			<h4 class="Subtitulo">Lo que nos motiva</h4>
+		</div>
+		<div class="Box-grid grid-center">
+			<div *ngFor="let motivacion of motivaciones"
+					 class="card">
+					 <div class="card-img">
+						 <img src="{{motivacion.img}}">
+					 </div>
+					 <div class="card-text">
+						<p>{{motivacion.text}}</p>
+					 </div>
+			</div>
 		</div>
 	</div>
 </section>
-<section class="Equipo container">
+<section class="Equipo container-max">
 	<div class="Articulo">
 		<h4 class="Subtitulo">Equipo</h4>
 	</div>
@@ -155,24 +160,35 @@
 		</div>
 	</div>
 </section>
-<section class="Conoce container">
-	<h4 class="Subtitulo">
-		Escuela Taller un proyecto de fundación territorial
-	</h4>
-	<div class="Box-grid-max-2">
-		<div class="Box-img-btn">
-			<div class="img-100">
-				<img src="/assets/img/logo-territorial.png" alt="Logo Territorial">
+<section class="Conoce container-full">
+	<div class="container-max">
+		<h4 class="Subtitulo">
+			Escuela Taller un proyecto de fundación territorial
+		</h4>
+		<div class="Box-grid-max-2">
+			<div class="Box-img-btn">
+				<div class="img-100">
+					<img src="/assets/img/logo-territorial.png" alt="Logo Territorial">
+				</div>
+				<a href="https://www.youtube.com/channel/UCDMLbhnaN0r2YvfCP-RMR5Q/featured"
+					 target="_blank"
+					 class="btn-pages">
+					 Conócelo aquí
+				</a>
 			</div>
-			<a href="https://www.youtube.com/channel/UCDMLbhnaN0r2YvfCP-RMR5Q/featured"
-				 target="_blank"
-				 class="btn-pages">
-				 Conócelo aquí
-			</a>
+			<p class="Parrafo">
+				Conectamos actores y recursos locales CODISEÑANDO EXPERIENCIAS URBANAS  para la transformación de territorios creativos, humanos y sostenibles, que mejoren la calidad de vida y reconecten al habitante con entorno.
+			</p>
 		</div>
-		<p class="Parrafo">
-			Conectamos actores y recursos locales CODISEÑANDO EXPERIENCIAS URBANAS  para la transformación de territorios creativos, humanos y sostenibles, que mejoren la calidad de vida y reconecten al habitante con entorno.
-		</p>
 	</div>
-
+	<div class="Banner-img-back-css"
+			 [ngStyle]="{'backgroundImage': 'url(/assets/img/equipo.jpg)'}">
+		<a href="https://www.youtube.com/"
+				target="_blank"
+				rel="noopener noreferrer">
+			<div class="icon">
+				<i class="icon-play"></i>
+			</div>
+		</a>
+	</div>
 </section>

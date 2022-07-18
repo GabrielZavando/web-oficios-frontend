@@ -4,6 +4,7 @@ import { MaestroComponent } from './maestro/maestro.component';
 import { PaginadosComponent } from './paginados/paginados.component';
 import { MaestrosComponent } from './maestros.component';
 import { MaestrosRoutingModule } from './maestros-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -15,7 +16,8 @@ import { MaestrosRoutingModule } from './maestros-routing.module';
 	],
   imports: [
     CommonModule,
-		MaestrosRoutingModule
+		MaestrosRoutingModule,
+		SharedModule
   ]
 })
 export class MaestrosModule { }

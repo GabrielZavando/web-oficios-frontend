@@ -12,8 +12,13 @@
 	position: relative;
 }
 
-.container{
-	@include container(block, $ancho-maximo);
+.container-full{
+	@include container(block, $ancho-total);
+}
+
+.container-max{
+	@include container(block, $ancho-maximo );
+	width: 90%;
 }
 
 .container-flex{

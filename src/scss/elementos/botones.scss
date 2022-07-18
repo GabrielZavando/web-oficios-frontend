@@ -21,9 +21,9 @@
 
 .btn-pages{
   @include btn(color(primary), color(blanco), color(secondary));
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   text-transform: uppercase;
-  padding: .3rem 1rem;
+  padding: .5rem 1.7rem;
 	text-decoration: none;
 	font-size: .8rem;
 	@include mq(tablet){
@@ -55,4 +55,21 @@
 
 .btn-menu{
   @include btn(transparent, color(blanco), transparent);
+}
+
+.btn-banner{
+	position: absolute;
+	top: 20%;
+	right: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	@include mq(tablet){
+		right: 2.5rem;
+	}
+	@include mq(notebook){
+		right: 5%;
+	}
+	@include mq(escritorio){
+		right: 6%;
+	}
 }

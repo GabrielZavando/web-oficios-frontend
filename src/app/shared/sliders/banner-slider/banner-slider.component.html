@@ -2,7 +2,7 @@
 <div *ngIf="cards && cards.length > 0"
 		 class="carousel-container">
 	<div *ngFor="let card of cards; let i = index"
-			 [ngStyle]="{'background': 'url('+ card.imagen +')'}"
+			 [ngStyle]="{'backgroundImage': 'url('+ card.imagen +')'}"
 			 [ngClass]="{'card-active': selectedIndex === i}"
 			 class="card fade">
 		<div class="card-content">
@@ -10,11 +10,11 @@
 				{{card.titulo}}
 			</h1>
 			<hr>
-			<h3 class="card-subtitulo">
+			<h5 class="card-subtitulo">
 				{{card.subtitulo}}
-			</h3>
+			</h5>
 			<a routerLink="{{card.boton?.link}}"
-						class="card-btn">
+						class="btn-pages card-btn">
 					{{card.boton?.texto}}
 				</a>
 		</div>
@@ -39,5 +39,5 @@
 					(click)="onNextClick()">
 		<i class="icon-arrow-right icon-carousel icon-next"></i>
 	</button>
-	
+
 </div>

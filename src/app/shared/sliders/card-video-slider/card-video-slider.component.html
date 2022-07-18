@@ -1,23 +1,31 @@
-<div class="swiper-container">
-	<div class="swiper-wrapper">
-		<div *ngFor="let destacado of DESTACADOS"
-					class="swiper-slide card">
-			<img [src]="destacado.banner"
-					 class="card-img">
-			<i class="card-categoria">
-				{{destacado.categoria}}
-			</i>
-			<h4 class="card-nombre">
-				{{destacado.nombre}}
-			</h4>
-			<p class="card-descripcion">
-				{{destacado.descripcion}}
-			</p>
+<swiper [config]="config"
+				[navigation]="true">
+	<ng-template swiperSlide
+							 *ngFor="let destacado of DESTACADOS" class="card">
+		<div [ngStyle]="{'backgroundImage': 'url('+ destacado.banner +')'}"
+				 class="card-img">
+			<a [href]="destacado.videos[0]"
+				 target="_blank"
+				 rel="noopener noreferrer">
+				<div class="icon">
+					<i class="icon-play"></i>
+				</div>
+			</a>
 		</div>
-	</div>
+		<i class="card-categoria">
+			{{ destacado.categoria }}
+		</i>
+		<h4 class="card-nombre">
+			{{ destacado.nombre }}
+		</h4>
+		<p class="card-descripcion">
+			{{ destacado.descripcion }}
+		</p>
+		<a [routerLink]="['/maestros', destacado.uid]" class="btn-pages">
+			Ver más
+		</a>
+	</ng-template>
 
-	<div class="controles">
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-	</div>
-</div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</swiper>
