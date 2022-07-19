@@ -53,6 +53,21 @@
 	padding: 3rem 0;
 }
 
+.sugerencias{
+	list-style: none;
+	border: 1px solid green;
+	&-item{
+		border: 1px solid blue;
+		cursor: pointer;
+		& > a{
+			cursor: pointer;
+		}
+	}
+	& > li:last-of-type{
+		cursor: pointer;
+	}
+}
+
 .Maestros{
 	&-img{
 		width: 100%;
@@ -65,4 +80,16 @@
 
 .Paginados{
 	margin-top: 2rem;
+}
+
+.Destacados{
+	margin-top: 1rem;
+	padding: var(--padding-sections);
+	margin-bottom: 3rem;
+	& > .Box-slider{
+		margin-top: 1rem;
+		@include mq(notebook){
+			margin-top: 2rem;
+		}
+	}
 }

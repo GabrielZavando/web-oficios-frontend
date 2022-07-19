@@ -11,8 +11,24 @@
 	<app-maestros-buscador (onEnter)="buscar($event)"
 												 (onDebounce)="sugerencias($event)">
 	</app-maestros-buscador>
+	<ul *ngIf="mostrarSugerencias"
+			class="sugerencias">
+		<li *ngFor="let sugerido of usuariosSugeridos"
+				class="sugerencias-item">
+				<a [routerLink]="['/maestros', sugerido.uid]">
+					{{sugerido.nombre}}
+				</a>
+		</li>
+		<li *ngIf="usuariosSugeridos.length > 0"
+				(click)="buscarSugerido(termino)">
+			<a>
+				Buscar: "{{termino}}"
+			</a>
+		</li>
+	</ul>
 </section>
-<section class="Maestros container-max">
+<section *ngIf="mostrarSeccionMaestros"
+				 class="Maestros container-max">
 	<div class="Maestros-img">
 		<img src="/assets/img/maestros.jpg" alt="Cortando madera">
 	</div>
@@ -28,8 +44,25 @@
 		</p>
 	</div>
 </section>
-<section class="Paginados container-max">
-	<app-paginados></app-paginados>
+<section *ngIf="usuarios.length > 0"
+				 class="Paginados container-max">
+	<app-paginados [usuarios]="usuarios"
+								 [total]="total">
+	</app-paginados>
+	<div class="Paginacion">
+		<button *ngIf="btnNextActivo" (click)="next(termino, 6)">
+			Siguientes
+		</button>
+	</div>
+</section>
+<section class="Destacados container-max">
+	<div class="Box-slider">
+		<h4 class="Subtitulo">Maestros Destacados</h4>
+		<app-card-slider
+			[DESTACADOS]="DESTACADOS"
+			*ngIf="DESTACADOS.length > 0"
+		></app-card-slider>
+	</div>
 </section>
 
 

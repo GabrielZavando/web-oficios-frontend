@@ -18,9 +18,7 @@ export class MaestrosBuscadorComponent implements OnInit {
 
   ngOnInit(): void {
 		this.debouncer
-		.pipe(
-			debounceTime(300)
-		)
+		.pipe(debounceTime(300))
 		.subscribe({
 			next: (valor) => {
 				this.onDebounce.emit(valor)
