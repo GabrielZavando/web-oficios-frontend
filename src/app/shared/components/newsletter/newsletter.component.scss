@@ -1,0 +1,32 @@
+@import "../../../../scss/config/styles-root";
+
+.Box-form{
+	max-width: 320px;
+	& .Form-round{
+		&-item{
+			& .text-danger{
+				color: color(alert);
+				background-color: color(blanco);
+				padding: .5rem;
+			}
+		}
+		&-input:focus{
+			transition: background-color .25s;
+			background-color: color(secondary);
+		}
+		&-btn{
+			color: color(blanco);
+			align-self: flex-start;
+			background-color: color(secondary);
+			margin-top: 1rem;
+			&:hover{
+				background-color: color(blanco);
+				color: color(secondary);
+			}
+		}
+	}
+}
+
+.alert-title{
+	border: 2px solid red;
+}

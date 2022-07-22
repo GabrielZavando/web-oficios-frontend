@@ -1,6 +1,10 @@
+// Modulos nativos
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
+// Componentes
 import { BlogBuscadorComponent } from './buscadores/blog-buscador/blog-buscador.component';
 import { MaestrosBuscadorComponent } from './buscadores/maestros-buscador/maestros-buscador.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -10,9 +14,13 @@ import { BannerSliderComponent } from './sliders/banner-slider/banner-slider.com
 import { CardSliderComponent } from './sliders/card-slider/card-slider.component';
 import { CardVideoSliderComponent } from './sliders/card-video-slider/card-video-slider.component';
 import { BotonUpComponent } from './components/boton-up/boton-up.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
+// Modulos propios
+
+// Modulos plugins
 import { SwiperModule } from 'swiper/angular';
-import { RouterModule } from '@angular/router';
+import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2'
 
 
 
@@ -26,7 +34,8 @@ import { RouterModule } from '@angular/router';
 		CardSliderComponent,
 		CardVideoSliderComponent,
 		MenuComponent,
-		BotonUpComponent
+		BotonUpComponent,
+  NewsletterComponent
 	],
 	exports: [
 		FooterComponent,
@@ -44,7 +53,8 @@ import { RouterModule } from '@angular/router';
 		FormsModule,
 		ReactiveFormsModule,
 		RouterModule,
-		SwiperModule
+		SwiperModule,
+		SweetAlert2Module.forRoot()
 	]
 })
 export class SharedModule { }

@@ -1,4 +1,6 @@
+import { Location } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { UsuariosService } from '../../services/usuarios.service';
 
 @Component({
   selector: 'app-header',
@@ -6,12 +8,26 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public colorHeader: string = 'Header'
-  public colorLogo: string = 'Logo'
 
-  constructor() { }
+	event$
+
+	public colorLogo: string = 'Logo'
+  public colorHeader: string = 'Header'
+	public Logonegro: boolean = false
+
+  constructor(
+		private location: Location,
+		private userService: UsuariosService
+	) {
+
+		this.event$=location.onUrlChange((val) => {
+			this.Logonegro = this.userService.cargado
+			console.log(this.Logonegro);
+    })
+	}
 
   ngOnInit(): void {
+
   }
 
   headerChangeColor(){

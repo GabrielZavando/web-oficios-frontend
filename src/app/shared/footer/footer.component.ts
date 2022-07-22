@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NewsletterService } from '../../services/newsletter.service';
 
@@ -7,7 +7,7 @@ import { NewsletterService } from '../../services/newsletter.service';
 	templateUrl: './footer.component.html',
 	styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent{
 	// public suscriptor: Newsletter
 	public form: FormGroup = this.fb.group({
 		nombre: ['', [
@@ -26,26 +26,22 @@ export class FooterComponent implements OnInit {
 		private newsletterService: NewsletterService
 	) {	 }
 
-	ngOnInit(): void {
-	}
-
-
-
-
-
 	suscribir(){
-		this.newsletterService.addSuscriptor(this.form.value)
-														.subscribe({
-															next: (suscriptor) =>{
-																console.log(suscriptor);
-															},
-															error: (err) =>{
-																console.log(err);
-															},
-															complete: () =>{
-																console.log('Operacion completada');
-															}
-														})
+		console.log(this.form.value)
+
+		this.newsletterService
+					.addSuscriptor(this.form.value)
+						.subscribe({
+							next: (suscriptor) =>{
+								console.log(suscriptor);
+							},
+							error: (err) =>{
+								console.log(err);
+							},
+							complete: () =>{
+								console.log('Operacion completada');
+							}
+						})
 	}
 
 }

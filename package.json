@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "dev": "rm -rf dist && ng serve -o",
     "start": "ng serve -o",
-    "build": "ng build",
+    "build": "rm -rf dist && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -18,8 +19,9 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "@sweetalert2/ngx-sweetalert2": "^11.0.0",
     "rxjs": "~7.5.0",
-    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.24",
     "swiper": "^8.3.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

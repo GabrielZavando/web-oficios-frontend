@@ -1,4 +1,15 @@
-<p>Componente que muestra un maestro</p>
+<section class="Banner">
+	<div class="Banner-img-back-css">
+		<div class="Box-banner-content">
+			<h1 class="Titulo-banner">Maestro</h1>
+			<hr>
+		</div>
+	</div>
+	<button class="btn-pages btn-banner"
+					routerLink="maestros">
+		Buscar Maestros
+	</button>
+</section>
 
 <div *ngIf="!usuario; else cardUsuario">
 	<p>Loader</p>
@@ -6,6 +17,28 @@
 
 <ng-template #cardUsuario>
 	<div class="card-usuario-full">
-		<p>{{usuario.nombre}}</p>
+		<div class="card">
+			<div class="card-banner">
+				<img [src]="usuario.banner" [alt]="usuario.emprendimiento">
+			</div>
+			<div class="card-body">
+				<div class="card-nombre">
+					<p>{{usuario.nombre}}</p>
+				</div>
+				<div class="card-logo">
+					<img [src]="usuario.logo">
+				</div>
+				<div class="card-emprendimiento">
+					<i>{{usuario.emprendimiento}}</i>
+				</div>
+				<hr>
+				<div class="card-categoria">
+					<i>{{usuario.categoria}}</i>
+				</div>
+				<div class="card-descripcion">
+					<p>{{usuario.descripcion}}</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </ng-template>

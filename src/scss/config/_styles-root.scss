@@ -271,3 +271,22 @@ swiper.swiper{
 			top: 25%;
 		}
 }
+
+// Sweetalert
+
+.alert{
+	&-btn{
+		background-color: color(primary)!important;
+		border: none!important;
+		outline: none!important;
+		box-shadow: none!important;
+	}
+	&-icon-error{
+		color: color(alert)!important;
+		border-color: color(alert)!important;
+	}
+}
+
+.swal2-icon.swal2-error [class^=swal2-x-mark-line]{
+	background-color: color(alert)!important;
+}

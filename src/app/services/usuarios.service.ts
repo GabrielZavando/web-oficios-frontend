@@ -4,7 +4,7 @@ import { environment } from '../../environments/environment';
 import { UserList, Usuario } from '../models/usuario.model';
 import { Observable } from 'rxjs';
 
-const base_url = environment.base_url
+const base_url = "https://apirest-weboficios.herokuapp.com/api/v1"
 // En local
 // 'http://localhost:3000/api/v1'
 
@@ -15,6 +15,7 @@ const base_url = environment.base_url
   providedIn: 'root'
 })
 export class UsuariosService {
+	public cargado: boolean = false
 
   constructor(
 		private http: HttpClient
@@ -35,8 +36,6 @@ export class UsuariosService {
 	}
 
 	getUserForTermino(termino: string, desde: number = 0):Observable<UserList>{
-		const params = new HttpParams()
-							.set('desde', desde)
-		return this.http.get<UserList>(`${base_url}/user/buscar/${termino}`, {params: params})
+		return this.http.get<UserList>(`${base_url}/user/buscar/${termino}?desde=${desde}`)
 	}
 }

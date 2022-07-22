@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
@@ -11,7 +12,10 @@ export class MenuComponent implements OnInit {
 	public menuNotebook: string = ''
 	public breakPoint: any = window.matchMedia("(min-width:1024px)")
 
-	constructor() {
+	constructor(
+		private location: Location
+		) {
+			console.log(this.location.path());
 		if(this.breakPoint.matches){
 			this.mostrarMenu = true
 			this.menuNotebook = 'link-menu-notebook-activo'

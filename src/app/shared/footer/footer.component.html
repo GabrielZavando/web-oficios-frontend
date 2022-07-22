@@ -9,24 +9,7 @@
 				<p class="Parrafo">Sé parte de nuestro correo mensual, para recibir las últimas actualizaciones de creadores, panoramas y nuevas convocatorias.</p>
 			</div>
 			<div class="Box-grid-item form">
-				<div class="Box-form">
-					<form [formGroup]="form"
-							(ngSubmit)="suscribir()"
-							class="Form-round">
-					<input type="text"
-									formControlName="nombre"
-									placeholder="Nombre"
-									class="Form-round-input">
-					<input type="text"
-									formControlName="correo"
-									placeholder="Correo"
-									class="Form-round-input">
-					<button type="submit"
-									class="Form-round-btn">
-						Enviar
-					</button>
-				</form>
-				</div>
+				<app-newsletter></app-newsletter>
 			</div>
 			<div class="Box-grid-item siguenos">
 				<div class="Box-flex">

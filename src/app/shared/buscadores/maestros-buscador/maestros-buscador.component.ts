@@ -27,6 +27,7 @@ export class MaestrosBuscadorComponent implements OnInit {
   }
 
 	buscar(){
+		console.log('boton')
 		this.onEnter.emit(this.termino)
 	}
 

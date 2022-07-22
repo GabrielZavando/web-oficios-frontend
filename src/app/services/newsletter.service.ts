@@ -14,6 +14,6 @@ export class NewsletterService {
 
 
 	addSuscriptor(suscriptor: Newsletter):Observable<Newsletter>{
-		return this.http.post<Newsletter>('localhost:8080/newsletter.php', suscriptor);
+		return this.http.post<Newsletter>('/sendmail.php', suscriptor);
 	}
 }

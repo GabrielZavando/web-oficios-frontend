@@ -13,8 +13,9 @@
 			<h5 class="card-subtitulo">
 				{{card.subtitulo}}
 			</h5>
-			<a routerLink="{{card.boton?.link}}"
-						class="btn-pages card-btn">
+			<a [href]="card.boton?.link"
+				 target="_blank"
+				 class="btn-pages card-btn">
 					{{card.boton?.texto}}
 				</a>
 		</div>

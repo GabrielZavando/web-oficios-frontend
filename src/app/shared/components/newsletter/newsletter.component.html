@@ -1,0 +1,33 @@
+
+<div class="Box-form">
+	<form [formGroup]="form"
+			(ngSubmit)="suscribir()"
+			class="Form-round">
+		<div class="Form-round-item">
+			<input type="text"
+							formControlName="nombre"
+							placeholder="Nombre"
+							class="Form-round-input">
+			<small *ngIf="nombreNoValido"
+						 class="text-danger">
+				Escriba entre 3 a 15 caracteres
+			</small>
+		</div>
+
+		<div class="Form-round-item">
+			<input type="text"
+							formControlName="correo"
+							placeholder="Correo"
+							class="Form-round-input">
+			<small *ngIf="correoNoValido"
+						 class="text-danger">
+				Ingrese un correo válido
+			</small>
+		</div>
+
+		<button type="submit"
+						class="Form-round-btn">
+			Enviar
+		</button>
+	</form>
+</div>

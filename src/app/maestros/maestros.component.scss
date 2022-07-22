@@ -55,16 +55,51 @@
 
 .sugerencias{
 	list-style: none;
-	border: 1px solid green;
+	// border: 1px solid green;
+	width: 90%;
+	max-width: 350px;
+	margin: auto;
+	padding: 0;
+	padding-left: 1rem;
 	&-item{
-		border: 1px solid blue;
+		width: 80%;
+		text-align: left;
 		cursor: pointer;
+		padding: .5rem;
+		border: 1px solid color(secondary);
+		transition: background-color .25s;
+		color: color(text);
+		--color-a: color(text);
+		&:hover{
+			background-color: color(impacto);
+			color: color(blanco);
+			--color-a: color(blanco);
+		}
 		& > a{
 			cursor: pointer;
+			text-decoration: none;
+			font-weight: 600;
+			color: inherit;
 		}
 	}
 	& > li:last-of-type{
+		width: 80%;
 		cursor: pointer;
+		text-align: left;
+		padding: .5rem;
+		border: 1px solid color(secondary);
+		transition: background-color .25s;
+		color: var(--color-a);
+		&:hover{
+			background-color: color(impacto);
+			color: color(blanco);
+		}
+		& > a{
+			cursor: pointer;
+			text-decoration: none;
+			font-weight: 600;
+			color: inherit;
+		}
 	}
 }
 
@@ -78,8 +113,36 @@
 	}
 }
 
-.Paginados{
-	margin-top: 2rem;
+.Paginacion{
+	margin: 3rem auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& .numero-pagina{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto 2rem;
+		& p{
+			padding: .5rem;
+			margin: 0;
+			font-weight: 600;
+		}
+	}
+	&-btn{
+		border: none;
+		background-color: transparent;
+		font-size: 3rem;
+		color: color(primary);
+		transition: color .25s;
+		cursor: pointer;
+		&:hover{
+			color: color(impacto);
+		}
+		&:active{
+			transform: scale(.98);
+		}
+	}
 }
 
 .Destacados{

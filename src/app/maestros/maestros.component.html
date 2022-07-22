@@ -50,8 +50,20 @@
 								 [total]="total">
 	</app-paginados>
 	<div class="Paginacion">
-		<button *ngIf="btnNextActivo" (click)="next(termino, 6)">
-			Siguientes
+		<button *ngIf="btnPrevActivo"
+						(click)="prev(termino, 6)"
+						class="Paginacion-btn">
+			<i class="icon-arrow-left"></i>
+		</button>
+		<div class="numero-pagina">
+			<p>{{1 + (desde / 6)}}</p>
+			<span>/</span>
+			<p>{{totalPag}}</p>
+		</div>
+		<button *ngIf="btnNextActivo"
+						(click)="next(termino, 6)"
+						class="Paginacion-btn">
+			<i class="icon-arrow-right"></i>
 		</button>
 	</div>
 </section>
@@ -64,25 +76,5 @@
 		></app-card-slider>
 	</div>
 </section>
-
-
-
-<!-- <section class="Banner container mg-bot-1r">
-	<div class="Banner-img-back-css p-relative">
-		<h1>Maestros</h1>
-	</div>
-</section>
-<section class="container buscador">
-	<app-maestros-buscador (onEnter)="buscar($event)"
-												 (onDebounce)="sugerencias($event)">
-	</app-maestros-buscador>
-</section>
-
-<section class="container">
-
-</section>
-<section class="container">
-	slider de maestros destacados
-</section> -->
 
 

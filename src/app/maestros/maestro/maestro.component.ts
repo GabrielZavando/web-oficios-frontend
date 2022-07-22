@@ -11,11 +11,13 @@ import { UsuariosService } from '../../services/usuarios.service';
 })
 export class MaestroComponent implements OnInit {
 	public usuario!: Usuario
+	public cargado: boolean = true
 
   constructor(
 		private activatedRoute: ActivatedRoute,
 		private userService: UsuariosService
-	) { }
+		) {	}
+
 
   ngOnInit(): void {
 		this.activatedRoute.params

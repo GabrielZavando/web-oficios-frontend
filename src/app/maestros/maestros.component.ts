@@ -34,12 +34,13 @@ export class MaestrosComponent implements OnInit{
 
 	usuariosPaginados(desde: number = 0): void{
 		this.desde = desde
-		console.log(this.desde);
-		// let hasta = Math.floor(this.total / 6)
-		// console.log(hasta);
-		// if(desde === hasta){
-		// 	this.btnNextActivo = false
-		// }
+
+		if(desde > 0){
+			this.btnPrevActivo = true
+		}else if(desde <= 0){
+			this.btnPrevActivo = false
+		}
+
 		this.userService.getPaginatedUsers(desde)
 						.subscribe({
 							next: (resp: UserList) => {
@@ -49,6 +50,8 @@ export class MaestrosComponent implements OnInit{
 								let hasta = (Math.floor(this.total / 6) * 6)
 								if(desde === hasta){
 									this.btnNextActivo = false
+								}else if(desde < hasta){
+									this.btnNextActivo = true
 								}
 							}
 						})
@@ -64,9 +67,17 @@ export class MaestrosComponent implements OnInit{
 	}
 
 	buscar(termino: string = '', desde: number = 0){
+		this.mostrarSugerencias = false
 		this.hayError = false
 		this.termino = termino
+		this.desde = desde
 		this.mostrarSeccionMaestros = false
+
+		if(desde > 0){
+			this.btnPrevActivo = true
+		}else if(desde <= 0){
+			this.btnPrevActivo = false
+		}
 
 		this.userService.getUserForTermino(termino, desde)
 					.subscribe({
@@ -74,7 +85,13 @@ export class MaestrosComponent implements OnInit{
 							this.usuarios = res.usuarios
 							this.total = res.total
 							this.totalPag = Math.ceil(this.total / 6)
-							this.desde = Number(desde)
+							let hasta = (Math.floor(this.total / 6) * 6)
+							if(desde === hasta){
+								this.btnNextActivo = false
+							}else if(desde < hasta){
+								this.btnNextActivo = true
+							}
+
 						},
 						error: (err) => {
 							this.hayError = true
@@ -92,7 +109,7 @@ export class MaestrosComponent implements OnInit{
 		this.userService.getUserForTermino(termino)
 					.subscribe({
 						next: (resp: UserList) => {
-							this.usuariosSugeridos = resp.usuarios.splice(0,3)
+							this.usuariosSugeridos = resp.usuarios.splice(0,5)
 							console.log(this.usuariosSugeridos)
 						},
 						error: (err) => {this.usuariosSugeridos = []}
@@ -116,7 +133,15 @@ export class MaestrosComponent implements OnInit{
 		}
 	}
 
-	TODO
-	prev(termino: string = '', prev: number){}
+
+	prev(termino: string = '', prev: number){
+    let desde = this.desde - prev
+
+    if(termino === ''){
+      this.usuariosPaginados(desde)
+    }else{
+      this.buscar(termino, desde)
+    }
+  }
 
 }
