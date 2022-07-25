@@ -1,34 +1,36 @@
 import { Location } from '@angular/common';
-import { Component, HostListener, OnInit } from '@angular/core';
-import { UsuariosService } from '../../services/usuarios.service';
+import { Component, HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent{
 
 	event$
 
 	public colorLogo: string = 'Logo'
   public colorHeader: string = 'Header'
-	public Logonegro: boolean = false
+	public logoNegro: string = ''
 
   constructor(
-		private location: Location,
-		private userService: UsuariosService
+		private location: Location
 	) {
 
-		this.event$=location.onUrlChange((val) => {
-			this.Logonegro = this.userService.cargado
-			console.log(this.Logonegro);
+		this.event$=location.onUrlChange((valorUrl) => {
+			// Extraigo /maestros/ y me quedo con el resto
+			let ruta = valorUrl.slice(10)
+			let regex = new RegExp('^[a-z0-9]{10,24}$', 'i')
+			// Comparo si coinciden
+			if(regex.test(ruta)){
+				this.logoNegro = 'Logo-negro'
+			}else{
+				this.logoNegro = ''
+			}
     })
 	}
-
-  ngOnInit(): void {
-
-  }
 
   headerChangeColor(){
     let lastScrollTop = 0

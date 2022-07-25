@@ -1,26 +1,63 @@
-<section class="Banner container mg-bot-1r">
-	<div class="Banner-img-back-css p-relative">
-		<button class="btn-pages mg-top-1r mg-bot-1r"
-						routerLink="maestros">
-			Buscar Maestros
-		</button>
+<section class="Banner">
+	<div class="Banner-img-back-css">
+		<div class="Box-banner-content">
+			<h1 class="Titulo-banner">Aprende</h1>
+			<hr>
+		</div>
 	</div>
 </section>
-<section class="container pad-1r">
-	<div class="img">
-		<img src="/assets/img/modista.jpg" alt="Cortando madera">
-	</div>
+<section class="Buscador container-max">
+	<app-maestros-buscador (onEnter)="buscar($event)" (onDebounce)="sugerencias($event)">
+	</app-maestros-buscador>
+	<ul *ngIf="mostrarSugerencias" class="sugerencias">
+		<li *ngFor="let sugerido of usuariosSugeridos" class="sugerencias-item">
+			<a [routerLink]="['/maestros', sugerido.uid]">
+				{{sugerido.nombre}}
+			</a>
+		</li>
+		<li *ngIf="usuariosSugeridos.length > 0" (click)="buscarSugerido(termino)">
+			<a>
+				Buscar: "{{termino}}"
+			</a>
+		</li>
+	</ul>
 </section>
-<section class="container">
+
+<section *ngIf="mostrarSeccionAprende" class="Aprende container-max">
+	<div class="Aprende-img">
+		<img src="/assets/img/lettering.jpg" alt="Escribiendo con plumones">
+	</div>
 	<div class="Articulo">
 		<p class="Parrafo">
-			El oficio vive en la magia del aprender haciendo. Disfruta del conocimiento ancestral e innovador de la mano de sus creadores. Inspírate, crea y aprende sus técnicas y secretos.
+			El oficio vive en la magia del aprender haciendo. Disfruta del conocimiento ancestral e innovador de la mano de
+			sus creadores. Inspírate, crea y aprende sus técnicas y secretos.
 		</p>
 	</div>
 </section>
-<section class="container">
-	Maestros páginados
+
+<section *ngIf="usuarios.length > 0" class="Paginados container-max">
+	<app-paginados [usuarios]="usuarios" [total]="total">
+	</app-paginados>
+	<div class="Paginacion">
+		<button *ngIf="btnPrevActivo" (click)="prev(termino, 6)" class="Paginacion-btn">
+			<i class="icon-arrow-left"></i>
+		</button>
+		<div class="numero-pagina">
+			<p>{{1 + (desde / 6)}}</p>
+			<span>/</span>
+			<p>{{totalPag}}</p>
+		</div>
+		<button *ngIf="btnNextActivo" (click)="next(termino, 6)" class="Paginacion-btn">
+			<i class="icon-arrow-right"></i>
+		</button>
+	</div>
 </section>
-<section class="container">
-	slider de maestros destacados
+<section class="Destacados container-max">
+	<div class="Box-slider">
+		<h4 class="Subtitulo">Maestros Destacados</h4>
+		<app-card-video-slider
+			[DESTACADOS]="DESTACADOS"
+			*ngIf="DESTACADOS.length > 0">
+		</app-card-video-slider>
+	</div>
 </section>

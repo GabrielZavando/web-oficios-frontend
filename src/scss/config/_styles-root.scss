@@ -272,7 +272,7 @@ swiper.swiper{
 		}
 }
 
-// Sweetalert
+// Sweetalert (teoricamente listo)
 
 .alert{
 	&-btn{
@@ -289,4 +289,12 @@ swiper.swiper{
 
 .swal2-icon.swal2-error [class^=swal2-x-mark-line]{
 	background-color: color(alert)!important;
+}
+
+.swal2-icon.swal2-success{
+	border-color: color(success);
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-line]{
+	background-color: color(success);
 }

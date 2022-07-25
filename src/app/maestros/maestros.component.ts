@@ -28,7 +28,6 @@ export class MaestrosComponent implements OnInit{
 	ngOnInit(): void {
 		this.usuariosPaginados()
 		this.usuariosDestacados()
-
 	}
 
 
@@ -105,6 +104,7 @@ export class MaestrosComponent implements OnInit{
 		this.hayError = false
 		this.termino = termino
 		this.mostrarSugerencias = true
+		this.mostrarSeccionMaestros = false
 
 		this.userService.getUserForTermino(termino)
 					.subscribe({

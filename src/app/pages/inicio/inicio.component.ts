@@ -23,11 +23,8 @@ export class InicioComponent implements OnInit {
 					.subscribe({
 						next: (destacados: Usuario[]) => {
 							this.DESTACADOS = destacados
-							console.log(this.DESTACADOS);
-
 						}
 					})
-		console.log(this.DESTACADOS)
 	}
 
 }

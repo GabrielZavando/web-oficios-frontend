@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 // Componentes
 import { AprendeComponent } from './aprende/aprende.component';
@@ -8,6 +8,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 
 // Modulos
 import { AppRoutingModule } from '../app-routing.module';
+import { MaestrosModule } from '../maestros/maestros.module';
 import { SharedModule } from '../shared/shared.module';
 
 
@@ -26,7 +27,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     AppRoutingModule,
-		SharedModule
+		SharedModule,
+		MaestrosModule
   ]
 })
 export class PagesModule { }

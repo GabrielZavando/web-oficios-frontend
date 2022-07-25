@@ -18,6 +18,10 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
 		MaestrosRoutingModule,
 		SharedModule
-  ]
+  ],
+	exports: [
+		MaestroComponent,
+		PaginadosComponent
+	]
 })
 export class MaestrosModule { }

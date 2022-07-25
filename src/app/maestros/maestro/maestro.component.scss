@@ -1,0 +1,31 @@
+@import "../../../scss/config/styles-root";
+
+.Banner{
+	position: relative;
+	padding-top: 10rem;
+	&-content{
+		width: 90%;
+		max-width: $ancho-maximo;
+		margin: auto;
+		padding: var(--padding-banner-inicio);
+		& .Titulo-banner{
+			text-transform: uppercase;
+			font-weight: 400;
+			color: color(primary);
+			font-size: var(--size-titulo-banner);
+			width: max-content;
+			padding: var(--padding-titulo-banner);
+		}
+		& hr{
+			height: 2px;
+			width: 100%;
+			max-width: 600px;
+			margin-left: 0;
+			border: none;
+			background-color: color(primary);
+		}
+	}
+	& .btn-banner{
+		top: 35%;
+	}
+}

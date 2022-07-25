@@ -28,8 +28,6 @@ export class NewsletterComponent{
 	) { }
 
 	suscribir(){
-		console.log(this.form.value)
-
 		this.newsletterService
 					.addSuscriptor(this.form.value)
 						.subscribe({
@@ -37,22 +35,24 @@ export class NewsletterComponent{
 								Swal.fire({
 									title: 'Gracias por suscribirte!',
 									text: 'Estaremos en contacto',
-									icon: 'success'
+									icon: 'success',
+									customClass: {
+										confirmButton: 'alert-btn',
+										icon: 'alert-icon-error',
+									}
 								})
-								console.log(suscriptor)
 								this.form.reset()
 							},
 							error: (err) =>{
 								Swal.fire({
 									title: 'Error!',
-									text: 'Ha ocurrido un error, intentalo nuevamente',
+									text: err.message,
 									icon: 'error',
 									customClass: {
 										confirmButton: 'alert-btn',
 										icon: 'alert-icon-error',
 									}
 								})
-								console.log(err)
 							},
 							complete: () =>{
 								console.log('Operación completada')

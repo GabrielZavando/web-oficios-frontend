@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Newsletter } from '../models/newsletter.model';
 
 @Injectable({
@@ -13,7 +12,11 @@ export class NewsletterService {
 	) { }
 
 
-	addSuscriptor(suscriptor: Newsletter):Observable<Newsletter>{
-		return this.http.post<Newsletter>('/sendmail.php', suscriptor);
+	addSuscriptor(suscriptor: Newsletter){
+		// let headers = new HttpHeaders({
+		// 	'Content-Type': 'application/json',
+		// 	'Accept': 'application/json'
+		// }, resposeType: text);
+		return this.http.post('/sendmail.php', suscriptor, {responseType: 'text'})
 	}
 }

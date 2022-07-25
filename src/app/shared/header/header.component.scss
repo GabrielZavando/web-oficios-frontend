@@ -12,8 +12,20 @@
 	padding: var(--padding-banner-inicio);
 	// border: 2px solid red;
 	&-activo{
-		background-color: color(hoverHeader);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 1000;
+		background-color: transparent;
 		transition: background-color .25s;
+		padding: var(--padding-banner-inicio);
+		background-color: color(hoverHeader);
+		& .container-flex{
+			max-width: $ancho-maximo;
+			margin: auto;
+		}
 	}
 	& .container-flex{
 		max-width: $ancho-maximo;
@@ -25,7 +37,17 @@
 	text-align: center;
 	color: color(blanco);
 	&-activo{
+		text-align: center;
 		color: color(negro);
+		& a{
+			text-decoration: none;
+			color: inherit;
+			cursor: pointer;
+			& h1{
+				font-family: $fuente-logo;
+				font-size: var(--size-logo);
+			}
+		}
 	}
 	& a{
 		text-decoration: none;
@@ -36,6 +58,10 @@
 			font-size: var(--size-logo);
 		}
 	}
+}
+
+.Logo-negro{
+	color: color(negro)!important;
 }
 
 // .Menu{

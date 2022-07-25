@@ -1,9 +1,7 @@
 <section class="Banner">
-	<div class="Banner-img-back-css">
-		<div class="Box-banner-content">
-			<h1 class="Titulo-banner">Maestro</h1>
-			<hr>
-		</div>
+	<div class="Banner-content">
+		<h1 class="Titulo-banner">Maestro</h1>
+		<hr>
 	</div>
 	<button class="btn-pages btn-banner"
 					routerLink="maestros">
@@ -16,7 +14,7 @@
 </div>
 
 <ng-template #cardUsuario>
-	<div class="card-usuario-full">
+	<div class="card-usuario-full container-max">
 		<div class="card">
 			<div class="card-banner">
 				<img [src]="usuario.banner" [alt]="usuario.emprendimiento">
@@ -37,6 +35,41 @@
 				</div>
 				<div class="card-descripcion">
 					<p>{{usuario.descripcion}}</p>
+				</div>
+				<hr>
+				<div class="card-contacto">
+					<div class="card-contacto-titulo">
+						<i></i>
+						<h4>Contacto</h4>
+					</div>
+					<div class="card-contacto-correo">
+						<i></i>
+						<p>{{usuario.correo}}</p>
+					</div>
+					<div class="card-contacto-whatsapp">
+						<i></i>
+						<p>{{usuario.whatsapp}}</p>
+					</div>
+					<div class="card-contacto-direccion">
+						<i></i>
+						<p>{{usuario.direccion}}</p>
+					</div>
+					<div class="card-contacto-web">
+						<i></i>
+						<p>{{usuario.web}}</p>
+					</div>
+				</div>
+				<hr>
+			</div>
+			<div class="card-footer">
+				<i></i>
+				<h5>Siguenos:</h5>
+				<div class="card-footer-rrss">
+					<a href="http://"
+						 target="_blank"
+						 rel="noopener noreferrer">
+						 {{usuario.rrss}}
+					</a>
 				</div>
 			</div>
 		</div>

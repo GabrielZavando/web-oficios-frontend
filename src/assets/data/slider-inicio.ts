@@ -37,9 +37,9 @@ export const SLIDER_BANNER_DATA: SliderBanner[] = [
     titulo: 'Panoramas',
     subtitulo: 'Entérate de todo, inspírate y descubre un mundo de oficio y creatividad',
     imagen: 'assets/img/banner-4.jpg',
-		// boton: {
-		// 	link: 'https://www.instagram.com/',
-		// 	texto: 'ver más'
-		// }
+		boton: {
+			link: 'https://www.instagram.com/',
+			texto: 'ver más'
+		}
   }
 ]
