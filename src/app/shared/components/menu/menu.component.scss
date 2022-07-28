@@ -23,6 +23,7 @@
 		display: flex;
 		justify-content: flex-end;
 		transition: background-color 0.25s;
+		--colorMenu: color(blanco);
 		@include mq(notebook){
 			display: none;
 		}
@@ -77,11 +78,17 @@
 				}
 				& a.link-activo {
 					background-color: color(secondary);
-					color: color(blanco);
+					color: color(blanco) !important;
 				}
 				& a.link-menu-notebook{
-					color: color(primary);
+					color: color(blanco);
 					&-activo{
+						color: color(primary);
+					}
+				}
+				& a.link-cafe{
+					color: color(primary);
+					&:hover{
 						color: color(blanco);
 					}
 				}
@@ -118,4 +125,7 @@
 		color: color(primary);
 		transition: color 0.25s;
 	}
+	// &-cafe{
+	// 	color: color(primary);
+	// }
 }

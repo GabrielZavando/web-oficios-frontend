@@ -17,58 +17,74 @@
 	<div class="card-usuario-full container-max">
 		<div class="card">
 			<div class="card-banner">
-				<img [src]="usuario.banner" [alt]="usuario.emprendimiento">
+				<img [src]="usuario.banner"
+						 [alt]="usuario.emprendimiento">
 			</div>
 			<div class="card-body">
-				<div class="card-nombre">
-					<p>{{usuario.nombre}}</p>
+				<div class="card-body-nombre">
+					<h2>{{usuario.nombre}}</h2>
 				</div>
-				<div class="card-logo">
+				<div class="card-body-logo">
 					<img [src]="usuario.logo">
 				</div>
-				<div class="card-emprendimiento">
-					<i>{{usuario.emprendimiento}}</i>
+				<div class="card-body-emprendimiento">
+					<h3>
+						<i>{{usuario.emprendimiento}}</i>
+					</h3>
 				</div>
 				<hr>
-				<div class="card-categoria">
+				<div class="card-body-categoria">
 					<i>{{usuario.categoria}}</i>
 				</div>
-				<div class="card-descripcion">
-					<p>{{usuario.descripcion}}</p>
+				<div class="card-body-descripcion">
+					<p class="Parrafo">{{usuario.descripcion}}</p>
 				</div>
 				<hr>
-				<div class="card-contacto">
-					<div class="card-contacto-titulo">
-						<i></i>
+				<div class="card-body-contacto">
+					<div class="card-body-contacto-titulo">
+						<i class="icon-usuario"></i>
 						<h4>Contacto</h4>
 					</div>
-					<div class="card-contacto-correo">
-						<i></i>
+					<div class="card-body-contacto-correo">
+						<i class="icon-correo"></i>
 						<p>{{usuario.correo}}</p>
 					</div>
-					<div class="card-contacto-whatsapp">
-						<i></i>
+					<div class="card-body-contacto-whatsapp">
+						<a href="{{linkWhatsapp}}"
+							 target="_blank"
+							 rel="noopener noreferrer">
+							 <i class="icon-whatsapp"></i>
+						</a>
 						<p>{{usuario.whatsapp}}</p>
 					</div>
-					<div class="card-contacto-direccion">
-						<i></i>
+					<div class="card-body-contacto-direccion">
+						<i class="icon-pin"></i>
 						<p>{{usuario.direccion}}</p>
 					</div>
-					<div class="card-contacto-web">
-						<i></i>
+					<div class="card-body-contacto-web">
+						<a href="{{usuario.web}}"
+							 target="_blank"
+							 rel="noopener noreferrer">
+							 <i class="icon-web"></i>
+						</a>
 						<p>{{usuario.web}}</p>
 					</div>
 				</div>
 				<hr>
 			</div>
 			<div class="card-footer">
-				<i></i>
+				<i class="icon-like"></i>
 				<h5>Siguenos:</h5>
 				<div class="card-footer-rrss">
-					<a href="http://"
+					<a href="https://www.instagram.com/"
 						 target="_blank"
 						 rel="noopener noreferrer">
-						 {{usuario.rrss}}
+						 <i class="icon-instagram"></i>
+					</a>
+					<a href="https://www.facebook.com/"
+						 target="_blank"
+						 rel="noopener noreferrer">
+						 <i class="icon-facebook"></i>
 					</a>
 				</div>
 			</div>

@@ -2,30 +2,101 @@
 
 .Banner{
 	position: relative;
-	padding-top: 10rem;
+	padding-top: 12rem;
 	&-content{
 		width: 90%;
 		max-width: $ancho-maximo;
 		margin: auto;
-		padding: var(--padding-banner-inicio);
 		& .Titulo-banner{
 			text-transform: uppercase;
 			font-weight: 400;
 			color: color(primary);
 			font-size: var(--size-titulo-banner);
 			width: max-content;
-			padding: var(--padding-titulo-banner);
+			margin: 1rem 0;
 		}
 		& hr{
-			height: 2px;
-			width: 100%;
+			height: 1px;
+			width: 70%;
 			max-width: 600px;
 			margin-left: 0;
+			margin-bottom: 1rem;
 			border: none;
 			background-color: color(primary);
 		}
 	}
 	& .btn-banner{
-		top: 35%;
+		top: 40%;
+	}
+}
+
+.card{
+	border: 2px solid red;
+	&-body{
+		border: 2px solid blue;
+		& hr{
+			width: 40%;
+			max-width: 300px;
+			margin-left: 0;
+			height: 1px;
+			border: none;
+			background-color: color(primary);
+		}
+		&-nombre{
+			& h2{
+				margin: 1rem 0;
+			}
+		}
+		&-logo{
+			width: 40%;
+			max-width: 200px;
+		}
+		&-emprendimiento{
+			margin: 1rem 0;
+		}
+		&-contacto div[class*="card-body-contacto-"]{
+			display: flex;
+			align-items: center;
+			border: 2px solid green;
+			& > i{
+				font-size: 2rem;
+				color: color(primary);
+				width: max-content;
+				margin-right: .5rem;
+			}
+			& > a{
+				text-decoration: none;
+				font-size: 2rem;
+				color: color(primary);
+				width: max-content;
+				margin-right: .5rem;
+			}
+			& > p{
+				margin: 0;
+			}
+		}
+	}
+	&-footer{
+		display: flex;
+		& > i{
+			font-size: 2rem;
+			color: color(primary);
+			margin-right: .5rem;
+		}
+		& > h5{
+			font-size: 1.5rem;
+			margin-right: .5rem;
+		}
+		&-rrss{
+			display: flex;
+			align-items: center;
+			& a{
+				text-decoration: none;
+				color: color(primary);
+				cursor: pointer;
+				font-size: 2rem;
+				margin-right: .5rem;
+			}
+		}
 	}
 }

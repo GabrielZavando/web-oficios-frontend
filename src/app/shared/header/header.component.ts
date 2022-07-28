@@ -9,8 +9,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent{
 
-	event$
-
+	public event$
 	public colorLogo: string = 'Logo'
   public colorHeader: string = 'Header'
 	public logoNegro: string = ''
@@ -20,7 +19,7 @@ export class HeaderComponent{
 	) {
 
 		this.event$=location.onUrlChange((valorUrl) => {
-			// Extraigo /maestros/ y me quedo con el resto
+			// Extraigo /maestros/ y almaceno el resto en ruta
 			let ruta = valorUrl.slice(10)
 			let regex = new RegExp('^[a-z0-9]{10,24}$', 'i')
 			// Comparo si coinciden

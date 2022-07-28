@@ -21,6 +21,7 @@
 
 .btn-pages{
   @include btn(color(primary), color(blanco), color(secondary));
+	display: block;
   border-radius: 1.5rem;
   text-transform: uppercase;
   padding: .5rem 1.7rem;
