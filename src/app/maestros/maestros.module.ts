@@ -5,6 +5,8 @@ import { PaginadosComponent } from './paginados/paginados.component';
 import { MaestrosComponent } from './maestros.component';
 import { MaestrosRoutingModule } from './maestros-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 

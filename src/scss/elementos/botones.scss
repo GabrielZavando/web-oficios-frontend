@@ -54,9 +54,9 @@
 	@include btn(color(primary), color(blanco), color(secondary));
 }
 
-.btn-menu{
-  @include btn(transparent, color(blanco), transparent);
-}
+// .btn-menu{
+//   @include btn(transparent, color(blanco), transparent);
+// }
 
 .btn-banner{
 	position: absolute;

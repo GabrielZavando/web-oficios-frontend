@@ -1,5 +1,5 @@
 import { Location } from '@angular/common';
-import { Component, HostListener} from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
 	selector: 'app-menu',
@@ -8,11 +8,11 @@ import { Component, HostListener} from '@angular/core';
 })
 export class MenuComponent{
 	public event$
-	public colorMenu: string = 'btn-menu'
+	public btnMenuColor: string = ''
 	public menuCafe: string = ''
 	public linkCafe: string = ''
 	public mostrarMenu: boolean = false
-	public menuNotebook: string = ''
+	public linkMenuNotebook: string = ''
 	public breakPoint: any = window.matchMedia("(min-width:1024px)")
 
 	constructor(
@@ -25,7 +25,7 @@ export class MenuComponent{
 	onBreakPoint():void{
 		if(this.breakPoint.matches){
 			this.mostrarMenu = true
-			this.menuNotebook = 'link-menu-notebook'
+			this.linkMenuNotebook = this.linkCafe
 		}
 	}
 
@@ -36,26 +36,41 @@ export class MenuComponent{
 			let regex = new RegExp('^[a-z0-9]{10,24}$', 'i')
 			// Comparo si coinciden
 			if(regex.test(ruta)){
-				this.menuCafe = 'btn-menu-cafe'
+				this.menuCafe = 'btn-menu-activo'
 				this.linkCafe = 'link-menu-notebook-activo'
+				this.btnMenuColor = 'btn-menu-activo'
 			}else{
 				this.menuCafe = 'btn-menu'
 				this.linkCafe = 'link-menu-notebook'
+				this.btnMenuColor = 'btn-menu'
 			}
 		})
 	}
 
 	showHidePanelMenu(){
-		this.menuNotebook = 'link-menu-notebook'
+		let lastScrollTop = 0
+		// al hacer scroll aumenta el valor de sctop
+		let sctop = document.documentElement.scrollTop
+		// console.log(sctop)
+		let st = window.pageXOffset || document.documentElement.scrollTop
+
 		if(this.breakPoint.matches){
+			this.mostrarMenu = true
+			if(st > lastScrollTop){
+				this.linkMenuNotebook = 'link-menu-notebook-activo'
+			}else if(sctop === 0){
+				this.linkMenuNotebook = 'link-menu-notebook'
+			}
 			return
 		}
 		this.mostrarMenu = !this.mostrarMenu
-		if(this.mostrarMenu){
-			this.colorMenu = 'btn-menu-activo'
+
+		if(st > lastScrollTop){
+			this.btnMenuColor = 'btn-menu-activo'
 		}else{
-			this.colorMenu = 'btn-menu'
+			this.btnMenuColor = this.menuCafe
 		}
+		lastScrollTop = st
 	}
 
 	menuChangeColor(){
@@ -66,13 +81,19 @@ export class MenuComponent{
 		let st = window.pageXOffset || document.documentElement.scrollTop
 
 
-		if (st > lastScrollTop || (this.mostrarMenu && !this.breakPoint.matches)){
-			this.colorMenu = 'btn-menu-activo'
-			this.menuNotebook = 'link-menu-notebook-activo'
+		if (st > lastScrollTop){
+			this.btnMenuColor = 'btn-menu-activo'
+			this.linkMenuNotebook = 'link-menu-notebook-activo'
 		}else if (sctop === 0 ){
-			this.colorMenu = 'btn-menu'
+			if(this.breakPoint.matches){
+				this.mostrarMenu = true
+				this.linkMenuNotebook = this.linkCafe
+			}else{
+				this.mostrarMenu = false
+			}
+			this.btnMenuColor = this.menuCafe
 			// this.menuNotebook = 'link-menu-notebook'
-			this.menuNotebook = this.linkCafe
+			// this.menuNotebook = this.linkCafe
 		}
 
 		lastScrollTop = st

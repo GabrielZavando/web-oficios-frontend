@@ -1,12 +1,10 @@
 <div class="Panel">
 	<div
-		class="Panel-btn"
 		[class]="mostrarMenu ? 'Panel-btn-activo' : 'Panel-btn'">
 		<button
 			#btnMenu
-			class="btn-menu"
-			[class]="colorMenu"
-			(click)="showHidePanelMenu()">
+			(click)="showHidePanelMenu()"
+			[class]="btnMenuColor">
 			<i class="icon-menu"></i>
 			<span>Menu</span>
 		</button>
@@ -22,25 +20,25 @@
 					[routerLinkActiveOptions]="{exact:
 						true}"
 					(click)="showHidePanelMenu()"
-					[class]="menuNotebook">Inicio</a>
+					[class]="linkMenuNotebook">Inicio</a>
 			</li>
 			<li>
 				<a routerLink="nosotros"
 					routerLinkActive="link-activo"
-					[class]="menuNotebook"
-					(click)="showHidePanelMenu()">Nosotros</a>
+					(click)="showHidePanelMenu()"
+					[class]="linkMenuNotebook">Nosotros</a>
 			</li>
 			<li>
 				<a routerLink="maestros"
 					routerLinkActive="link-activo"
-					[class]="menuNotebook"
-					(click)="showHidePanelMenu()">Maestros</a>
+					(click)="showHidePanelMenu()"
+					[class]="linkMenuNotebook">Maestros</a>
 			</li>
 			<li>
 				<a routerLink="aprende"
 					routerLinkActive="link-activo"
-					[class]="menuNotebook"
-					(click)="showHidePanelMenu()">Aprende</a>
+					(click)="showHidePanelMenu()"
+					[class]="linkMenuNotebook">Aprende</a>
 			</li>
 			<!-- <li>
 				<a routerLink="panoramas"

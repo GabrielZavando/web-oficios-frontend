@@ -19,17 +19,75 @@
 	}
 	&-btn {
 		// background-color: color(hoverHeader);
-		border-radius: 15px 15px 0 0;
+
 		display: flex;
 		justify-content: flex-end;
 		transition: background-color 0.25s;
-		--colorMenu: color(blanco);
 		@include mq(notebook){
 			display: none;
 		}
-		&-activo {
+		 &-activo {
 			transition: background-color 0.25s;
-			background-color: color(hoverHeader);
+			background: color(hoverHeader);
+			border-radius: 15px 15px 0 0;
+			@include mq(notebook){
+				display: none;
+			}
+			& button{
+				display: flex;
+				transition: color 0.25s;
+				margin-top: 0.5rem;
+				font-size: var(--size-menu);
+				justify-content: center;
+				align-items: center;
+				color: color(primary);
+				padding: 10px 15px;
+				border: none;
+				cursor: pointer;
+				background-color: transparent;
+				@include mq(tablet){
+					margin-right: auto;
+					margin-left: auto;
+				}
+				& > i {
+					margin-right: 5px;
+				}
+				& > span {
+					text-transform: uppercase;
+				}
+				&:active {
+					transform: scale(1);
+				}
+			}
+		}
+		& button{
+			display: flex;
+			transition: color 0.25s;
+			margin-top: 0.5rem;
+			font-size: var(--size-menu);
+			justify-content: center;
+			align-items: center;
+			color: color(blanco);
+			border: none;
+			cursor: pointer;
+			padding: 10px;
+			background-color: transparent;
+			@include mq(tablet){
+				margin-right: auto;
+				margin-left: auto;
+			}
+			& > i {
+				margin-right: 5px;
+			}
+			& > span {
+				text-transform: uppercase;
+			}
+			&:active {
+				transform: scale(1);
+			}
+		}
+		& button.btn-menu-activo{
+			color: color(primary);
 		}
 	}
 	&-menu {
@@ -86,12 +144,6 @@
 						color: color(primary);
 					}
 				}
-				& a.link-cafe{
-					color: color(primary);
-					&:hover{
-						color: color(blanco);
-					}
-				}
 			}
 		}
 	}
@@ -99,33 +151,33 @@
 
 
 
-.btn-menu {
-	display: flex;
-	color: color(blanco);
-	transition: color 0.25s;
-	margin-top: 0.5rem;
-	font-size: var(--size-menu);
-	// padding-right: 0;
-	justify-content: center;
-  align-items: center;
-	@include mq(tablet){
-		margin-right: auto;
-		margin-left: auto;
-	}
-	& > i {
-		margin-right: 5px;
-	}
-	& > span {
-		text-transform: uppercase;
-	}
-	&:active {
-		transform: scale(1);
-	}
-	&-activo {
-		color: color(primary);
-		transition: color 0.25s;
-	}
-	// &-cafe{
-	// 	color: color(primary);
-	// }
-}
+// .btn-menu {
+// 	display: flex;
+// 	color: color(blanco);
+// 	transition: color 0.25s;
+// 	margin-top: 0.5rem;
+// 	font-size: var(--size-menu);
+// 	// padding-right: 0;
+// 	justify-content: center;
+//   align-items: center;
+// 	@include mq(tablet){
+// 		margin-right: auto;
+// 		margin-left: auto;
+// 	}
+// 	& > i {
+// 		margin-right: 5px;
+// 	}
+// 	& > span {
+// 		text-transform: uppercase;
+// 	}
+// 	&:active {
+// 		transform: scale(1);
+// 	}
+// 	&-activo {
+// 		color: color(primary);
+// 		transition: color 0.25s;
+// 	}
+// 	// &-cafe{
+// 	// 	color: color(primary);
+// 	// }
+// }

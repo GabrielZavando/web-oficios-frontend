@@ -11,6 +11,7 @@ import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { MaestrosModule } from './maestros/maestros.module';
 import { PanoramasModule } from './panoramas/panoramas.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
 	declarations: [
@@ -18,6 +19,7 @@ import { PanoramasModule } from './panoramas/panoramas.module';
 	],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
 		AppRoutingModule,
 		MaestrosModule,
 		PagesModule,

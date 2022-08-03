@@ -15,7 +15,7 @@
 
 <ng-template #cardUsuario>
 	<div class="card-usuario-full container-max">
-		<div class="card">
+		<section class="card">
 			<div class="card-banner">
 				<img [src]="usuario.banner"
 						 [alt]="usuario.emprendimiento">
@@ -88,6 +88,34 @@
 					</a>
 				</div>
 			</div>
-		</div>
+		</section>
+		<section class="Galeria">
+			<div class="Box-galeria">
+				<h4 class="Subtitulo">
+					Nuestros productos
+				</h4>
+				<app-masonry-lightbox [galleryData]="data"
+															[showCount]="true">
+
+				</app-masonry-lightbox>
+			</div>
+		</section>
+		<section class="Comparte">
+			<div class="Box-comparte">
+				<h4 class="Subtitulo">
+					Comparte:
+				</h4>
+				<a href="{{linkShareTwitter}}"
+					 target="_blank"
+					 rel="noopener noreferrer">
+					<i class="icon-twitter"></i>
+				</a>
+				<a href="{{linkShareFace}}"
+					 target="_blank"
+					 rel="noopener noreferrer">
+					<i class="icon-facebook"></i>
+				</a>
+			</div>
+		</section>
 	</div>
 </ng-template>
