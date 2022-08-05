@@ -1,12 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaestroComponent } from './maestro/maestro.component';
-import { PaginadosComponent } from './paginados/paginados.component';
-import { MaestrosComponent } from './maestros.component';
-import { MaestrosRoutingModule } from './maestros-routing.module';
+import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
+import { MaestroComponent } from './maestro/maestro.component';
+import { MaestrosRoutingModule } from './maestros-routing.module';
+import { MaestrosComponent } from './maestros.component';
+import { PaginadosComponent } from './paginados/paginados.component';
+
 
 
 
@@ -19,7 +18,7 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [
     CommonModule,
 		MaestrosRoutingModule,
-		SharedModule
+		SharedModule,
   ],
 	exports: [
 		MaestroComponent,

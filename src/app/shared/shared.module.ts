@@ -2,7 +2,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
 // Componentes
@@ -23,7 +22,9 @@ import { CardVideoSliderComponent } from './sliders/card-video-slider/card-video
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { SwiperModule } from 'swiper/angular';
 import { MasonryLightboxComponent } from './components/masonry-lightbox/masonry-lightbox.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { MapaComponent } from './components/mapa/mapa.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+
 
 
 
@@ -39,7 +40,8 @@ import { BrowserModule } from '@angular/platform-browser';
 		MenuComponent,
 		BotonUpComponent,
 		NewsletterComponent,
-		MasonryLightboxComponent
+		MasonryLightboxComponent,
+		MapaComponent,
 	],
 	exports: [
 		FooterComponent,
@@ -51,7 +53,8 @@ import { BrowserModule } from '@angular/platform-browser';
 		CardVideoSliderComponent,
 		MenuComponent,
 		BotonUpComponent,
-		MasonryLightboxComponent
+		MasonryLightboxComponent,
+		MapaComponent,
 	],
 	imports: [
 		CommonModule,
@@ -59,7 +62,8 @@ import { BrowserModule } from '@angular/platform-browser';
 		ReactiveFormsModule,
 		RouterModule,
 		SwiperModule,
-		SweetAlert2Module.forRoot()
+		SweetAlert2Module.forRoot(),
+		GoogleMapsModule
 	]
 })
 export class SharedModule { }
