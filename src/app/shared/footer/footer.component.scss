@@ -97,115 +97,60 @@
 			@include mq(notebook){
 				justify-content: space-between;
 			}
+			@include mq(notebookM){
+				justify-content: space-around;
+			}
 			& .img{
 				width: 80%;
 				max-width: 300px;
 				@include mq(notebook){
 					max-width: 440px;
 				}
+				@include mq(notebookM){
+					max-width: 550px;
+				}
+			}
+			& .card-text{
+				// border: 2px solid green;
+				display: flex;
+				align-items: center;
+				max-width: 350px;
+				@include mq(notebook){
+					max-width: 450px;
+				}
+				@include mq(notebookM){
+					max-width: 600px;
+				}
+				& .img{
+					width: 50%;
+					max-width: 150px;
+					@include mq(notebook){
+						max-width: 200px;
+					}
+				}
+				& .Parrafo{
+					width: 50%;
+					font-size: 12px;
+					line-height: 14px;
+					color: color(blanco);
+					padding: .5rem;
+					font-weight: 600;
+					@include mq(movilM){
+						font-size: 13px;
+						line-height: 18px;
+					}
+					@include mq(notebook){
+						font-size: 18px;
+						line-height: 20px;
+						width: 70%;
+					}
+					@include mq(notebookM){
+						font-size: 22px;
+						line-height: 26px;
+						padding: 1rem;
+					}
+				}
 			}
 		}
 	}
 }
-
-// .Footer{
-// 	& > div:first-child{
-// 		background-image: img('banner-2.jpg');
-// 		background-position: center center;
-// 		padding: var(--padding-banner-inicio);
-// 		border: 1px solid red;
-// 		&::before{
-// 			@include transparencia(color(primary), .5);
-// 		}
-// 		& .Box{
-// 			position: relative;
-// 			z-index: 1;
-// 			color: color(blanco);
-// 			border: 1px solid blue;
-// 			@include mq(tablet){
-// 				display: flex;
-// 			}
-// 			&-item:first-child{
-// 				border: 2px solid green;
-// 				@include mq(tablet){
-// 					flex: 1 1 40%;
-// 				}
-// 				& > .Box-flex{
-// 					& h2{
-// 						font-size: 2rem;
-// 						font-weight: 400;
-// 						text-transform: uppercase;
-// 					}
-// 					& > i{
-// 						font-size: 1.5rem;
-// 						margin-left: .5rem;
-// 					}
-// 				}
-// 				& > p{
-// 					color: color(blanco);
-// 					@include mq(tablet){
-// 						margin-top: 1rem;
-// 					}
-// 				}
-// 			}
-// 			&-item:last-child{
-// 				@include mq(tablet){
-// 					flex: 2 1 60%;
-// 				}
-// 				& > .Box-form{
-// 					border: 2px solid gold;
-// 					max-width: 400px;
-// 				}
-// 				& > .container{
-// 					& > .Box-flex{
-// 						border: 2px solid pink;
-// 						margin-top: 1.5rem;
-// 						@include mq(tablet){
-// 							justify-content: center;
-// 						}
-// 						& h4{
-// 							font-size: 1.5rem;
-// 							font-weight: 400;
-// 						}
-// 						& .card-links-rrss{
-// 							& a{
-// 								color: color(blanco);
-// 								transition: color .5s;
-// 								& > i{
-// 									margin-left: .5rem;
-// 									font-size: 2rem;
-// 								}
-// 								&:hover{
-// 									color: color(negro);
-// 								}
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// 	& > div:last-child{
-// 		background-color: color(primary);
-// 		justify-content: space-around;
-// 		& .img{
-// 			& img{
-// 				width: 80%;
-// 				max-width: 600px;
-// 				margin: 0 auto;
-// 			}
-// 		}
-// 	}
-// }
-
-// .Box-form{
-// 	// border: 1px solid brown;
-// 	width: 80%;
-// 	margin: 1rem auto;
-// }
-
-
-// .Form-round-input:focus{
-// 	transition: background-color .25s;
-// 	background-color: color(secondary);
-// }
