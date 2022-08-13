@@ -5,7 +5,7 @@ export const SLIDER_BANNER_DATA: SliderBanner[] = [
   {
     id: 1,
     titulo: 'Postula',
-    subtitulo: 'Hasta el 7 de Agosto',
+    subtitulo: 'Hasta el 20 de Agosto',
     imagen: 'assets/img/banner-1.jpg',
 		boton: {
 			link: 'https://forms.gle/uReintMcRj2XPoACA',

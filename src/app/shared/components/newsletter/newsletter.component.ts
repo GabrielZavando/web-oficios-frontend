@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { NewsletterService } from '../../../services/newsletter.service';
 
@@ -10,7 +10,7 @@ import { NewsletterService } from '../../../services/newsletter.service';
 })
 export class NewsletterComponent{
 
-	public form: FormGroup = this.fb.group({
+	public form: UntypedFormGroup = this.fb.group({
 		nombre: ['', [
 			Validators.required,
 			Validators.minLength(3),
@@ -23,7 +23,7 @@ export class NewsletterComponent{
 	})
 
   constructor(
-		private fb: FormBuilder,
+		private fb: UntypedFormBuilder,
 		private newsletterService: NewsletterService
 	) { }
 

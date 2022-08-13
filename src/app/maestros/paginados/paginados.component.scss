@@ -16,4 +16,11 @@
 	&-img{
 		margin-bottom: .5rem;
 	}
+	&-text{
+		// border: 2px solid green;
+		& a{
+			width: max-content;
+			float: right;
+		}
+	}
 }

@@ -104,15 +104,31 @@
 }
 
 .Maestros{
+	@include mq(notebook){
+		display: flex;
+		margin-bottom: 3rem;
+	}
+	@include mq(escritorio){
+		margin-bottom: 4rem;
+		margin-top: 1rem;
+	}
 	&-img{
 		width: 100%;
 		height: auto;
+		@include mq(notebook){
+			width: 80%;
+			max-width: 800px;
+		}
 		& > img{
 			aspect-ratio: 16 / 9;
 		}
 	}
 	& .Articulo{
 		margin: 2rem auto;
+		@include mq(notebook){
+			margin: auto;
+			padding: 2rem;
+		}
 	}
 }
 

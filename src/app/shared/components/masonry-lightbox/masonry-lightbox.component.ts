@@ -1,10 +1,6 @@
-import { animate, style, transition, trigger, AnimationEvent } from '@angular/animations';
+import { animate, AnimationEvent, style, transition, trigger } from '@angular/animations';
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 
-interface Item{
-	imageSrc: string;
-	imageAlt: string;
-}
 
 @Component({
   selector: 'app-masonry-lightbox',
@@ -30,12 +26,12 @@ interface Item{
 	]
 })
 export class MasonryLightboxComponent implements OnInit {
-	@Input() galleryData: Item[] = []
+	@Input() galleryData: string[] = []
 	@Input() showCount = false
 
 	previewImage = false
 	showMask = false
-	currentLightboxImage: Item = this.galleryData[0]
+	currentLightboxImage: string = this.galleryData[0]
 	currentIndex = 0
 	controls = true
 	totalImageCount = 0

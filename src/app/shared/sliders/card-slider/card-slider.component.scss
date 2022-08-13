@@ -1,9 +1,13 @@
 @import "../../../../scss/config/styles-root";
 
-
 .card-img{
 	position: relative;
 	&::before{
 		@include transparencia(color(negro), .3);
 	}
+}
+
+a.btn-pages{
+	width: max-content;
+	float: right;
 }

@@ -4,8 +4,14 @@
 	// border: 2px solid red;
 	display: flex;
 	width: 90%;
-	max-width: 350px;
+	max-width: 400px;
 	margin: auto;
+	@include mq(notebook){
+		max-width: 450px;
+	}
+	@include mq(escritorio){
+		max-width: 500px;
+	}
 	&-input{
 		border: 1px solid transparent;
 		background-color: color(secondary);

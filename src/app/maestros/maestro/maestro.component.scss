@@ -23,17 +23,40 @@
 			margin-bottom: 1rem;
 			border: none;
 			background-color: color(primary);
+			@include mq(tablet){
+				max-width: 150px;
+			}
 		}
 	}
 	& .btn-banner{
 		top: 40%;
+		@include mq(tablet){
+			top: 55%;
+		}
+		@include mq(notebook){
+			top: 60%;
+		}
 	}
 }
 
 .card{
-	border: 2px solid red;
+	// border: 2px solid red;
+	@include mq(notebook){
+		// border: 2px solid green;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&-banner{
+		@include mq(notebook){
+			width: 50%;
+		}
+	}
 	&-body{
-		border: 2px solid blue;
+		// border: 2px solid blue;
+		@include mq(notebook){
+			width: 50%;
+			padding-left: 2rem;
+		}
 		& hr{
 			width: 40%;
 			max-width: 300px;
@@ -44,7 +67,7 @@
 		}
 		&-nombre{
 			& h2{
-				margin: 1rem 0;
+				margin: 2rem 0;
 			}
 		}
 		&-logo{
@@ -52,12 +75,16 @@
 			max-width: 200px;
 		}
 		&-emprendimiento{
-			margin: 1rem 0;
+			margin: 2rem 0;
+		}
+		&-contacto{
+			margin: 2rem 0;
 		}
 		&-contacto div[class*="card-body-contacto-"]{
 			display: flex;
 			align-items: center;
-			border: 2px solid green;
+			// border: 1px solid green;
+			margin-bottom: .5rem;
 			& > i{
 				font-size: 2rem;
 				color: color(primary);
@@ -78,6 +105,7 @@
 	}
 	&-footer{
 		display: flex;
+		margin: 2rem 0;
 		& > i{
 			font-size: 2rem;
 			color: color(primary);
@@ -99,4 +127,35 @@
 			}
 		}
 	}
+}
+
+.Box-galeria{
+	// border: 2px solid green;
+	& .Subtitulo{
+		margin: 2rem 0;
+	}
+}
+
+.Box-comparte{
+	margin: 2rem 0;
+}
+
+.Comparte-rrss{
+	display: flex;
+	padding: .5rem 0;
+	& a{
+		text-decoration: none;
+		color: color(primary);
+		font-size: 2rem;
+		margin-right: .5rem;
+		cursor: pointer;
+		transition: color .25s ease;
+		&:hover{
+			color: color(secondary);
+		}
+	}
+}
+
+.Mapa{
+	margin-bottom: 2rem;
 }

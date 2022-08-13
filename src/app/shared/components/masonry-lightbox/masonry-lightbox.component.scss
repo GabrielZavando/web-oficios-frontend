@@ -1,3 +1,4 @@
+@import "../../../../scss/config/styles-root";
 
 :host{
 	display: block;
@@ -9,14 +10,21 @@
 	display: inline-block;
 	.gallery{
 		line-height: 0;
-		column-count: 3;
-		column-gap: 5px;
+		column-count: 2;
+		column-gap: 10px;
+		@include mq(notebook){
+			column-count: 3;
+			column-gap: 15px;
+		}
 		.gallery-img img{
 			width: 100%;
 			height: auto;
 			cursor: zoom-in;
-			margin-bottom: 5px;
+			margin-bottom: 10px;
 			box-shadow: 0 1px 5px 0 rgba(0,0,0, .21);
+			@include mq(notebook){
+				margin-bottom: 15px;;
+			}
 		}
 	}
 }
